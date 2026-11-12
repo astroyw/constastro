@@ -12,11 +12,12 @@ def main():
  # Back up the recovered source, installer and attributed samples alongside
  # the existing public artifacts. Never include SQLite, raw caches or secrets.
  source_paths=[]
- allowed={'.py','.sh','.mjs','.json','.html','.css','.svg','.md'}
+ allowed={'.py','.sh','.js','.mjs','.json','.html','.css','.svg','.md'}
  for folder in ('app','static','scripts','samples','docs','tests'):
   source_paths.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and not p.is_symlink() and '__pycache__' not in p.parts and p.suffix in allowed)
  source_paths.extend(ROOT/n for n in ('.gitignore','README.md','requirements.txt','requirements.lock','requirements-dev.txt','netlify.toml'))
  files={p.relative_to(ROOT).as_posix():p for p in source_paths}
+ assert {p.relative_to(ROOT).as_posix() for p in (ROOT/'static').glob('*.js')}.issubset(files), 'Missing browser modules in source backup'
  files.update(artifacts)
  with tempfile.TemporaryDirectory(prefix='linaje-publish-index-') as temp:
   env={**os.environ,'GIT_INDEX_FILE':str(Path(temp)/'index')}
