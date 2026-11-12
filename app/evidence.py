@@ -9,11 +9,13 @@ def load_evidence():
 
 def collect_evidence(horses):
     nodes={h['id']:h for h in horses};best={};scores={}
-    files=sorted((ROOT/'data'/'deep_pedigree').glob('*.json'))
+    files=[ROOT/'samples'/'pedigree_evidence.json'] if (ROOT/'samples'/'pedigree_evidence.json').exists() else []
+    files+=sorted((ROOT/'data'/'deep_pedigree').glob('*.json'))
     files+=sorted((ROOT/'data'/'ranking_cache').glob('uy-tree-*.json'))
     files += [ROOT/'samples'/n for n in ('historical_rankings.json','uruguay_official.json','argentina_official.json')]
     for path in files:
         data=json.loads(path.read_text());records=data.get('horses',[]) if isinstance(data,dict) else []
+        if path.name=='pedigree_evidence.json':records=list(data.values())
         if path.name.startswith('uy-tree-'):
             from .uruguay import parse_pedigree
             tree=data['data'];ident='uy-studbook:'+str(tree['id'])

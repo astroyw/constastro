@@ -12,7 +12,9 @@ from app.scraper import fetch_public,fetch_public_json,source_by_id
 
 CACHE=ROOT/'data'/'deep_pedigree';CACHE.mkdir(parents=True,exist_ok=True)
 LOCK=threading.Lock()
-TARGETS=set(json.loads((ROOT/'data'/'pedigree_original_ids.json').read_text()))
+TARGET_PATH=ROOT/'data'/'pedigree_original_ids.json'
+if not TARGET_PATH.exists():TARGET_PATH=ROOT/'samples'/'pedigree_targets.json'
+TARGETS=set(json.loads(TARGET_PATH.read_text()))
 
 def required_nodes(nodes):
  # Fixed original cohort; newly discovered ancestors are only traversed along

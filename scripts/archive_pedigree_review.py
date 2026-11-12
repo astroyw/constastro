@@ -10,7 +10,9 @@ from app.verification import compare_all
 from app.evidence import collect_evidence
 
 horses=db.horse_rows(False);nodes={h['id']:h for h in horses};validate_graph(horses)
-original=json.loads((ROOT/'data'/'pedigree_original_ids.json').read_text())
+target_path=ROOT/'data'/'pedigree_original_ids.json'
+if not target_path.exists():target_path=ROOT/'samples'/'pedigree_targets.json'
+original=json.loads(target_path.read_text())
 assert len(original)==2452 and all(i in nodes for i in original)
 evidence=collect_evidence(horses)
 (ROOT/'samples'/'pedigree_evidence.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2))
