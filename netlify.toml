@@ -1,0 +1,9 @@
+[build]
+  command = "bash scripts/build-netlify.sh"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# The build also writes _headers and _redirects into dist/ so manual uploads
+# and Git deployments receive the same configuration.

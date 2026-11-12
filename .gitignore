@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+exports/*.xlsx
+*.log
+.DS_Store
+
+.venv-netlify/
+dist/
+exports/*.zip
+.netlify/

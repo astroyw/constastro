@@ -1,0 +1,282 @@
+{
+  "pedigree": {
+    "id": 49882,
+    "name": "INVASOR (ARG)",
+    "birthDate": "2002-08-03",
+    "mother": {
+      "id": 49883,
+      "name": "QUENDOM (ARG)",
+      "birthDate": "1997-10-27",
+      "coat": {
+        "id": 10,
+        "abbreviation": "ZN."
+      },
+      "mother": {
+        "id": 49884,
+        "name": "QUEEN OF VICTORY (ARG)",
+        "birthDate": "1990-01-01",
+        "coat": {
+          "id": 1,
+          "abbreviation": "Z."
+        },
+        "mother": {
+          "id": 49885,
+          "name": "TWITCH CROWN (ARG)",
+          "birthDate": "1983-07-01",
+          "coat": {
+            "id": 1,
+            "abbreviation": "Z."
+          },
+          "mother": {
+            "id": 8195,
+            "name": "TWINS (ARG)",
+            "birthDate": "1964-07-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          },
+          "father": {
+            "id": 111,
+            "name": "CROWN THY GOOD (USA)",
+            "birthDate": "1976-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          }
+        },
+        "father": {
+          "id": 723,
+          "name": "CIPAYO (ARG)",
+          "birthDate": "1974-07-01",
+          "coat": {
+            "id": 1,
+            "abbreviation": "Z."
+          },
+          "mother": {
+            "id": 7902,
+            "name": "TSARINA (GB)",
+            "birthDate": "1961-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          },
+          "father": {
+            "id": 7901,
+            "name": "LACYDON (GB)",
+            "birthDate": "1955-01-01",
+            "coat": {
+              "id": 4,
+              "abbreviation": "ZC."
+            }
+          }
+        }
+      },
+      "father": {
+        "id": 8761,
+        "name": "INTERPRETE (ARG)",
+        "birthDate": "1988-07-01",
+        "coat": {
+          "id": 1,
+          "abbreviation": "Z."
+        },
+        "mother": {
+          "id": 8762,
+          "name": "INACCESIBLE (ARG)",
+          "birthDate": "1981-07-01",
+          "coat": {
+            "id": 1,
+            "abbreviation": "Z."
+          },
+          "mother": {
+            "id": 8763,
+            "name": "ILIADA (ARG)",
+            "birthDate": "1966-09-25",
+            "coat": {
+              "id": 2,
+              "abbreviation": "A."
+            }
+          },
+          "father": {
+            "id": 8532,
+            "name": "LILOY (FR)",
+            "birthDate": "1971-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          }
+        },
+        "father": {
+          "id": 5487,
+          "name": "FARNESIO (ARG)",
+          "birthDate": "1974-07-01",
+          "coat": {
+            "id": 1,
+            "abbreviation": "Z."
+          },
+          "mother": {
+            "id": 8764,
+            "name": "LA FARNESIANA (ARG)",
+            "birthDate": "1957-07-01",
+            "coat": {
+              "id": 2,
+              "abbreviation": "A."
+            }
+          },
+          "father": {
+            "id": 2938,
+            "name": "GOOD MANNERS (USA)",
+            "birthDate": "1966-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          }
+        }
+      }
+    },
+    "father": {
+      "id": 9769,
+      "name": "CANDY STRIPES (USA)",
+      "birthDate": "1982-01-01",
+      "coat": {
+        "id": 2,
+        "abbreviation": "A."
+      },
+      "mother": {
+        "id": 9770,
+        "name": "BUBBLE COMPANY (FR)",
+        "birthDate": "1977-01-01",
+        "coat": {
+          "id": 2,
+          "abbreviation": "A."
+        },
+        "mother": {
+          "id": 9771,
+          "name": "PRODICE (FR)",
+          "birthDate": "1969-01-01",
+          "coat": {
+            "id": 2,
+            "abbreviation": "A."
+          },
+          "mother": {
+            "id": 39307,
+            "name": "EURIDICE (FR)",
+            "birthDate": "1962-01-01",
+            "coat": {
+              "id": 2,
+              "abbreviation": "A."
+            }
+          },
+          "father": {
+            "id": 9772,
+            "name": "PROMINER (IRE)",
+            "birthDate": "1962-01-01",
+            "coat": {
+              "id": 2,
+              "abbreviation": "A."
+            }
+          }
+        },
+        "father": {
+          "id": 4145,
+          "name": "LYPHARD (USA)",
+          "birthDate": "1969-01-01",
+          "coat": {
+            "id": 4,
+            "abbreviation": "ZC."
+          },
+          "mother": {
+            "id": 7804,
+            "name": "GOOFED (USA)",
+            "birthDate": "1960-01-01",
+            "coat": null
+          },
+          "father": {
+            "id": 7854,
+            "name": "NORTHERN DANCER (CAN)",
+            "birthDate": "1961-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          }
+        }
+      },
+      "father": {
+        "id": 6481,
+        "name": "BLUSHING GROOM (FR)",
+        "birthDate": "1974-01-01",
+        "coat": {
+          "id": 2,
+          "abbreviation": "A."
+        },
+        "mother": {
+          "id": 7769,
+          "name": "RUNAWAY BRIDE (GB)",
+          "birthDate": "1962-01-01",
+          "coat": {
+            "id": 1,
+            "abbreviation": "Z."
+          },
+          "mother": {
+            "id": 38915,
+            "name": "AIMEE (GB)",
+            "birthDate": "1957-01-01",
+            "coat": null
+          },
+          "father": {
+            "id": 7787,
+            "name": "WILD RISK (FR)",
+            "birthDate": "1940-01-01",
+            "coat": {
+              "id": 4,
+              "abbreviation": "ZC."
+            }
+          }
+        },
+        "father": {
+          "id": 7768,
+          "name": "RED GOD (USA)",
+          "birthDate": "1954-01-01",
+          "coat": {
+            "id": 2,
+            "abbreviation": "A."
+          },
+          "mother": {
+            "id": 7786,
+            "name": "SPRING RUN (USA)",
+            "birthDate": "1948-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          },
+          "father": {
+            "id": 7785,
+            "name": "NASRULLAH (GB)",
+            "birthDate": "1940-01-01",
+            "coat": {
+              "id": 1,
+              "abbreviation": "Z."
+            }
+          }
+        }
+      }
+    }
+  },
+  "profile": {
+    "id": 49882,
+    "name": "INVASOR (ARG)",
+    "sex": "M",
+    "birthDate": "2002-08-03",
+    "coat": {
+      "id": 1,
+      "abbreviation": "Z.",
+      "description": "ZAINO"
+    }
+  }
+}

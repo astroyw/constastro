@@ -1,0 +1,132 @@
+from io import BytesIO
+
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.utils import get_column_letter
+
+from .catalog import SOURCES
+from .db import now
+from .ancestry import audit,original_targets
+from .verification import compare_all
+from .evidence import load_evidence
+
+PATHS=[("Padre","s"),("Madre","d"),("Abuelo paterno","ss"),("Abuela paterna","sd"),("Abuelo materno","ds"),("Abuela materna","dd"),
+       ("Bisabuelo PPP","sss"),("Bisabuela PPM","ssd"),("Bisabuelo PMP","sds"),("Bisabuela PMM","sdd"),
+       ("Bisabuelo MPP","dss"),("Bisabuela MPM","dsd"),("Bisabuelo MMP","dds"),("Bisabuela MMM","ddd")]
+
+
+def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_576,rankings=None):
+    # Streaming workbook: split sheets at Excel's hard limit instead of truncating records.
+    wb=Workbook(write_only=True)
+    from openpyxl.cell import WriteOnlyCell
+    if not 2<=sheet_row_limit<=1_048_576:
+        raise ValueError('El límite de filas por hoja debe estar entre 2 y 1.048.576.')
+
+    def sheet(name,headers,rows):
+        part=0
+        row_count=0
+        ws=None
+        def create():
+            nonlocal part,row_count
+            part+=1
+            out=wb.create_sheet((name if part==1 else f'{name} {part}')[:31])
+            out.freeze_panes='A2'
+            for i,h in enumerate(headers,1):
+                out.column_dimensions[get_column_letter(i)].width=min(42,max(20,len(h)+3))
+            styled=[]
+            for h in headers:
+                c=WriteOnlyCell(out,value=h)
+                c.font=Font(name='Calibri',bold=True,color='FFFFFF',size=11)
+                c.fill=PatternFill('solid',fgColor='203B31')
+                c.alignment=Alignment(vertical='center')
+                styled.append(c)
+            out.append(styled)
+            row_count=1
+            return out
+        for row in rows:
+            if ws is None or row_count>=sheet_row_limit:
+                if ws is not None:
+                    ws.auto_filter.ref=f'A1:{get_column_letter(len(headers))}{row_count}'
+                ws=create()
+            cells=[]
+            for value in row:
+                cell=WriteOnlyCell(ws,value=value)
+                if isinstance(value,str):cell.data_type='s'
+                cells.append(cell)
+            ws.append(cells)
+            row_count+=1
+        if ws is None:ws=create()
+        ws.auto_filter.ref=f'A1:{get_column_letter(len(headers))}{row_count}'
+
+    nodes={h["id"]:h for h in horses}
+    targets=original_targets()
+    info=[
+        ["Proyecto","Linaje · constastro"],["Generado UTC",now()],
+        ["Contenido","DEMOSTRACIÓN: todos los caballos son ficticios" if demo else "Registros importados por el usuario o desde páginas públicas; revisar su procedencia"],
+        ["Cantidad de caballos",len(horses)],["Resultados",len(results)],
+        ["Cómo guardar datos","Caballos es la tabla normalizada: IDs únicos y referencias Padre ID / Madre ID. Pedigree 3G presenta los 14 ancestros en una fila por caballo."],
+        ["Datos desconocidos","Las celdas vacías son datos faltantes; no indican ausencia de parentesco."],
+        ["Homónimos","Nunca vincular caballos únicamente por su nombre. Usar el ID y comprobar el registro de origen."],
+        ["Importación","La aplicación admite JSON según docs/importacion.md; este XLSX es una exportación para archivo y edición."],
+        ["Genética","Un pedigree no sustituye una prueba genética ni predice aptitud deportiva. No incluye resultados de ADN."],
+        ["Capacidad","El archivo divide automáticamente cada tabla al superar 1.048.575 registros por hoja. Limitado por almacenamiento y memoria del equipo."],
+    ]
+    if not demo:
+        info.append(['Ascendencia histórica','Caballos conserva todas las generaciones enlazadas. Cobertura 1935 audita cada registro hasta que todas sus ramas alcanzan un nacimiento documentado en 1935 o antes (época de Nearco). Vacíos y años desconocidos quedan pendientes. No implica que todos desciendan de Nearco.'])
+    sheet("Leer primero",["Campo","Información"],info)
+    sheet("Caballos",["ID","Nombre","País de registro","Año nacimiento","Sexo M H C U","Pelaje","Padre ID","Madre ID","Fuente","URL de origen","Consultado UTC","Demostración","Notas","País de nacimiento"],
+          ([h.get(k) for k in ["id","name","country","birth_year","sex","coat","sire_id","dam_id","source_id","source_url","fetched_at","is_demo","notes","birth_country"]] for h in horses))
+    def pedigree_rows():
+        for h in horses:
+            row=[h['id'],h['name'],h.get('country'),h.get('birth_year')]
+            for label,path in PATHS:
+                a=h
+                for p in path:
+                    a=nodes.get(a.get("sire_id" if p=='s' else "dam_id")) if a else None
+                row.extend([a['id'],a['name']] if a else [None,None])
+            row.extend([h.get('source_url'),h.get('is_demo')])
+            yield row
+    sheet("Pedigree 3G",["ID","Caballo","País de registro","Año"]+[v for label,path in PATHS for v in [label+" ID",label+" nombre"]]+["URL de origen","Demostración"],pedigree_rows())
+    if not demo:
+        def coverage_rows():
+            for h in horses:
+                a=audit(h['id'],nodes)
+                yield [h['id'],h['name'],'Completo' if a['complete'] else 'Pendiente',a['ancestor_count'],a['max_generation'],a['oldest_year'],a['missing_links'],a['terminals_1935'], '; '.join(f"{n['id']} (generación {n['generation']})" for n in a['nearco']),h['id'] in targets]
+        sheet('Cobertura 1935',['ID','Nombre','Hasta 1935 en todas las ramas','Ancestros únicos','Generación más lejana documentada','Año más antiguo documentado','Enlaces pendientes','Ancestros terminales hasta 1935','Nearco documentado','Objetivo original'],coverage_rows())
+    if not demo:
+        comparisons=compare_all(horses,load_evidence())
+        def verification_rows():
+            for h in horses:
+                v=comparisons[h['id']]
+                for c in v['comparisons'] or [None]:
+                    yield [h['id'],h['name'],v['status'],h.get('source_id'),v['primary_url'],c['source_id'] if c else '',c['id'] if c else '',c['url'] if c else '',c['observed_at'] if c else '',bool(c and c['identity_supported']),', '.join(v['confirmed_fields']),', '.join(v['pending_fields']),'; '.join(f"{d['field']}: {d['value']} / {d['other']}" for d in c['differences']) if c else '',v['scope']]
+        sheet('Contraste fuentes',['ID','Nombre','Estado','Fuente inicial','URL inicial','Segunda fuente','Segundo ID','Segunda URL','Consulta segunda fuente','Identidad respaldada','Campos corroborados','Campos pendientes','Diferencias','Alcance'],verification_rows())
+    sheet("Resultados",["ID","País","Hipódromo","Fecha","Carrera","Distancia m","Pista","Puesto","Caballo","Caballo ID","Jinete","Tiempo","URL","Consultado UTC","Carrera ID","Tipo de tiempo","Cobertura","Participantes oficiales"],
+          ([r.get(k) for k in ['id','country','track','date','race_name','distance','surface','position','horse_name','horse_id','jockey','time','source_url','fetched_at','race_id','time_kind','scope','field_size']] for r in results))
+    sheet("Fuentes",["ID","País","Organismo","Tipo","URL","Estado"],([s['id'],s['country'],s['name'],s['kind'],s['url'],"Directorio; conexión y esquema requieren validación en origen"] for s in SOURCES))
+    sheet("Importaciones",["Fecha UTC","Fuente","Tipo","Estado","Filas","URL","Detalle"],([r.get(k) for k in ['created_at','source_id','kind','status','count','url','message']] for r in imports))
+    sheet("Diccionario",["Campo","Definición"],[
+        ['id','Identificador estable por registro, no derivado exclusivamente del nombre.'],
+        ['sire_id / dam_id','Referencias al ID del padre y de la madre.'],
+        ['country','País de registro: URU USA FRA GBR JPN HKG BRA ARG CHI.'],
+        ['birth_country','País de nacimiento verificado. No se deduce del país de registro. Una celda vacía indica que falta confirmar.'],
+        ['sex','M: macho; H: hembra; C: castrado; U: no registrado.'],
+        ['source_url','Página de procedencia. Vacía para los ejemplos ficticios.'],
+        ['is_demo','1: ejemplo ficticio. 0: registro importado. No equivale a validación oficial.'],
+        ['fetched_at','Fecha de incorporación UTC. No es la fecha de la carrera.'],
+        ['time_kind','winner: tiempo del ganador; individual: tiempo de ese caballo; unknown: tipo no identificado.'],
+        ['scope / field_size','full: tantas llegadas numéricas como participantes oficiales; partial: clasificación incompleta. field_size contiene el número oficial de participantes cuando se conoce.'],
+        ['P / M','En las rutas de ancestros, P significa padre y M significa madre, desde el caballo hacia atrás.'],
+        ['Estimaciones por distancia','Índice orientativo 1–100 de posiciones relativas históricas familiares: (participantes − puesto) / (participantes − 1), promedio por caballo y pesos 1, 1/2, 1/4, 1/8 por generación; cada rama aporta 50%. No es probabilidad de ganar ni predicción genética validada.'],
+        ['Datos mínimos de estimación','Tres carreras compatibles por rama, seis actuaciones únicas entre ambas y dos caballos distintos; fuente, distancia, superficie, puesto y participantes oficiales conocidos. Sin evidencia suficiente no se asigna puntaje.'],
+        ['Perfiles de referencia','Classic 2000 m arena; Distaff 1800 m arena; Mile 1600 m césped; Turf 2400 m césped; Sprint 1200 m arena. Margen ±200 m. No evalúan elegibilidad por edad o sexo.'],
+        ['Ganancias de rankings','Importes nominales de cada fuente, conservados como texto decimal exacto. No sumar monedas ni equiparar circuitos. Los rankings no cuentan ancestros como puestos adicionales.'],
+    ])
+    if rankings is not None and not demo:
+        sheet('Rankings', ['ID ranking','Título','Nacimiento requerido','Moneda','Cobertura','Fuente','Consultado UTC','Puestos solicitados','Estado','Metodología','Pendiente'],
+              ([batch['ranking'].get(k) for k in ['id','title','birth_country','currency','scope','source_url','observed_at','requested_count','status','methodology','blocker']] for batch in rankings))
+        sheet('Ganancias', ['Ranking ID','Puesto','Caballo ID','Nombre','País de nacimiento','Ganancias nominales exactas','Moneda','ID en fuente','Fuente','Consultado UTC'],
+              ([batch['ranking']['id'],e['position'],e['horse_id'],e.get('name'),e.get('birth_country'),e['earnings'],batch['ranking']['currency'],e['source_horse_id'],e['source_url'],e['observed_at']] for batch in rankings for e in batch['entries']))
+    stream=BytesIO()
+    wb.save(stream)
+    return stream.getvalue()

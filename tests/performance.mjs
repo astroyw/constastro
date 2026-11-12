@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {performance,performancePanel} from '../static/performance.js';
+const horses=[{id:'s'},{id:'d'}];
+const race=(id,i,position=1,extra={})=>({id:id+i,horse_id:id,race_id:id+i,position,field_size:10,distance:2000,surface:'Arena',source_url:'https://example.org/official',...extra});
+const rows=[...Array.from({length:3},(_,i)=>race('s',i)),...Array.from({length:3},(_,i)=>race('d',i))];
+const classic=(h=horses,r=rows)=>performance('s','d',h,r).find(p=>p.name==='Classic');
+assert.equal(classic().score,100);assert.equal(classic().confidence,'Baja');
+assert.equal(classic(horses,rows.map(r=>({...r,position:10}))).score,1);
+assert.equal(classic(horses,rows.map(r=>({...r,position:r.horse_id==='s'?1:10}))).score,51);
+assert.equal(classic(horses,rows.slice(0,5)).score,null);
+assert.equal(performance('s','d',horses,rows).find(p=>p.name==='Turf').score,null);
+for(const extra of [{field_size:null},{field_size:1},{position:11},{position:0},{position:1.5},{surface:'Desconocida'},{source_url:'javascript:alert(1)'},{distance:2201}])assert.equal(classic(horses,rows.map(r=>({...r,...extra}))).score,null);
+assert.equal(classic(horses,rows.map(r=>({...r,distance:2200}))).score,100);
+assert.equal(classic(horses,[...rows,...rows]).uniqueStarts,6);
+assert.equal(classic(horses,[...rows,{...rows[0],position:2}]).score,null);
+const shared=[{id:'s',sire_id:'ancestor'},{id:'d',sire_id:'ancestor'},{id:'ancestor'}];
+assert.equal(classic(shared,Array.from({length:3},(_,i)=>race('ancestor',i))).score,null);
+const ancestors=[{id:'s',sire_id:'a'},{id:'a'},{id:'d'}];
+const weighted=[...rows,...Array.from({length:30},(_,i)=>race('a',i,10))];
+assert.equal(classic(ancestors,weighted).score,84); // per-horse means, not 30x influence
+const html=performancePanel(performance('s','d',horses,rows));assert.ok(html.includes('100 / 100'));assert.ok(html.includes('no una predicción')||html.includes('ni una predicción'));assert.ok(html.includes('Confianza: Baja'));
+console.log('PASS: 1–100, equal branches, category evidence, boundaries, invalid data, deduplication, conflicts, shared evidence and ancestor weighting.');

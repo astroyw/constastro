@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {affinity} from '../static/affinity.js';
+const horses=[{id:'s'},{id:'d'}];
+const race=(horse,i,distance=2000,surface='Arena')=>({id:horse+i,horse_id:horse,race_id:horse+i,distance,surface,source_url:'https://example.org/official'});
+const rows=[...Array.from({length:3},(_,i)=>race('s',i)),...Array.from({length:3},(_,i)=>race('d',i))];
+let result=affinity('s','d',horses,rows);
+assert.equal(result.find(x=>x.name==='Classic').score,100);
+assert.equal(result.find(x=>x.name==='Turf').score,0);
+assert.equal(affinity('s','d',horses,rows.slice(0,5))[0].score,null);
+assert.equal(affinity('s','d',horses,[...rows.slice(0,5),rows[4]])[0].score,null);
+assert.equal(affinity('s','d',horses,rows.map(r=>r.horse_id==='d'?{...r,surface:'Desconocida'}:r))[0].score,null);
+assert.equal(affinity('s','d',horses,rows.map(r=>r.horse_id==='d'?{...r,distance:1200}:r))[0].score,50);
+assert.equal(affinity('s','d',horses,rows.map(r=>({...r,horse_id:'homonym-unlinked'})))[0].score,null);
+const family=[{id:'s',sire_id:'ancestor'},{id:'d'},{id:'ancestor'}];
+const extra=Array.from({length:3},(_,i)=>race('ancestor',i,1200));
+assert.equal(affinity('s','d',family,[...rows,...extra])[0].score,83);
+console.log('PASS: 100/0/50 scores, weighting, insufficient data, unknown surfaces, duplicate races and unlinked homonyms.');

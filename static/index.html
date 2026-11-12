@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#203b31">
+  <meta name="description" content="Pedigrees de pura sangre, análisis de cruces y resultados hípicos. Uruguay como punto de partida.">
+  <title>Linaje — El origen de un campeón</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#inicio" aria-label="Linaje, inicio"><span class="brand-mark">L<span>↗</span></span><span>linaje<span class="brand-dot">.</span><small>INTELIGENCIA HÍPICA</small></span></a>
+    <div class="workspace-label">TU ESPACIO HÍPICO</div>
+    <nav aria-label="Navegación principal" id="nav"></nav>
+    <div class="sidebar-bottom">
+      <div class="uruguay-note"><span class="sun-mark">☀</span><strong>De Uruguay al mundo.</strong><p>La pasión de siempre.<br>Una nueva forma de mirar.</p><span class="tiny-label">9 REGIONES · UN MISMO TURF</span></div>
+      <a class="help-link" href="#fuentes"><span data-icon="shield"></span>Fuentes y metodología<span>↗</span></a>
+      <div class="sidebar-signature"><span class="avatar">UY</span><div>Hecho para el turf<small>Edición Uruguay</small></div><span class="status-dot"></span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="mobile-menu" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button>
+      <div class="breadcrumb">Mi espacio <span>/</span> <strong id="breadcrumb-current">Panorama</strong></div>
+      <div class="topbar-actions"><form class="global-search" id="search-form"><span data-icon="search"></span><input id="global-search" aria-label="Buscar un caballo" placeholder="Buscar un caballo…"><kbd>↵</kbd></form><button id="mode-button" class="mode-button" title="Cambiar entre ejemplos ficticios y registros importados"><span class="mode-dot"></span><span id="mode-label">Datos reales</span><span data-icon="chevron"></span></button><span class="profile-avatar" title="Edición Uruguay">UY</span></div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-state">Preparando tu espacio hípico…</div></main>
+    <footer class="footer"><span>linaje. <span class="footer-divider">/</span> El origen de un campeón.</span><span>Pedigree, datos y pasión por el turf.</span></footer>
+  </div>
+  <dialog id="horse-dialog" class="horse-dialog" aria-labelledby="horse-title"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

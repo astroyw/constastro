@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import {historicPedigree} from '../static/ancestry.js';
+const nodes=new Map([['root',{id:'root',name:'Root',birth_year:2000,sire_id:'nearco'}],['nearco',{id:'nearco',name:'NEARCO',birth_year:1935}]]);
+let a=historicPedigree('root',nodes);assert.equal(a.complete,false);assert.equal(a.missing,1);assert.equal(a.terminals,1);
+nodes.get('root').dam_id='old';nodes.set('old',{id:'old',name:'Other branch',birth_year:1930});
+a=historicPedigree('root',nodes);assert.equal(a.complete,true);assert.equal(a.rows.length,3);
+nodes.get('old').birth_year=null;a=historicPedigree('root',nodes);assert.equal(a.missing,2);
+nodes.get('root').dam_id='nearco';a=historicPedigree('root',nodes);assert.equal(a.rows.length,2);assert.equal(a.complete,true);
+console.log('PASS: historical coverage requires every branch, known years, unique ancestors, cutoff independent of Nearco descent.');

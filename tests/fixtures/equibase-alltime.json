@@ -1,0 +1,1812 @@
+[
+  {
+    "total_rows": 200,
+    "stats": [
+      {
+        "rank": 200,
+        "referenceNumber": 5388290,
+        "registry": "T",
+        "horseName": "Funny Cide",
+        "earnings": 3541928.0,
+        "sireReferenceNumber": 1396750,
+        "sireName": "Distorted Humor"
+      },
+      {
+        "rank": 199,
+        "referenceNumber": 8146945,
+        "registry": "T",
+        "horseName": "Little Mike",
+        "earnings": 3543392.0,
+        "sireReferenceNumber": 6224898,
+        "sireName": "Spanish Steps"
+      },
+      {
+        "rank": 198,
+        "referenceNumber": 10988974,
+        "registry": "T",
+        "horseName": "Derma Sotogake (JPN)",
+        "earnings": 3555647.0,
+        "sireReferenceNumber": 9500592,
+        "sireName": "Mind Your Biscuits"
+      },
+      {
+        "rank": 197,
+        "referenceNumber": 9883026,
+        "registry": "T",
+        "horseName": "Roaring Lion",
+        "earnings": 3575197.0,
+        "sireReferenceNumber": 6252387,
+        "sireName": "Kitten's Joy"
+      },
+      {
+        "rank": 196,
+        "referenceNumber": 9465075,
+        "registry": "T",
+        "horseName": "Exaggerator",
+        "earnings": 3581120.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 195,
+        "referenceNumber": 11043410,
+        "registry": "T",
+        "horseName": "Remake (JPN)",
+        "earnings": 3584308.0,
+        "sireReferenceNumber": 9477928,
+        "sireName": "Lani"
+      },
+      {
+        "rank": 194,
+        "referenceNumber": 1626043,
+        "registry": "T",
+        "horseName": "Gentlemen (ARG)",
+        "earnings": 3608558.0,
+        "sireReferenceNumber": 1111155,
+        "sireName": "Robin des Bois"
+      },
+      {
+        "rank": 193,
+        "referenceNumber": 7453661,
+        "registry": "T",
+        "horseName": "Big Brown",
+        "earnings": 3614500.0,
+        "sireReferenceNumber": 1289263,
+        "sireName": "Boundary"
+      },
+      {
+        "rank": 192,
+        "referenceNumber": 4823597,
+        "registry": "T",
+        "horseName": "Harlan's Holiday",
+        "earnings": 3632664.0,
+        "sireReferenceNumber": 1226849,
+        "sireName": "Harlan"
+      },
+      {
+        "rank": 191,
+        "referenceNumber": 11169691,
+        "registry": "T",
+        "horseName": "Minnie Hauk (IRE)",
+        "earnings": 3633712.0,
+        "sireReferenceNumber": 8333732,
+        "sireName": "Frankel (GB)"
+      },
+      {
+        "rank": 190,
+        "referenceNumber": 2493788,
+        "registry": "T",
+        "horseName": "Almutawakel (GB)",
+        "earnings": 3643021.0,
+        "sireReferenceNumber": 1110412,
+        "sireName": "Machiavellian"
+      },
+      {
+        "rank": 189,
+        "referenceNumber": 7789618,
+        "registry": "T",
+        "horseName": "Flat Out",
+        "earnings": 3645383.0,
+        "sireReferenceNumber": 4636938,
+        "sireName": "Flatter"
+      },
+      {
+        "rank": 188,
+        "referenceNumber": 9064185,
+        "registry": "T",
+        "horseName": "Tonalist",
+        "earnings": 3647000.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 187,
+        "referenceNumber": 10400317,
+        "registry": "T",
+        "horseName": "Midnight Bourbon",
+        "earnings": 3647970.0,
+        "sireReferenceNumber": 4322623,
+        "sireName": "Tiznow"
+      },
+      {
+        "rank": 186,
+        "referenceNumber": 8441252,
+        "registry": "T",
+        "horseName": "Manighar (FR)",
+        "earnings": 3657022.0,
+        "sireReferenceNumber": 3032401,
+        "sireName": "Linamix (FR)"
+      },
+      {
+        "rank": 185,
+        "referenceNumber": 7404350,
+        "registry": "T",
+        "horseName": "Raven's Pass",
+        "earnings": 3658556.0,
+        "sireReferenceNumber": 1396994,
+        "sireName": "Elusive Quality"
+      },
+      {
+        "rank": 184,
+        "referenceNumber": 4448074,
+        "registry": "T",
+        "horseName": "The Tin Man",
+        "earnings": 3663780.0,
+        "sireReferenceNumber": 624999,
+        "sireName": "Affirmed"
+      },
+      {
+        "rank": 183,
+        "referenceNumber": 8593380,
+        "registry": "T",
+        "horseName": "Secret Circle",
+        "earnings": 3670790.0,
+        "sireReferenceNumber": 6132134,
+        "sireName": "Eddington"
+      },
+      {
+        "rank": 182,
+        "referenceNumber": 9873708,
+        "registry": "T",
+        "horseName": "McKinzie",
+        "earnings": 3673360.0,
+        "sireReferenceNumber": 7198670,
+        "sireName": "Street Sense"
+      },
+      {
+        "rank": 181,
+        "referenceNumber": 5693113,
+        "registry": "T",
+        "horseName": "Phoenix Reach (IRE)",
+        "earnings": 3695444.0,
+        "sireReferenceNumber": 2471289,
+        "sireName": "Alhaarth (IRE)"
+      },
+      {
+        "rank": 180,
+        "referenceNumber": 10628836,
+        "registry": "T",
+        "horseName": "Modern Games (IRE)",
+        "earnings": 3719049.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 179,
+        "referenceNumber": 8035812,
+        "registry": "T",
+        "horseName": "Drosselmeyer",
+        "earnings": 3728170.0,
+        "sireReferenceNumber": 1396750,
+        "sireName": "Distorted Humor"
+      },
+      {
+        "rank": 178,
+        "referenceNumber": 7465008,
+        "registry": "T",
+        "horseName": "Gladiatorus",
+        "earnings": 3742463.0,
+        "sireReferenceNumber": 3092070,
+        "sireName": "Silic (FR)"
+      },
+      {
+        "rank": 177,
+        "referenceNumber": 10761322,
+        "registry": "T",
+        "horseName": "Saudi Crown",
+        "earnings": 3742708.0,
+        "sireReferenceNumber": 9662832,
+        "sireName": "Always Dreaming"
+      },
+      {
+        "rank": 176,
+        "referenceNumber": 7444721,
+        "registry": "T",
+        "horseName": "Court Vision",
+        "earnings": 3764675.0,
+        "sireReferenceNumber": 980222,
+        "sireName": "Gulch"
+      },
+      {
+        "rank": 175,
+        "referenceNumber": 10406928,
+        "registry": "T",
+        "horseName": "Elite Power",
+        "earnings": 3775711.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 174,
+        "referenceNumber": 915201,
+        "registry": "T",
+        "horseName": "Ferdinand",
+        "earnings": 3777978.0,
+        "sireReferenceNumber": 348586,
+        "sireName": "Nijinsky II"
+      },
+      {
+        "rank": 173,
+        "referenceNumber": 9051171,
+        "registry": "T",
+        "horseName": "Protectionist (GER)",
+        "earnings": 3785697.0,
+        "sireReferenceNumber": 1601031,
+        "sireName": "Monsun (GER)"
+      },
+      {
+        "rank": 172,
+        "referenceNumber": 9797503,
+        "registry": "T",
+        "horseName": "Sistercharlie (IRE)",
+        "earnings": 3786003.0,
+        "sireReferenceNumber": 7560571,
+        "sireName": "Myboycharlie (IRE)"
+      },
+      {
+        "rank": 171,
+        "referenceNumber": 10422662,
+        "registry": "T",
+        "horseName": "Malathaat",
+        "earnings": 3790825.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 170,
+        "referenceNumber": 2467043,
+        "registry": "T",
+        "horseName": "Swain (IRE)",
+        "earnings": 3797566.0,
+        "sireReferenceNumber": 1062297,
+        "sireName": "Nashwan"
+      },
+      {
+        "rank": 169,
+        "referenceNumber": 10509028,
+        "registry": "T",
+        "horseName": "State of Rest (IRE)",
+        "earnings": 3808013.0,
+        "sireReferenceNumber": 7997465,
+        "sireName": "Starspangledbanner (AUS)"
+      },
+      {
+        "rank": 168,
+        "referenceNumber": 1592269,
+        "registry": "T",
+        "horseName": "Sandpit (BRZ)",
+        "earnings": 3812597.0,
+        "sireReferenceNumber": 958441,
+        "sireName": "Baynoun (IRE)"
+      },
+      {
+        "rank": 167,
+        "referenceNumber": 6955794,
+        "registry": "T",
+        "horseName": "Doctor Dino (FR)",
+        "earnings": 3826744.0,
+        "sireReferenceNumber": 2510126,
+        "sireName": "Muhtathir (GB)"
+      },
+      {
+        "rank": 166,
+        "referenceNumber": 8127360,
+        "registry": "T",
+        "horseName": "Cape Blanco (IRE)",
+        "earnings": 3855665.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      },
+      {
+        "rank": 165,
+        "referenceNumber": 8055442,
+        "registry": "T",
+        "horseName": "Joshua Tree (IRE)",
+        "earnings": 3876374.0,
+        "sireReferenceNumber": 2505598,
+        "sireName": "Montjeu (IRE)"
+      },
+      {
+        "rank": 164,
+        "referenceNumber": 10629025,
+        "registry": "T",
+        "horseName": "Inspiral (GB)",
+        "earnings": 3883762.0,
+        "sireReferenceNumber": 8333732,
+        "sireName": "Frankel (GB)"
+      },
+      {
+        "rank": 163,
+        "referenceNumber": 1243405,
+        "registry": "T",
+        "horseName": "Devil His Due",
+        "earnings": 3920405.0,
+        "sireReferenceNumber": 835369,
+        "sireName": "Devil's Bag"
+      },
+      {
+        "rank": 162,
+        "referenceNumber": 8866097,
+        "registry": "T",
+        "horseName": "Will Take Charge",
+        "earnings": 3924648.0,
+        "sireReferenceNumber": 1392779,
+        "sireName": "Unbridled's Song"
+      },
+      {
+        "rank": 161,
+        "referenceNumber": 9097137,
+        "registry": "T",
+        "horseName": "Untapable",
+        "earnings": 3926625.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 160,
+        "referenceNumber": 6085860,
+        "registry": "T",
+        "horseName": "Ashado",
+        "earnings": 3931440.0,
+        "sireReferenceNumber": 1251574,
+        "sireName": "Saint Ballado"
+      },
+      {
+        "rank": 159,
+        "referenceNumber": 10571036,
+        "registry": "T",
+        "horseName": "Idiomatic",
+        "earnings": 3944190.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 158,
+        "referenceNumber": 4063490,
+        "registry": "T",
+        "horseName": "Cat Thief",
+        "earnings": 3951012.0,
+        "sireReferenceNumber": 935962,
+        "sireName": "Storm Cat"
+      },
+      {
+        "rank": 157,
+        "referenceNumber": 10630286,
+        "registry": "T",
+        "horseName": "Rattle N Roll",
+        "earnings": 3952047.0,
+        "sireReferenceNumber": 9526872,
+        "sireName": "Connect"
+      },
+      {
+        "rank": 156,
+        "referenceNumber": 8527272,
+        "registry": "T",
+        "horseName": "Red Desire (JPN)",
+        "earnings": 3957621.0,
+        "sireReferenceNumber": 5311462,
+        "sireName": "Manhattan Cafe (JPN)"
+      },
+      {
+        "rank": 155,
+        "referenceNumber": 4474473,
+        "registry": "T",
+        "horseName": "Point Given",
+        "earnings": 3968500.0,
+        "sireReferenceNumber": 1369240,
+        "sireName": "Thunder Gulch"
+      },
+      {
+        "rank": 154,
+        "referenceNumber": 9330751,
+        "registry": "T",
+        "horseName": "Frosted",
+        "earnings": 3972800.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 153,
+        "referenceNumber": 10997731,
+        "registry": "T",
+        "horseName": "Geoglyph (JPN)",
+        "earnings": 3999265.0,
+        "sireReferenceNumber": 9493840,
+        "sireName": "Drefong"
+      },
+      {
+        "rank": 152,
+        "referenceNumber": 9674626,
+        "registry": "T",
+        "horseName": "Channel Maker",
+        "earnings": 4013111.0,
+        "sireReferenceNumber": 6543139,
+        "sireName": "English Channel"
+      },
+      {
+        "rank": 151,
+        "referenceNumber": 9338334,
+        "registry": "T",
+        "horseName": "Shaman Ghost",
+        "earnings": 4020914.0,
+        "sireReferenceNumber": 5342927,
+        "sireName": "Ghostzapper"
+      },
+      {
+        "rank": 150,
+        "referenceNumber": 1451577,
+        "registry": "T",
+        "horseName": "Seeking the Pearl",
+        "earnings": 4021716.0,
+        "sireReferenceNumber": 1043178,
+        "sireName": "Seeking the Gold"
+      },
+      {
+        "rank": 149,
+        "referenceNumber": 898701,
+        "registry": "T",
+        "horseName": "Creme Fraiche",
+        "earnings": 4024727.0,
+        "sireReferenceNumber": 622857,
+        "sireName": "Rich Cream"
+      },
+      {
+        "rank": 148,
+        "referenceNumber": 7453428,
+        "registry": "T",
+        "horseName": "Twice Over (GB)",
+        "earnings": 4033121.0,
+        "sireReferenceNumber": 4292794,
+        "sireName": "Observatory"
+      },
+      {
+        "rank": 147,
+        "referenceNumber": 10259223,
+        "registry": "T",
+        "horseName": "Charlatan",
+        "earnings": 4047200.0,
+        "sireReferenceNumber": 4434181,
+        "sireName": "Speightstown"
+      },
+      {
+        "rank": 146,
+        "referenceNumber": 10631792,
+        "registry": "T",
+        "horseName": "Nations Pride (IRE)",
+        "earnings": 4056504.0,
+        "sireReferenceNumber": 7266474,
+        "sireName": "Teofilo (IRE)"
+      },
+      {
+        "rank": 145,
+        "referenceNumber": 4499845,
+        "registry": "T",
+        "horseName": "Azeri",
+        "earnings": 4079820.0,
+        "sireReferenceNumber": 980230,
+        "sireName": "Jade Hunter"
+      },
+      {
+        "rank": 144,
+        "referenceNumber": 2459825,
+        "registry": "T",
+        "horseName": "Pilsudski (IRE)",
+        "earnings": 4080297.0,
+        "sireReferenceNumber": 1094909,
+        "sireName": "Polish Precedent"
+      },
+      {
+        "rank": 143,
+        "referenceNumber": 6524621,
+        "registry": "T",
+        "horseName": "David Junior",
+        "earnings": 4116358.0,
+        "sireReferenceNumber": 1137309,
+        "sireName": "Pleasant Tap"
+      },
+      {
+        "rank": 142,
+        "referenceNumber": 10631497,
+        "registry": "T",
+        "horseName": "Win Carnelian (JPN)",
+        "earnings": 4137588.0,
+        "sireReferenceNumber": 7936250,
+        "sireName": "Screen Hero (JPN)"
+      },
+      {
+        "rank": 141,
+        "referenceNumber": 4543359,
+        "registry": "T",
+        "horseName": "Collier Hill (GB)",
+        "earnings": 4164434.0,
+        "sireReferenceNumber": 2441325,
+        "sireName": "Dr Devious (IRE)"
+      },
+      {
+        "rank": 140,
+        "referenceNumber": 909360,
+        "registry": "T",
+        "horseName": "Spend a Buck",
+        "earnings": 4220689.0,
+        "sireReferenceNumber": 620894,
+        "sireName": "Buckaroo"
+      },
+      {
+        "rank": 139,
+        "referenceNumber": 10246686,
+        "registry": "T",
+        "horseName": "Art Collector",
+        "earnings": 4231290.0,
+        "sireReferenceNumber": 6801271,
+        "sireName": "Bernardini"
+      },
+      {
+        "rank": 138,
+        "referenceNumber": 10053442,
+        "registry": "T",
+        "horseName": "Tacitus",
+        "earnings": 4267350.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 137,
+        "referenceNumber": 9500592,
+        "registry": "T",
+        "horseName": "Mind Your Biscuits",
+        "earnings": 4279566.0,
+        "sireReferenceNumber": 5331310,
+        "sireName": "Posse"
+      },
+      {
+        "rank": 136,
+        "referenceNumber": 9167559,
+        "registry": "T",
+        "horseName": "The Grey Gatsby (IRE)",
+        "earnings": 4290448.0,
+        "sireReferenceNumber": 7849108,
+        "sireName": "Mastercraftsman (IRE)"
+      },
+      {
+        "rank": 135,
+        "referenceNumber": 8576985,
+        "registry": "T",
+        "horseName": "Stephanie's Kitten",
+        "earnings": 4292458.0,
+        "sireReferenceNumber": 6252387,
+        "sireName": "Kitten's Joy"
+      },
+      {
+        "rank": 134,
+        "referenceNumber": 6622907,
+        "registry": "T",
+        "horseName": "Hurricane Run (IRE)",
+        "earnings": 4300351.0,
+        "sireReferenceNumber": 2505598,
+        "sireName": "Montjeu (IRE)"
+      },
+      {
+        "rank": 133,
+        "referenceNumber": 10466476,
+        "registry": "T",
+        "horseName": "Yibir (GB)",
+        "earnings": 4327273.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 132,
+        "referenceNumber": 7522057,
+        "registry": "T",
+        "horseName": "Dar Re Mi (GB)",
+        "earnings": 4359112.0,
+        "sireReferenceNumber": 1595810,
+        "sireName": "Singspiel (IRE)"
+      },
+      {
+        "rank": 131,
+        "referenceNumber": 5084552,
+        "registry": "T",
+        "horseName": "Moon Ballad (IRE)",
+        "earnings": 4364791.0,
+        "sireReferenceNumber": 1595810,
+        "sireName": "Singspiel (IRE)"
+      },
+      {
+        "rank": 130,
+        "referenceNumber": 7762628,
+        "registry": "T",
+        "horseName": "Blame",
+        "earnings": 4368214.0,
+        "sireReferenceNumber": 4003359,
+        "sireName": "Arch"
+      },
+      {
+        "rank": 129,
+        "referenceNumber": 1439425,
+        "registry": "T",
+        "horseName": "Awesome Again",
+        "earnings": 4374590.0,
+        "sireReferenceNumber": 779025,
+        "sireName": "Deputy Minister"
+      },
+      {
+        "rank": 128,
+        "referenceNumber": 4681636,
+        "registry": "T",
+        "horseName": "Better Talk Now",
+        "earnings": 4375624.0,
+        "sireReferenceNumber": 1371579,
+        "sireName": "Talkin Man"
+      },
+      {
+        "rank": 127,
+        "referenceNumber": 7198670,
+        "registry": "T",
+        "horseName": "Street Sense",
+        "earnings": 4383200.0,
+        "sireReferenceNumber": 4531602,
+        "sireName": "Street Cry (IRE)"
+      },
+      {
+        "rank": 126,
+        "referenceNumber": 9924867,
+        "registry": "T",
+        "horseName": "Old Persian (GB)",
+        "earnings": 4403411.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 125,
+        "referenceNumber": 10124157,
+        "registry": "T",
+        "horseName": "Mucho Gusto",
+        "earnings": 4453800.0,
+        "sireReferenceNumber": 8377751,
+        "sireName": "Mucho Macho Man"
+      },
+      {
+        "rank": 124,
+        "referenceNumber": 9116772,
+        "registry": "T",
+        "horseName": "Bayern",
+        "earnings": 4454930.0,
+        "sireReferenceNumber": 5342834,
+        "sireName": "Offlee Wild"
+      },
+      {
+        "rank": 123,
+        "referenceNumber": 5617469,
+        "registry": "T",
+        "horseName": "Saint Liam",
+        "earnings": 4456995.0,
+        "sireReferenceNumber": 1251574,
+        "sireName": "Saint Ballado"
+      },
+      {
+        "rank": 122,
+        "referenceNumber": 8322290,
+        "registry": "T",
+        "horseName": "Fort Larned",
+        "earnings": 4471322.0,
+        "sireReferenceNumber": 4472854,
+        "sireName": "E Dubai"
+      },
+      {
+        "rank": 121,
+        "referenceNumber": 1108188,
+        "registry": "T",
+        "horseName": "Unbridled",
+        "earnings": 4489475.0,
+        "sireReferenceNumber": 702640,
+        "sireName": "Fappiano"
+      },
+      {
+        "rank": 120,
+        "referenceNumber": 10114265,
+        "registry": "T",
+        "horseName": "Aerolithe (JPN)",
+        "earnings": 4501918.0,
+        "sireReferenceNumber": 4470335,
+        "sireName": "Kurofune"
+      },
+      {
+        "rank": 119,
+        "referenceNumber": 9460235,
+        "registry": "T",
+        "horseName": "Whitmore",
+        "earnings": 4502350.0,
+        "sireReferenceNumber": 4471511,
+        "sireName": "Pleasantly Perfect"
+      },
+      {
+        "rank": 118,
+        "referenceNumber": 10132285,
+        "registry": "T",
+        "horseName": "Tarnawa (IRE)",
+        "earnings": 4508464.0,
+        "sireReferenceNumber": 6575444,
+        "sireName": "Shamardal"
+      },
+      {
+        "rank": 117,
+        "referenceNumber": 10425358,
+        "registry": "T",
+        "horseName": "Flightline",
+        "earnings": 4514800.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 116,
+        "referenceNumber": 10998315,
+        "registry": "T",
+        "horseName": "Lake Forest (GB)",
+        "earnings": 4539939.0,
+        "sireReferenceNumber": 9086209,
+        "sireName": "No Nay Never"
+      },
+      {
+        "rank": 115,
+        "referenceNumber": 10453207,
+        "registry": "T",
+        "horseName": "Life Is Good",
+        "earnings": 4541700.0,
+        "sireReferenceNumber": 7436720,
+        "sireName": "Into Mischief"
+      },
+      {
+        "rank": 114,
+        "referenceNumber": 1428418,
+        "registry": "T",
+        "horseName": "Behrens",
+        "earnings": 4563500.0,
+        "sireReferenceNumber": 731082,
+        "sireName": "Pleasant Colony"
+      },
+      {
+        "rank": 113,
+        "referenceNumber": 9101058,
+        "registry": "T",
+        "horseName": "Tepin",
+        "earnings": 4583838.0,
+        "sireReferenceNumber": 4304973,
+        "sireName": "Bernstein"
+      },
+      {
+        "rank": 112,
+        "referenceNumber": 2488210,
+        "registry": "T",
+        "horseName": "Daylami (IRE)",
+        "earnings": 4614762.0,
+        "sireReferenceNumber": 2082832,
+        "sireName": "Doyoun (IRE)"
+      },
+      {
+        "rank": 111,
+        "referenceNumber": 7757447,
+        "registry": "T",
+        "horseName": "Cityscape (GB)",
+        "earnings": 4651021.0,
+        "sireReferenceNumber": 1189628,
+        "sireName": "Selkirk"
+      },
+      {
+        "rank": 110,
+        "referenceNumber": 9511159,
+        "registry": "T",
+        "horseName": "Songbird",
+        "earnings": 4692000.0,
+        "sireReferenceNumber": 4823628,
+        "sireName": "Medaglia d'Oro"
+      },
+      {
+        "rank": 109,
+        "referenceNumber": 9122103,
+        "registry": "T",
+        "horseName": "Hoppertunity",
+        "earnings": 4712625.0,
+        "sireReferenceNumber": 7086287,
+        "sireName": "Any Given Saturday"
+      },
+      {
+        "rank": 108,
+        "referenceNumber": 4963519,
+        "registry": "T",
+        "horseName": "Perfect Drift",
+        "earnings": 4714213.0,
+        "sireReferenceNumber": 1049059,
+        "sireName": "Dynaformer"
+      },
+      {
+        "rank": 107,
+        "referenceNumber": 10985561,
+        "registry": "T",
+        "horseName": "Notable Speech (GB)",
+        "earnings": 4762377.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 106,
+        "referenceNumber": 11102940,
+        "registry": "T",
+        "horseName": "Journalism",
+        "earnings": 4770755.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 105,
+        "referenceNumber": 9892147,
+        "registry": "T",
+        "horseName": "Monomoy Girl",
+        "earnings": 4776818.0,
+        "sireReferenceNumber": 8333257,
+        "sireName": "Tapizar"
+      },
+      {
+        "rank": 104,
+        "referenceNumber": 11272859,
+        "registry": "T",
+        "horseName": "Golden Tempo",
+        "earnings": 4783000.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 103,
+        "referenceNumber": 9479612,
+        "registry": "T",
+        "horseName": "Hawkbill",
+        "earnings": 4788980.0,
+        "sireReferenceNumber": 6252387,
+        "sireName": "Kitten's Joy"
+      },
+      {
+        "rank": 102,
+        "referenceNumber": 11043418,
+        "registry": "T",
+        "horseName": "Crown Pride (JPN)",
+        "earnings": 4794918.0,
+        "sireReferenceNumber": 8453665,
+        "sireName": "Reach the Crown (JPN)"
+      },
+      {
+        "rank": 101,
+        "referenceNumber": 9961022,
+        "registry": "T",
+        "horseName": "Magic Wand (IRE)",
+        "earnings": 4802433.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      }
+    ]
+  },
+  {
+    "total_rows": 200,
+    "stats": [
+      {
+        "rank": 100,
+        "referenceNumber": 9896727,
+        "registry": "T",
+        "horseName": "Vino Rosso",
+        "earnings": 4803125.0,
+        "sireReferenceNumber": 7147650,
+        "sireName": "Curlin"
+      },
+      {
+        "rank": 99,
+        "referenceNumber": 8250825,
+        "registry": "T",
+        "horseName": "Royal Delta",
+        "earnings": 4811126.0,
+        "sireReferenceNumber": 5378341,
+        "sireName": "Empire Maker"
+      },
+      {
+        "rank": 98,
+        "referenceNumber": 10955504,
+        "registry": "T",
+        "horseName": "Mystik Dan",
+        "earnings": 4819160.0,
+        "sireReferenceNumber": 8890672,
+        "sireName": "Goldencents"
+      },
+      {
+        "rank": 97,
+        "referenceNumber": 1071815,
+        "registry": "T",
+        "horseName": "Easy Goer",
+        "earnings": 4873770.0,
+        "sireReferenceNumber": 637430,
+        "sireName": "Alydar"
+      },
+      {
+        "rank": 96,
+        "referenceNumber": 10435982,
+        "registry": "T",
+        "horseName": "Essential Quality",
+        "earnings": 4905144.0,
+        "sireReferenceNumber": 6106474,
+        "sireName": "Tapit"
+      },
+      {
+        "rank": 95,
+        "referenceNumber": 6680815,
+        "registry": "T",
+        "horseName": "Utopia (JPN)",
+        "earnings": 4913585.0,
+        "sireReferenceNumber": 1051187,
+        "sireName": "Forty Niner"
+      },
+      {
+        "rank": 94,
+        "referenceNumber": 10723241,
+        "registry": "T",
+        "horseName": "Win Marilyn (JPN)",
+        "earnings": 4945197.0,
+        "sireReferenceNumber": 7936250,
+        "sireName": "Screen Hero (JPN)"
+      },
+      {
+        "rank": 93,
+        "referenceNumber": 1073230,
+        "registry": "T",
+        "horseName": "Sunday Silence",
+        "earnings": 4968554.0,
+        "sireReferenceNumber": 203236,
+        "sireName": "Halo"
+      },
+      {
+        "rank": 92,
+        "referenceNumber": 3087035,
+        "registry": "T",
+        "horseName": "Jim and Tonic (FR)",
+        "earnings": 4975807.0,
+        "sireReferenceNumber": 2071869,
+        "sireName": "Double Bed (FR)"
+      },
+      {
+        "rank": 91,
+        "referenceNumber": 4542999,
+        "registry": "T",
+        "horseName": "Preeminence (JPN)",
+        "earnings": 5042956.0,
+        "sireReferenceNumber": 1002490,
+        "sireName": "Afleet"
+      },
+      {
+        "rank": 90,
+        "referenceNumber": 9599497,
+        "registry": "T",
+        "horseName": "Nuovo Record (JPN)",
+        "earnings": 5120663.0,
+        "sireReferenceNumber": 7048664,
+        "sireName": "Heart's Cry (JPN)"
+      },
+      {
+        "rank": 89,
+        "referenceNumber": 4531602,
+        "registry": "T",
+        "horseName": "Street Cry (IRE)",
+        "earnings": 5150837.0,
+        "sireReferenceNumber": 1110412,
+        "sireName": "Machiavellian"
+      },
+      {
+        "rank": 88,
+        "referenceNumber": 6823273,
+        "registry": "T",
+        "horseName": "Well Armed",
+        "earnings": 5179803.0,
+        "sireReferenceNumber": 4322623,
+        "sireName": "Tiznow"
+      },
+      {
+        "rank": 87,
+        "referenceNumber": 9492600,
+        "registry": "T",
+        "horseName": "Nyquist",
+        "earnings": 5189200.0,
+        "sireReferenceNumber": 8292193,
+        "sireName": "Uncle Mo"
+      },
+      {
+        "rank": 86,
+        "referenceNumber": 5102508,
+        "registry": "T",
+        "horseName": "Sulamani (IRE)",
+        "earnings": 5252368.0,
+        "sireReferenceNumber": 3070780,
+        "sireName": "Hernando (FR)"
+      },
+      {
+        "rank": 85,
+        "referenceNumber": 6464942,
+        "registry": "T",
+        "horseName": "Lava Man",
+        "earnings": 5268706.0,
+        "sireReferenceNumber": 970290,
+        "sireName": "Slew City Slew"
+      },
+      {
+        "rank": 84,
+        "referenceNumber": 10979733,
+        "registry": "T",
+        "horseName": "Nysos",
+        "earnings": 5288500.0,
+        "sireReferenceNumber": 9492600,
+        "sireName": "Nyquist"
+      },
+      {
+        "rank": 83,
+        "referenceNumber": 6543139,
+        "registry": "T",
+        "horseName": "English Channel",
+        "earnings": 5319028.0,
+        "sireReferenceNumber": 1365869,
+        "sireName": "Smart Strike"
+      },
+      {
+        "rank": 82,
+        "referenceNumber": 5046364,
+        "registry": "T",
+        "horseName": "High Chaparral (IRE)",
+        "earnings": 5331231.0,
+        "sireReferenceNumber": 841734,
+        "sireName": "Sadler's Wells"
+      },
+      {
+        "rank": 81,
+        "referenceNumber": 9740533,
+        "registry": "T",
+        "horseName": "Waldgeist (GB)",
+        "earnings": 5401859.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      },
+      {
+        "rank": 80,
+        "referenceNumber": 10978853,
+        "registry": "T",
+        "horseName": "Thorpedo Anna",
+        "earnings": 5440913.0,
+        "sireReferenceNumber": 9104468,
+        "sireName": "Fast Anna"
+      },
+      {
+        "rank": 79,
+        "referenceNumber": 6138472,
+        "registry": "T",
+        "horseName": "Electrocutionist",
+        "earnings": 5442381.0,
+        "sireReferenceNumber": 1116341,
+        "sireName": "Red Ransom"
+      },
+      {
+        "rank": 78,
+        "referenceNumber": 7037992,
+        "registry": "T",
+        "horseName": "Dance in the Mood (JPN)",
+        "earnings": 5456107.0,
+        "sireReferenceNumber": 1073230,
+        "sireName": "Sunday Silence"
+      },
+      {
+        "rank": 77,
+        "referenceNumber": 5207767,
+        "registry": "T",
+        "horseName": "Roses in May",
+        "earnings": 5490187.0,
+        "sireReferenceNumber": 1243405,
+        "sireName": "Devil His Due"
+      },
+      {
+        "rank": 76,
+        "referenceNumber": 1331519,
+        "registry": "T",
+        "horseName": "Taiki Blizzard",
+        "earnings": 5523549.0,
+        "sireReferenceNumber": 600207,
+        "sireName": "Seattle Slew"
+      },
+      {
+        "rank": 75,
+        "referenceNumber": 9679803,
+        "registry": "T",
+        "horseName": "Gunnevera",
+        "earnings": 5561800.0,
+        "sireReferenceNumber": 8266889,
+        "sireName": "Dialed In"
+      },
+      {
+        "rank": 74,
+        "referenceNumber": 10777616,
+        "registry": "T",
+        "horseName": "National Treasure",
+        "earnings": 5578000.0,
+        "sireReferenceNumber": 7789704,
+        "sireName": "Quality Road"
+      },
+      {
+        "rank": 73,
+        "referenceNumber": 8377751,
+        "registry": "T",
+        "horseName": "Mucho Macho Man",
+        "earnings": 5625410.0,
+        "sireReferenceNumber": 4480431,
+        "sireName": "Macho Uno"
+      },
+      {
+        "rank": 72,
+        "referenceNumber": 9704540,
+        "registry": "T",
+        "horseName": "City of Light",
+        "earnings": 5662600.0,
+        "sireReferenceNumber": 7789704,
+        "sireName": "Quality Road"
+      },
+      {
+        "rank": 71,
+        "referenceNumber": 1166332,
+        "registry": "T",
+        "horseName": "Best Pal",
+        "earnings": 5668245.0,
+        "sireReferenceNumber": 581568,
+        "sireName": "Habitony (IRE)"
+      },
+      {
+        "rank": 70,
+        "referenceNumber": 10650766,
+        "registry": "T",
+        "horseName": "Facteur Cheval (IRE)",
+        "earnings": 5741246.0,
+        "sireReferenceNumber": 9568709,
+        "sireName": "Ribchester (IRE)"
+      },
+      {
+        "rank": 69,
+        "referenceNumber": 4823628,
+        "registry": "T",
+        "horseName": "Medaglia d'Oro",
+        "earnings": 5754720.0,
+        "sireReferenceNumber": 2441280,
+        "sireName": "El Prado (IRE)"
+      },
+      {
+        "rank": 68,
+        "referenceNumber": 9355122,
+        "registry": "T",
+        "horseName": "Mubtaahij (IRE)",
+        "earnings": 5780332.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 67,
+        "referenceNumber": 7490044,
+        "registry": "T",
+        "horseName": "Americain",
+        "earnings": 5780679.0,
+        "sireReferenceNumber": 1049059,
+        "sireName": "Dynaformer"
+      },
+      {
+        "rank": 66,
+        "referenceNumber": 10963699,
+        "registry": "T",
+        "horseName": "Fierceness",
+        "earnings": 5785320.0,
+        "sireReferenceNumber": 9704540,
+        "sireName": "City of Light"
+      },
+      {
+        "rank": 65,
+        "referenceNumber": 9705888,
+        "registry": "T",
+        "horseName": "West Coast",
+        "earnings": 5803800.0,
+        "sireReferenceNumber": 4636938,
+        "sireName": "Flatter"
+      },
+      {
+        "rank": 64,
+        "referenceNumber": 7524491,
+        "registry": "T",
+        "horseName": "Conduit (IRE)",
+        "earnings": 5815813.0,
+        "sireReferenceNumber": 5714698,
+        "sireName": "Dalakhani (IRE)"
+      },
+      {
+        "rank": 63,
+        "referenceNumber": 4553585,
+        "registry": "T",
+        "horseName": "Falbrav (IRE)",
+        "earnings": 5825517.0,
+        "sireReferenceNumber": 883160,
+        "sireName": "Fairy King"
+      },
+      {
+        "rank": 62,
+        "referenceNumber": 1595810,
+        "registry": "T",
+        "horseName": "Singspiel (IRE)",
+        "earnings": 5952825.0,
+        "sireReferenceNumber": 2284897,
+        "sireName": "In the Wings (GB)"
+      },
+      {
+        "rank": 61,
+        "referenceNumber": 10439301,
+        "registry": "T",
+        "horseName": "Hot Rod Charlie",
+        "earnings": 5976720.0,
+        "sireReferenceNumber": 8859882,
+        "sireName": "Oxbow"
+      },
+      {
+        "rank": 60,
+        "referenceNumber": 10644151,
+        "registry": "T",
+        "horseName": "Skippylongstocking",
+        "earnings": 6022650.0,
+        "sireReferenceNumber": 9465075,
+        "sireName": "Exaggerator"
+      },
+      {
+        "rank": 59,
+        "referenceNumber": 10801520,
+        "registry": "T",
+        "horseName": "Auguste Rodin (IRE)",
+        "earnings": 6082430.0,
+        "sireReferenceNumber": 7355659,
+        "sireName": "Deep Impact (JPN)"
+      },
+      {
+        "rank": 58,
+        "referenceNumber": 8884841,
+        "registry": "T",
+        "horseName": "Beholder",
+        "earnings": 6156600.0,
+        "sireReferenceNumber": 6848321,
+        "sireName": "Henny Hughes"
+      },
+      {
+        "rank": 57,
+        "referenceNumber": 7407836,
+        "registry": "T",
+        "horseName": "Gio Ponti",
+        "earnings": 6169800.0,
+        "sireReferenceNumber": 1439212,
+        "sireName": "Tale of the Cat"
+      },
+      {
+        "rank": 56,
+        "referenceNumber": 9954887,
+        "registry": "T",
+        "horseName": "Magical (IRE)",
+        "earnings": 6200713.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      },
+      {
+        "rank": 55,
+        "referenceNumber": 10811180,
+        "registry": "T",
+        "horseName": "Songline (JPN)",
+        "earnings": 6273096.0,
+        "sireReferenceNumber": 9405746,
+        "sireName": "Kizuna (JPN)"
+      },
+      {
+        "rank": 54,
+        "referenceNumber": 6283294,
+        "registry": "T",
+        "horseName": "Ouija Board (GB)",
+        "earnings": 6312552.0,
+        "sireReferenceNumber": 2485761,
+        "sireName": "Cape Cross (IRE)"
+      },
+      {
+        "rank": 53,
+        "referenceNumber": 4322623,
+        "registry": "T",
+        "horseName": "Tiznow",
+        "earnings": 6427830.0,
+        "sireReferenceNumber": 1117816,
+        "sireName": "Cee's Tizzy"
+      },
+      {
+        "rank": 52,
+        "referenceNumber": 8052275,
+        "registry": "T",
+        "horseName": "Game On Dude",
+        "earnings": 6498893.0,
+        "sireReferenceNumber": 1439425,
+        "sireName": "Awesome Again"
+      },
+      {
+        "rank": 51,
+        "referenceNumber": 635131,
+        "registry": "T",
+        "horseName": "John Henry",
+        "earnings": 6591860.0,
+        "sireReferenceNumber": 357857,
+        "sireName": "Ole Bob Bowers"
+      },
+      {
+        "rank": 50,
+        "referenceNumber": 9344662,
+        "registry": "T",
+        "horseName": "Golden Horn (GB)",
+        "earnings": 6598454.0,
+        "sireReferenceNumber": 2485761,
+        "sireName": "Cape Cross (IRE)"
+      },
+      {
+        "rank": 49,
+        "referenceNumber": 6967892,
+        "registry": "T",
+        "horseName": "Dylan Thomas (IRE)",
+        "earnings": 6620852.0,
+        "sireReferenceNumber": 1068518,
+        "sireName": "Danehill"
+      },
+      {
+        "rank": 48,
+        "referenceNumber": 988282,
+        "registry": "T",
+        "horseName": "Alysheba",
+        "earnings": 6679242.0,
+        "sireReferenceNumber": 637430,
+        "sireName": "Alydar"
+      },
+      {
+        "rank": 47,
+        "referenceNumber": 9534904,
+        "registry": "T",
+        "horseName": "Accelerate",
+        "earnings": 6692480.0,
+        "sireReferenceNumber": 8081070,
+        "sireName": "Lookin At Lucky"
+      },
+      {
+        "rank": 46,
+        "referenceNumber": 4369229,
+        "registry": "T",
+        "horseName": "Captain Steve",
+        "earnings": 6828356.0,
+        "sireReferenceNumber": 1178367,
+        "sireName": "Fly So Free"
+      },
+      {
+        "rank": 45,
+        "referenceNumber": 11153700,
+        "registry": "T",
+        "horseName": "Sovereignty",
+        "earnings": 6876550.0,
+        "sireReferenceNumber": 7436720,
+        "sireName": "Into Mischief"
+      },
+      {
+        "rank": 44,
+        "referenceNumber": 1453885,
+        "registry": "T",
+        "horseName": "Silver Charm",
+        "earnings": 6944369.0,
+        "sireReferenceNumber": 723792,
+        "sireName": "Silver Buck"
+      },
+      {
+        "rank": 43,
+        "referenceNumber": 9694770,
+        "registry": "T",
+        "horseName": "Bricks and Mortar",
+        "earnings": 7085650.0,
+        "sireReferenceNumber": 4297000,
+        "sireName": "Giant's Causeway"
+      },
+      {
+        "rank": 42,
+        "referenceNumber": 7495262,
+        "registry": "T",
+        "horseName": "Goldikova (IRE)",
+        "earnings": 7176551.0,
+        "sireReferenceNumber": 1354309,
+        "sireName": "Anabaa"
+      },
+      {
+        "rank": 41,
+        "referenceNumber": 10286142,
+        "registry": "T",
+        "horseName": "Authentic",
+        "earnings": 7201200.0,
+        "sireReferenceNumber": 7436720,
+        "sireName": "Into Mischief"
+      },
+      {
+        "rank": 40,
+        "referenceNumber": 7156465,
+        "registry": "T",
+        "horseName": "Zenyatta",
+        "earnings": 7304580.0,
+        "sireReferenceNumber": 4531602,
+        "sireName": "Street Cry (IRE)"
+      },
+      {
+        "rank": 39,
+        "referenceNumber": 10406880,
+        "registry": "T",
+        "horseName": "Laurel River",
+        "earnings": 7508798.0,
+        "sireReferenceNumber": 7436720,
+        "sireName": "Into Mischief"
+      },
+      {
+        "rank": 38,
+        "referenceNumber": 7999682,
+        "registry": "T",
+        "horseName": "Wise Dan",
+        "earnings": 7556160.0,
+        "sireReferenceNumber": 4680072,
+        "sireName": "Wiseman's Ferry"
+      },
+      {
+        "rank": 37,
+        "referenceNumber": 10296312,
+        "registry": "T",
+        "horseName": "Mystic Guide",
+        "earnings": 7593200.0,
+        "sireReferenceNumber": 5342927,
+        "sireName": "Ghostzapper"
+      },
+      {
+        "rank": 36,
+        "referenceNumber": 9558616,
+        "registry": "T",
+        "horseName": "Found (IRE)",
+        "earnings": 7610405.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      },
+      {
+        "rank": 35,
+        "referenceNumber": 6119092,
+        "registry": "T",
+        "horseName": "Smarty Jones",
+        "earnings": 7613155.0,
+        "sireReferenceNumber": 1396994,
+        "sireName": "Elusive Quality"
+      },
+      {
+        "rank": 34,
+        "referenceNumber": 4471511,
+        "registry": "T",
+        "horseName": "Pleasantly Perfect",
+        "earnings": 7789880.0,
+        "sireReferenceNumber": 731082,
+        "sireName": "Pleasant Colony"
+      },
+      {
+        "rank": 33,
+        "referenceNumber": 6939800,
+        "registry": "T",
+        "horseName": "Invasor (ARG)",
+        "earnings": 7804070.0,
+        "sireReferenceNumber": 901764,
+        "sireName": "Candy Stripes"
+      },
+      {
+        "rank": 32,
+        "referenceNumber": 8092819,
+        "registry": "T",
+        "horseName": "St Nicholas Abbey (IRE)",
+        "earnings": 7863492.0,
+        "sireReferenceNumber": 2505598,
+        "sireName": "Montjeu (IRE)"
+      },
+      {
+        "rank": 31,
+        "referenceNumber": 10103593,
+        "registry": "T",
+        "horseName": "Lord North (IRE)",
+        "earnings": 8148646.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 30,
+        "referenceNumber": 10963584,
+        "registry": "T",
+        "horseName": "Sierra Leone",
+        "earnings": 8196200.0,
+        "sireReferenceNumber": 9496167,
+        "sireName": "Gun Runner"
+      },
+      {
+        "rank": 29,
+        "referenceNumber": 8331153,
+        "registry": "T",
+        "horseName": "Animal Kingdom",
+        "earnings": 8387500.0,
+        "sireReferenceNumber": 6277345,
+        "sireName": "Leroidesanimaux (BRZ)"
+      },
+      {
+        "rank": 28,
+        "referenceNumber": 4034562,
+        "registry": "T",
+        "horseName": "Fantastic Light",
+        "earnings": 8486957.0,
+        "sireReferenceNumber": 1055837,
+        "sireName": "Rahy"
+      },
+      {
+        "rank": 27,
+        "referenceNumber": 10596731,
+        "registry": "T",
+        "horseName": "White Abarrio",
+        "earnings": 8598170.0,
+        "sireReferenceNumber": 9118822,
+        "sireName": "Race Day"
+      },
+      {
+        "rank": 26,
+        "referenceNumber": 9314281,
+        "registry": "T",
+        "horseName": "American Pharoah",
+        "earnings": 8650300.0,
+        "sireReferenceNumber": 7766522,
+        "sireName": "Pioneerof the Nile"
+      },
+      {
+        "rank": 25,
+        "referenceNumber": 10261046,
+        "registry": "T",
+        "horseName": "Loves Only You (JPN)",
+        "earnings": 8686188.0,
+        "sireReferenceNumber": 7355659,
+        "sireName": "Deep Impact (JPN)"
+      },
+      {
+        "rank": 24,
+        "referenceNumber": 8275552,
+        "registry": "T",
+        "horseName": "So You Think (NZ)",
+        "earnings": 8696325.0,
+        "sireReferenceNumber": 5046364,
+        "sireName": "High Chaparral (IRE)"
+      },
+      {
+        "rank": 23,
+        "referenceNumber": 10049303,
+        "registry": "T",
+        "horseName": "Knicks Go",
+        "earnings": 9258135.0,
+        "sireReferenceNumber": 8562865,
+        "sireName": "Paynter"
+      },
+      {
+        "rank": 22,
+        "referenceNumber": 7973709,
+        "registry": "T",
+        "horseName": "Gloria de Campeao (BRZ)",
+        "earnings": 9258355.0,
+        "sireReferenceNumber": 5389930,
+        "sireName": "Impression (ARG)"
+      },
+      {
+        "rank": 21,
+        "referenceNumber": 10799548,
+        "registry": "T",
+        "horseName": "Hit Show",
+        "earnings": 9561683.0,
+        "sireReferenceNumber": 5902892,
+        "sireName": "Candy Ride (ARG)"
+      },
+      {
+        "rank": 20,
+        "referenceNumber": 8890577,
+        "registry": "T",
+        "horseName": "Flintshire (GB)",
+        "earnings": 9589910.0,
+        "sireReferenceNumber": 2509174,
+        "sireName": "Dansili (GB)"
+      },
+      {
+        "rank": 19,
+        "referenceNumber": 1403243,
+        "registry": "T",
+        "horseName": "Skip Away",
+        "earnings": 9616360.0,
+        "sireReferenceNumber": 895467,
+        "sireName": "Skip Trial"
+      },
+      {
+        "rank": 18,
+        "referenceNumber": 11123094,
+        "registry": "T",
+        "horseName": "Magnitude",
+        "earnings": 9626365.0,
+        "sireReferenceNumber": 9699281,
+        "sireName": "Not This Time"
+      },
+      {
+        "rank": 17,
+        "referenceNumber": 1275917,
+        "registry": "T",
+        "horseName": "Cigar",
+        "earnings": 9999815.0,
+        "sireReferenceNumber": 855223,
+        "sireName": "Palace Music"
+      },
+      {
+        "rank": 16,
+        "referenceNumber": 7147650,
+        "registry": "T",
+        "horseName": "Curlin",
+        "earnings": 10501800.0,
+        "sireReferenceNumber": 1365869,
+        "sireName": "Smart Strike"
+      },
+      {
+        "rank": 15,
+        "referenceNumber": 9383391,
+        "registry": "T",
+        "horseName": "Highland Reel (IRE)",
+        "earnings": 10530964.0,
+        "sireReferenceNumber": 4559460,
+        "sireName": "Galileo (IRE)"
+      },
+      {
+        "rank": 14,
+        "referenceNumber": 8285358,
+        "registry": "T",
+        "horseName": "Espoir City (JPN)",
+        "earnings": 11443812.0,
+        "sireReferenceNumber": 6386448,
+        "sireName": "Gold Allure (JPN)"
+      },
+      {
+        "rank": 13,
+        "referenceNumber": 10779789,
+        "registry": "T",
+        "horseName": "Shahryar (JPN)",
+        "earnings": 12026482.0,
+        "sireReferenceNumber": 7355659,
+        "sireName": "Deep Impact (JPN)"
+      },
+      {
+        "rank": 12,
+        "referenceNumber": 10458625,
+        "registry": "T",
+        "horseName": "Senor Buscador",
+        "earnings": 12944427.0,
+        "sireReferenceNumber": 4966077,
+        "sireName": "Mineshaft"
+      },
+      {
+        "rank": 11,
+        "referenceNumber": 9910104,
+        "registry": "T",
+        "horseName": "Midnight Bisou",
+        "earnings": 13971520.0,
+        "sireReferenceNumber": 6875760,
+        "sireName": "Midnight Lute"
+      },
+      {
+        "rank": 10,
+        "referenceNumber": 9707561,
+        "registry": "T",
+        "horseName": "Enable (GB)",
+        "earnings": 14062824.0,
+        "sireReferenceNumber": 8361797,
+        "sireName": "Nathaniel (IRE)"
+      },
+      {
+        "rank": 9,
+        "referenceNumber": 9074807,
+        "registry": "T",
+        "horseName": "California Chrome",
+        "earnings": 14752650.0,
+        "sireReferenceNumber": 6093927,
+        "sireName": "Lucky Pulpit"
+      },
+      {
+        "rank": 8,
+        "referenceNumber": 10297778,
+        "registry": "T",
+        "horseName": "Country Grammer",
+        "earnings": 14921320.0,
+        "sireReferenceNumber": 9064185,
+        "sireName": "Tonalist"
+      },
+      {
+        "rank": 7,
+        "referenceNumber": 10455608,
+        "registry": "T",
+        "horseName": "Rebel's Romance (IRE)",
+        "earnings": 15650493.0,
+        "sireReferenceNumber": 6596464,
+        "sireName": "Dubawi (IRE)"
+      },
+      {
+        "rank": 6,
+        "referenceNumber": 9496167,
+        "registry": "T",
+        "horseName": "Gun Runner",
+        "earnings": 15988500.0,
+        "sireReferenceNumber": 5902892,
+        "sireName": "Candy Ride (ARG)"
+      },
+      {
+        "rank": 5,
+        "referenceNumber": 10295580,
+        "registry": "T",
+        "horseName": "Mishriff (IRE)",
+        "earnings": 16034853.0,
+        "sireReferenceNumber": 9357205,
+        "sireName": "Make Believe (GB)"
+      },
+      {
+        "rank": 4,
+        "referenceNumber": 9705166,
+        "registry": "T",
+        "horseName": "Thunder Snow (IRE)",
+        "earnings": 16511476.0,
+        "sireReferenceNumber": 8466146,
+        "sireName": "Helmet (AUS)"
+      },
+      {
+        "rank": 3,
+        "referenceNumber": 9532243,
+        "registry": "T",
+        "horseName": "Arrogate",
+        "earnings": 17422600.0,
+        "sireReferenceNumber": 1392779,
+        "sireName": "Unbridled's Song"
+      },
+      {
+        "rank": 2,
+        "referenceNumber": 10295770,
+        "registry": "T",
+        "horseName": "Ushba Tesoro (JPN)",
+        "earnings": 18787874.0,
+        "sireReferenceNumber": 8932273,
+        "sireName": "Orfevre (JPN)"
+      },
+      {
+        "rank": 1,
+        "referenceNumber": 11151287,
+        "registry": "T",
+        "horseName": "Forever Young (JPN)",
+        "earnings": 32313590.0,
+        "sireReferenceNumber": 9725966,
+        "sireName": "Real Steel (JPN)"
+      }
+    ]
+  }
+]

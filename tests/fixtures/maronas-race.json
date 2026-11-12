@@ -1,0 +1,128 @@
+{
+  "race": {
+    "Id": 47352,
+    "Number": 1,
+    "Name": "HCP ESPECIAL ROGELIO RODRIGUEZ Y JOSÉ M. FERRO",
+    "RacingDate": {
+      "Date": "2026-10-18T00:00:00",
+      "FormattedDate": "18 de Octubre",
+      "Ordinal": 81,
+      "RacingDateStatusesEnum": 0,
+      "ProgramStatusId": 0,
+      "IsPreProgram": false
+    },
+    "StatusId": 6,
+    "RaceTrack": {
+      "Id": 1,
+      "Name": "MAROÑAS                       ",
+      "Logo": {
+        "Id": 0,
+        "ImageTypeId": 0
+      }
+    },
+    "Distance": {
+      "Value": 1400.0,
+      "Unit": {
+        "Name": "Metros",
+        "ShortCode": "m",
+        "Code": "mts",
+        "TypeId": 2
+      }
+    },
+    "SurfaceType": {
+      "Id": "A",
+      "Description": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": "Arena"
+          }
+        ]
+      }
+    },
+    "Result": {
+      "NumberOfStarters": 6,
+      "FinalWinningTime": "00:01:23.3120000"
+    }
+  },
+  "participants": [
+    {
+      "Horse": {
+        "Id": 70195,
+        "Name": "Mad Sharp"
+      },
+      "Jockey": {
+        "Name": "Jose L. Da Silva"
+      },
+      "Result": {
+        "FinalFinishPosition": 1,
+        "FinalTime": "00:01:23.3120000"
+      }
+    },
+    {
+      "Horse": {
+        "Id": 66832,
+        "Name": "Progreso"
+      },
+      "Jockey": {
+        "Name": "Héctor F. Lazo"
+      },
+      "Result": {
+        "FinalFinishPosition": 2,
+        "FinalTime": "00:01:23.3490000"
+      }
+    },
+    {
+      "Horse": {
+        "Id": 69996,
+        "Name": "True Lover"
+      },
+      "Jockey": {
+        "Name": "Vagner Leal"
+      },
+      "Result": {
+        "FinalFinishPosition": 3,
+        "FinalTime": "00:01:23.9220000"
+      }
+    },
+    {
+      "Horse": {
+        "Id": 68291,
+        "Name": "Sette Bravo"
+      },
+      "Jockey": {
+        "Name": "Pablo Rodríguez"
+      },
+      "Result": {
+        "FinalFinishPosition": 4,
+        "FinalTime": "00:01:24.6420000"
+      }
+    },
+    {
+      "Horse": {
+        "Id": 66076,
+        "Name": "El Tuber Storm"
+      },
+      "Jockey": {
+        "Name": "Máximo A. González"
+      },
+      "Result": {
+        "FinalFinishPosition": 5,
+        "FinalTime": "00:01:25.1730000"
+      }
+    },
+    {
+      "Horse": {
+        "Id": 69794,
+        "Name": "Estorbo"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Result": {
+        "FinalFinishPosition": 6,
+        "FinalTime": "00:01:25.1920000"
+      }
+    }
+  ]
+}
