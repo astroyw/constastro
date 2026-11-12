@@ -32,7 +32,18 @@ def values(h,nodes):
 
 def compare_all(horses,evidence=None):
     nodes={h['id']:h for h in horses};groups=defaultdict(list)
-    observations={ident:(evidence.get(ident,{}) if evidence is not None else h) for ident,h in nodes.items()}
+    observations={}
+    for ident,h in nodes.items():
+        observation=dict(evidence.get(ident,{}) if evidence is not None else h)
+        # A stored audit can outlive an edit/import. It must not corroborate an
+        # old birth year or parent link as though it were the current value.
+        if evidence is not None:
+            if not attributed(observation) or observation.get('id')!=ident or observation.get('source_id')!=h.get('source_id'):
+                observation={}
+            else:
+                for field in ('name','birth_year','sex','sire_id','dam_id','birth_country','coat'):
+                    if observation.get(field)!=h.get(field):observation[field]=None
+        observations[ident]=observation
     vals={ident:values(observations[ident],nodes) for ident in nodes}
     for h in horses:
         if attributed(h) and vals[h['id']]['name']:

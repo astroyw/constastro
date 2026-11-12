@@ -9,6 +9,7 @@ from app import db,uruguay
 from app.argentina import parse_profile
 from app.main import save_batch
 from app.scraper import fetch_public,fetch_public_json,source_by_id
+from app.recovery import FACTS,known
 
 CACHE=ROOT/'data'/'deep_pedigree';CACHE.mkdir(parents=True,exist_ok=True)
 LOCK=threading.Lock()
@@ -56,12 +57,12 @@ def run(source_id,limit):
     records=parse_profile(fetch_public(url,source_by_id(source_id)),url,max_generations=4,allow_missing_ids=True)
    for r in records:r['featured']=False
    with LOCK:
-    # Fail on conflicting known links instead of silently replacing genealogy.
+    # Automated enrichment must not silently replace any known genealogical fact.
     existing={n['id']:n for n in db.horse_rows(False)}
     for r in records:
      old=existing.get(r['id'],{})
-     for field in ('sire_id','dam_id'):
-      if r.get(field) and old.get(field) and r[field]!=old[field]:raise ValueError(f'Conflicting {field} for {r["id"]}')
+     for field in FACTS:
+      if known(field,r.get(field)) and known(field,old.get(field)) and r[field]!=old[field]:raise ValueError(f'Conflicting {field} for {r["id"]}: {old[field]} / {r[field]}')
     save_batch(records,[])
    atomic(cache,{'horses':records})
    progress['attempted'][ident]={'status':'expanded','name':h['name'],'records':len(records)}

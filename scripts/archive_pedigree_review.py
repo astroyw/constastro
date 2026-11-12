@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from app import db
-from app.ancestry import audit
+from app.ancestry import audit,pending_branches
 from app.genetics import validate_graph
 from app.verification import compare_all
 from app.evidence import collect_evidence
@@ -23,8 +23,10 @@ summary={'generated_at':db.now(),'target_birth_year':1935,'original_targets':len
          'verification_status':dict(Counter(r['verification']['status'] for r in rows)),
          'all_data_two_sources_verified':sum(r['verification']['all_data_verified'] for r in rows),
          'scope':'Targets fixed before expansion. New ancestors only support their branches until documented birth <=1935. Distinct publisher records are compared without merging identities. Earnings and campaigns still lack independent corroboration.'}
+pending=pending_branches(nodes,original)
+summary['unique_pending_relationships']=len(pending)
 (ROOT/'samples'/'extended_pedigrees.json').write_text(json.dumps({'summary':summary,'horses':horses},ensure_ascii=False,indent=2))
-(ROOT/'samples'/'pedigree_review.json').write_text(json.dumps({'summary':summary,'horses':rows},ensure_ascii=False,indent=2))
+(ROOT/'samples'/'pedigree_review.json').write_text(json.dumps({'summary':summary,'horses':rows,'pending_branches':pending},ensure_ascii=False,indent=2))
 (ROOT/'samples'/'pedigree_targets.json').write_text(json.dumps(original))
 with (ROOT/'exports'/'Linaje_revision_pedigrees.csv').open('w',newline='',encoding='utf-8-sig') as f:
  writer=csv.writer(f);writer.writerow(['ID','Nombre','Arbol hasta 1935','Ancestros unicos','Generaciones','Enlaces pendientes','Contraste','Campos corroborados','Fuente'])

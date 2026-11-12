@@ -10,7 +10,7 @@ export function createSnapshotAPI(data) {
       return analyze(body.sire_id,body.dam_id,data.horses[body.demo?'demo':'real']);
     }
     if(method!=='GET')throw new Error('Las incorporaciones se realizan durante el mantenimiento de la base.');
-    if(p==='/api/config')return {read_only:true};
+    if(p==='/api/config')return {read_only:true,reference_checks:data.reference_checks||[]};
     if(p==='/api/health')return {status:'ok',edition:'static'};
     if(p==='/api/countries')return data.countries;
     if(p==='/api/sources')return data.sources;

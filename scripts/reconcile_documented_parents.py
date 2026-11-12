@@ -9,6 +9,9 @@ from app.reconciliation import proposals
 from scripts.expand_pedigrees import required_nodes
 path=ROOT/'samples'/'pedigree_reconciliations.json'
 report=json.loads(path.read_text()) if path.exists() else {'method':'documented-child-parent-v1','applied':[],'rejected':[]}
+def rejection_key(p):return (p['id'],p['counterpart_id'],json.dumps(p['fields'],sort_keys=True),p['reason'])
+report['rejected']=list({rejection_key(p):p for p in report['rejected']}.values())
+rejected_keys={rejection_key(p) for p in report['rejected']}
 nodes={h['id']:h for h in db.horse_rows(False)}
 candidates=proposals(list(nodes.values()),collect_evidence(list(nodes.values())),required_nodes(nodes))
 for p in candidates:
@@ -19,6 +22,8 @@ for p in candidates:
  try:
   save_batch([{'id':h['id'],'name':h['name'],**fields,'notes':h['notes'][:max(0,2000-len(note))]+note}],[])
   h.update(fields);p['fields']=fields;p['applied_at']=db.now();report['applied'].append(p)
- except ValueError as e:report['rejected'].append({**p,'reason':str(e)})
+ except ValueError as e:
+  rejection={**p,'reason':str(e)};key=rejection_key(rejection)
+  if key not in rejected_keys:report['rejected'].append(rejection);rejected_keys.add(key)
 path.write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print('Propuestas',len(candidates),'complementos documentados acumulados',len(report['applied']),'rechazados acumulados',len(report['rejected']))

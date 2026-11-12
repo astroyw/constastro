@@ -68,6 +68,12 @@ def parse_profile(html,url,max_generations=3,allow_missing_ids=False):
         h['sire_id']=paths.get(path+'s',{}).get('id')
         h['dam_id']=paths.get(path+'d',{}).get('id')
         previous=merged.get(h['id'],{})
+        for key in ('name','birth_year','sex','sire_id','dam_id'):
+            a,b=previous.get(key),h.get(key)
+            if a not in (None,'','U') and b not in (None,'','U') and a!=b:
+                raise ScrapeError(f'El pedigree argentino publica datos contradictorios para {h["id"]} ({key}); requiere revisión.')
+        if previous.get('sex') in ('M','H','C') and h.get('sex')=='U':
+            h['sex']=previous['sex']
         merged[h['id']]={**previous,**{k:v for k,v in h.items() if v is not None or k not in previous}}
     return list(merged.values())
 

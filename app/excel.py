@@ -6,9 +6,10 @@ from openpyxl.utils import get_column_letter
 
 from .catalog import SOURCES
 from .db import now
-from .ancestry import audit,original_targets
+from .ancestry import audit,original_targets,pending_branches
 from .verification import compare_all
 from .evidence import load_evidence
+from .source_checks import reference_checks
 
 PATHS=[("Padre","s"),("Madre","d"),("Abuelo paterno","ss"),("Abuela paterna","sd"),("Abuelo materno","ds"),("Abuela materna","dd"),
        ("Bisabuelo PPP","sss"),("Bisabuela PPM","ssd"),("Bisabuelo PMP","sds"),("Bisabuela PMM","sdd"),
@@ -93,6 +94,9 @@ def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_57
                 a=audit(h['id'],nodes)
                 yield [h['id'],h['name'],'Completo' if a['complete'] else 'Pendiente',a['ancestor_count'],a['max_generation'],a['oldest_year'],a['missing_links'],a['terminals_1935'], '; '.join(f"{n['id']} (generación {n['generation']})" for n in a['nearco']),h['id'] in targets]
         sheet('Cobertura 1935',['ID','Nombre','Hasta 1935 en todas las ramas','Ancestros únicos','Generación más lejana documentada','Año más antiguo documentado','Enlaces pendientes','Ancestros terminales hasta 1935','Nearco documentado','Objetivo original'],coverage_rows())
+        sheet('Ramas pendientes',['ID','Caballo con dato faltante','Año documentado','Relación pendiente','Objetivos originales afectados','URL de origen'],
+              ([r['id'],r['name'],r['birth_year'],{'sire_id':'Padre','dam_id':'Madre','record':'Registro ausente'}[r['role']],r['affected_targets'],r['source_url']]
+               for r in pending_branches(nodes,targets)))
     if not demo:
         comparisons=compare_all(horses,load_evidence())
         def verification_rows():
@@ -103,7 +107,9 @@ def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_57
         sheet('Contraste fuentes',['ID','Nombre','Estado','Fuente inicial','URL inicial','Segunda fuente','Segundo ID','Segunda URL','Consulta segunda fuente','Identidad respaldada','Campos corroborados','Campos pendientes','Diferencias','Alcance'],verification_rows())
     sheet("Resultados",["ID","País","Hipódromo","Fecha","Carrera","Distancia m","Pista","Puesto","Caballo","Caballo ID","Jinete","Tiempo","URL","Consultado UTC","Carrera ID","Tipo de tiempo","Cobertura","Participantes oficiales"],
           ([r.get(k) for k in ['id','country','track','date','race_name','distance','surface','position','horse_name','horse_id','jockey','time','source_url','fetched_at','race_id','time_kind','scope','field_size']] for r in results))
-    sheet("Fuentes",["ID","País","Organismo","Tipo","URL","Estado"],([s['id'],s['country'],s['name'],s['kind'],s['url'],"Directorio; conexión y esquema requieren validación en origen"] for s in SOURCES))
+    source_rows=[[s['id'],s['country'],s['name'],s['kind'],s['url'],"Directorio; conexión y esquema requieren validación en origen"] for s in SOURCES]
+    source_rows.extend([s['id'],'Internacional',s['name'],'Referencia adicional',s['url'],s['checked_at']+' · '+s['message']] for s in reference_checks())
+    sheet("Fuentes",["ID","País","Organismo","Tipo","URL","Estado"],source_rows)
     sheet("Importaciones",["Fecha UTC","Fuente","Tipo","Estado","Filas","URL","Detalle"],([r.get(k) for k in ['created_at','source_id','kind','status','count','url','message']] for r in imports))
     sheet("Diccionario",["Campo","Definición"],[
         ['id','Identificador estable por registro, no derivado exclusivamente del nombre.'],

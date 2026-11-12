@@ -15,6 +15,7 @@ from .excel import export_workbook
 from .verification import compare_all
 from .evidence import load_evidence
 from .ancestry import original_targets,audit
+from .source_checks import reference_checks
 from .genetics import analyze, pedigree, validate_graph
 from .scraper import ScrapeError, fetch_public, parse_horses, parse_results, source_by_id, validate_url
 from .argentina import parse_profile, parse_campaign
@@ -51,7 +52,7 @@ async def public_access(request,call_next):
 
 @app.get('/api/config')
 def config():
-    return {'read_only':public_read_only()}
+    return {'read_only':public_read_only(),'reference_checks':reference_checks()}
 
 
 class Horse(BaseModel):

@@ -75,6 +75,8 @@ async def main():
         workbook=load_workbook(io.BytesIO(Path(await download.path()).read_bytes()),read_only=True)
         assert sum(1 for _ in workbook['Caballos'].rows)==len(data['horses']['real'])+1
         assert sum(1 for _ in workbook['Ganancias'].rows)==401
+        assert 'Ramas pendientes' in workbook.sheetnames
+        assert sum(1 for _ in workbook['Ramas pendientes'].rows)>1
         workbook.close()
         await page.locator('#mode-button').click()
         await page.get_by_role('link',name='Descargar Excel de ejemplo',exact=True).wait_for()
@@ -90,6 +92,8 @@ async def main():
         await page.locator('#mode-button').click()
         await page.goto(BASE+'/#fuentes')
         await page.locator('.source-card').first.wait_for()
+        assert 'HTTP 403' in await page.locator('.reference-check').inner_text()
+        assert 'No se importaron datos' in await page.locator('.reference-check').inner_text()
         await page.set_viewport_size({'width':390,'height':844})
         await page.goto(BASE+'/#rankings')
         await page.locator('#ranking-rows').wait_for()

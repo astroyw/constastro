@@ -29,6 +29,23 @@ class ScrapeError(ValueError):
     pass
 
 
+def access_challenge(html):
+    soup=BeautifulSoup(html,'html.parser')
+    return bool(soup.select_one('input[type="password"], #challenge-form, #cf-challenge-running') or
+                re.search(r'access denied|verify you are human|just a moment\.\.\.|pardon our interruption',soup.get_text(' ',strip=True),re.I) or
+                (soup.find() and re.search(r'captcha',soup.get_text(' ',strip=True),re.I)) or
+                '/cdn-cgi/challenge-platform/' in html)
+
+
+def http_failure(error, *, robots=False):
+    context=' al consultar robots.txt' if robots else ''
+    if error.code in (401,403):
+        return f'La fuente rechazó el acceso (HTTP {error.code}){context}. Puede exigir una sesión o verificación humana; no se importaron datos ni se eludió el control.'
+    if error.code==429:
+        return f'La fuente limitó las solicitudes (HTTP 429){context}. No se importaron datos; reintentá más tarde.'
+    return f'La fuente respondió HTTP {error.code}{context}. No se importaron datos.'
+
+
 def source_by_id(source_id):
     s = next((x for x in SOURCES if x["id"] == source_id),None)
     if not s: raise ScrapeError("Fuente desconocida.")
@@ -91,9 +108,11 @@ def authorize_public(url, source):
             robots=download(robots_url,source)
         except urllib.error.HTTPError as e:
             if e.code==404: robots=""
-            else: raise ScrapeError(f"No se pudo verificar robots.txt (HTTP {e.code}). No se importó la página.") from e
+            else: raise ScrapeError(http_failure(e,robots=True)) from e
         except (urllib.error.URLError,TimeoutError) as e:
             raise ScrapeError("No se pudo acceder a la fuente para consultar robots.txt. Revisá el acceso de red en la configuración del entorno.") from e
+        if access_challenge(robots):
+            raise ScrapeError('La fuente devolvió una verificación humana en lugar de robots.txt. No se importaron datos.')
         rp=urllib.robotparser.RobotFileParser()
         rp.parse(robots.splitlines())
         _policies[robots_url]=(time.monotonic(),rp)
@@ -109,10 +128,11 @@ def fetch_public(url, source, *, ajax=False):
     authorize_public(url,source)
     try:
         html=download(url,source,ajax=ajax)
+    except urllib.error.HTTPError as e:
+        raise ScrapeError(http_failure(e)) from e
     except (urllib.error.URLError,TimeoutError) as e:
         raise ScrapeError("No se pudo descargar la página. Puede requerir acceso de red, una sesión o autorización de la fuente.") from e
-    soup=BeautifulSoup(html,"html.parser")
-    if soup.select_one('input[type="password"]') or re.search(r"captcha|access denied|verify you are human", soup.get_text(" "), re.I):
+    if access_challenge(html):
         raise ScrapeError("La fuente requiere autenticación o verificación humana. No se intentará evadirla.")
     return html
 
@@ -198,7 +218,11 @@ def parse_horses(html,url,source):
             raise ScrapeError("La tabla no tiene identificadores o enlaces estables. No se fusionan caballos por nombre: usá el formato JSON con IDs del registro.")
         sex=norm(cell_text(row,"sex"))
         sex={"m":"M","macho":"M","male":"M","colt":"M","stallion":"M","h":"H","hembra":"H","female":"H","mare":"H","f":"H","c":"C","gelding":"C"}.get(sex,"U")
-        years=re.findall(r"\b(?:19|20)\d{2}\b",cell_text(row,"birth_year"))
+        # Historical pedigrees extend well before 1900. Keep documented years
+        # in the application's range, without guessing a date from other cells.
+        years=[int(y) for y in re.findall(r"\b\d{4}\b",cell_text(row,"birth_year")) if 1600<=int(y)<=date.today().year+1]
+        if len(set(years))>1:
+            raise ScrapeError("La celda de nacimiento contiene varios años distintos; requiere revisión.")
         record={"id":ident,"name":name,"country":source["country"],"sex":sex,"birth_year":int(years[0]) if years else None,
                 "sire_id":None,"dam_id":None,"source_url":url,"source_id":source["id"],"fetched_at":now(),"is_demo":0,"featured":1}
         for role,s in [("sire","M"),("dam","H")]:

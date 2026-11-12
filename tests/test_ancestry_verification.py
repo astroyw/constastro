@@ -1,5 +1,5 @@
 import unittest
-from app.ancestry import audit
+from app.ancestry import audit,pending_branches
 from app.verification import compare_all
 from app.argentina import parse_profile
 from app.scraper import ScrapeError
@@ -25,6 +25,13 @@ class AncestryTests(unittest.TestCase):
         a=audit('r',{x['id']:x for x in rows})
         self.assertFalse(a['complete']);self.assertEqual(a['ancestor_count'],1);self.assertEqual(a['missing_links'],2)
         self.assertEqual(audit('missing',{})['missing_links'],1)
+
+    def test_pending_branches_count_fixed_targets_without_promoting_ancestors(self):
+        rows=[h('a','First',2000,'shared'),h('b','Second',2000,'shared'),h('shared','Shared',1960),h('other','Unrelated',2000)]
+        pending=pending_branches({r['id']:r for r in rows},{'a','b'})
+        self.assertEqual(len(pending),4)
+        self.assertEqual([(r['id'],r['affected_targets']) for r in pending[:2]],[('shared',2),('shared',2)])
+        self.assertNotIn('other',{r['id'] for r in pending})
 
 class VerificationTests(unittest.TestCase):
     def families(self):
@@ -69,7 +76,29 @@ class VerificationTests(unittest.TestCase):
         self.assertEqual(compare_all(rows,evidence)['a']['status'],'review_candidates')
         self.assertEqual(compare_all(rows,{})['a']['confirmed_fields'],[])
 
+    def test_archived_observation_cannot_verify_a_changed_current_year(self):
+        rows=self.families();evidence={h['id']:dict(h) for h in rows}
+        rows[0]['birth_year']=1936
+        self.assertEqual(compare_all(rows,evidence)['a']['confirmed_fields'],[])
+
+    def test_wrong_record_or_publisher_evidence_cannot_verify_identity(self):
+        rows=self.families();evidence={h['id']:dict(h) for h in rows}
+        evidence['a']['id']='different-id'
+        self.assertEqual(compare_all(rows,evidence)['a']['confirmed_fields'],[])
+        evidence['a']={**rows[0],'source_url':'https://example.org/claim'}
+        self.assertEqual(compare_all(rows,evidence)['a']['confirmed_fields'],[])
+
 class ArgentinaPartialTests(unittest.TestCase):
+    def test_repeated_id_with_contradictory_facts_is_rejected(self):
+        from pathlib import Path
+        from bs4 import BeautifulSoup
+        url='https://www.studbook.org.ar/ejemplares/perfil/429310/electric-mud'
+        soup=BeautifulSoup(Path('tests/fixtures/argentina-profile.html').read_text(),'html.parser')
+        links=soup.select('#table-pedigree td.l1 a')
+        links[1]['href']=links[0]['href']
+        with self.assertRaisesRegex(ScrapeError,'contradictorios'):
+            parse_profile(str(soup),url)
+
     def test_missing_ancestor_id_stays_unlinked_without_bridging_generations(self):
         from pathlib import Path
         from bs4 import BeautifulSoup

@@ -39,7 +39,9 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(con.execute('SELECT COUNT(*) FROM imports').fetchone()[0],0)
 
     def test_consultation_analysis_and_excel_remain_available(self):
-        self.assertEqual(self.client.get('/api/config').json(),{'read_only':True})
+        configuration=self.client.get('/api/config').json()
+        self.assertTrue(configuration['read_only'])
+        self.assertIsInstance(configuration['reference_checks'],list)
         for path in ('/','/static/app.js','/api/health','/api/horses?demo=true','/api/rankings','/api/results','/api/export.json'):
             with self.subTest(path=path):self.assertEqual(self.client.get(path).status_code,200)
         cross=self.client.post('/api/compatibility',json={'sire_id':'demo-faro','dam_id':'demo-brisa','demo':True})

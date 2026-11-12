@@ -11992,6 +11992,78 @@
         }
       ],
       "applied_at": "2026-11-12T17:51:48+00:00"
+    },
+    {
+      "id": "uy-studbook:37348",
+      "counterpart_id": "ar-studbook:50387",
+      "fields": {
+        "sire_id": "ar-studbook:45231",
+        "dam_id": "ar-studbook:50388"
+      },
+      "source_id": "ar-studbook",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/112729/princess-daisy",
+      "observed_at": "2026-11-04T23:17:23+00:00",
+      "identity_basis": "Mismo progenitor de un hijo corroborado por nombre, año y ambos padres en dos editores distintos; correspondencia recíproca única.",
+      "child_evidence": [
+        {
+          "child_id": "uy-studbook:36730",
+          "other_child_id": "ar-studbook:50189",
+          "role": "dam_id",
+          "first_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "second_url": "https://www.studbook.org.ar/ejemplares/perfil/112729/princess-daisy",
+          "first_observed_at": "2026-11-04T23:29:41+00:00",
+          "second_observed_at": "2026-11-04T23:17:23+00:00"
+        }
+      ],
+      "applied_at": "2026-11-12T18:10:01+00:00"
+    },
+    {
+      "id": "ar-studbook:47984",
+      "counterpart_id": "uy-studbook:12823",
+      "fields": {
+        "sire_id": "uy-studbook:13592",
+        "dam_id": "uy-studbook:40411"
+      },
+      "source_id": "uy-studbook",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/17934",
+      "observed_at": "2026-11-04T23:18:11+00:00",
+      "identity_basis": "Mismo progenitor de un hijo corroborado por nombre, año y ambos padres en dos editores distintos; correspondencia recíproca única.",
+      "child_evidence": [
+        {
+          "child_id": "ar-studbook:44636",
+          "other_child_id": "uy-studbook:17934",
+          "role": "sire_id",
+          "first_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "second_url": "https://www.studbook.com.uy/online-volume/horse/17934",
+          "first_observed_at": "2026-11-04T23:42:16+00:00",
+          "second_observed_at": "2026-11-04T23:18:11+00:00"
+        }
+      ],
+      "applied_at": "2026-11-12T18:10:02+00:00"
+    },
+    {
+      "id": "uy-studbook:49253",
+      "counterpart_id": "ar-studbook:51739",
+      "fields": {
+        "sire_id": "ar-studbook:45166",
+        "dam_id": "ar-studbook:53353"
+      },
+      "source_id": "ar-studbook",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/367502/sherry-l",
+      "observed_at": "2026-11-04T23:27:36+00:00",
+      "identity_basis": "Mismo progenitor de un hijo corroborado por nombre, año y ambos padres en dos editores distintos; correspondencia recíproca única.",
+      "child_evidence": [
+        {
+          "child_id": "uy-studbook:50544",
+          "other_child_id": "ar-studbook:367502",
+          "role": "sire_id",
+          "first_url": "https://www.studbook.com.uy/online-volume/horse/50544",
+          "second_url": "https://www.studbook.org.ar/ejemplares/perfil/367502/sherry-l",
+          "first_observed_at": "2026-11-12T18:08:27+00:00",
+          "second_observed_at": "2026-11-04T23:27:36+00:00"
+        }
+      ],
+      "applied_at": "2026-11-12T18:10:02+00:00"
     }
   ],
   "rejected": [

@@ -39,7 +39,7 @@ def build():
                 results=[dict(r) for r in con.execute('SELECT * FROM results WHERE is_demo=0 ORDER BY date DESC,track,race_name,position')]
             horses={'real':db.horse_rows(False),'demo':db.horse_rows(True)}
             for rows in horses.values():validate_graph(rows)
-            payload={'original_targets':sorted(original_targets()),'verification':compare_all(horses['real'],load_evidence()),'horses':horses,'countries':main.COUNTRIES,'sources':main.sources(),
+            payload={'reference_checks':main.reference_checks(),'original_targets':sorted(original_targets()),'verification':compare_all(horses['real'],load_evidence()),'horses':horses,'countries':main.COUNTRIES,'sources':main.sources(),
                      'stats':{'real':main.stats(False),'demo':main.stats(True)},
                      'results':results,'ranking_sets':list_rankings(),'rankings':export_rankings()}
             (out/'data'/'site.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')))
@@ -53,6 +53,8 @@ def build():
     if review.exists():shutil.copy2(review,out/'downloads'/'Linaje_revision_pedigrees.json')
     reconciliations=ROOT/'samples'/'pedigree_reconciliations.json'
     if reconciliations.exists():shutil.copy2(reconciliations,out/'downloads'/'Linaje_conciliaciones.json')
+    recoveries=ROOT/'samples'/'pedigree_recoveries.json'
+    if recoveries.exists():shutil.copy2(recoveries,out/'downloads'/'Linaje_recuperaciones.json')
     (out/'data'/'health.json').write_text(json.dumps({'status':'ok','edition':'static'}))
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n')
     (out/'_redirects').write_text('/api/health /data/health.json 200\n')
@@ -61,6 +63,8 @@ def build():
     with ZipFile(destination,'w',ZIP_DEFLATED) as archive:
         for file in sorted(out.rglob('*')):
             if file.is_file():archive.write(file,file.relative_to(out).as_posix())
+    for name in ('Linaje_pedigrees.xlsx','Linaje_DEMOSTRACION.xlsx','Linaje_datos.json'):
+        shutil.copy2(out/'downloads'/name,ROOT/'exports'/name)
     print(f'Netlify: {len(horses["real"])} registros reales; {sum(len(r["entries"]) for r in payload["rankings"])} puestos.')
     print('Sitio generado: dist/; paquete: exports/Linaje-Netlify.zip')
 

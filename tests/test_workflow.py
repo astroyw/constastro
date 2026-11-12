@@ -43,6 +43,16 @@ class KinshipTests(unittest.TestCase):
 
 
 class ParserTests(unittest.TestCase):
+    def test_historical_years_are_imported_and_ambiguous_dates_are_rejected(self):
+        def table(year):
+            return f'<table><tr><th>ID</th><th>Nombre</th><th>Año</th><th>Padre ID</th></tr><tr><td>1</td><td>Antepasado de prueba</td><td>{year}</td><td></td></tr></table>'
+        source=source_by_id('uy-studbook')
+        for year in (1680,1799,1880,1935):
+            with self.subTest(year=year):
+                self.assertEqual(parse_horses(table(year),source['url'],source)[0]['birth_year'],year)
+        with self.assertRaisesRegex(ScrapeError,'varios años'):
+            parse_horses(table('1880 / 1881'),source['url'],source)
+
     def test_actual_argentine_profile_to_three_generations(self):
         url='https://www.studbook.org.ar/ejemplares/perfil/429310/electric-mud'
         records=parse_profile(Path('tests/fixtures/argentina-profile.html').read_text(),url)
