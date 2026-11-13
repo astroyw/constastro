@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+ <defs><radialGradient id="g"><stop stop-color="#8c9e71" stop-opacity=".42"/><stop offset="1" stop-color="#213c32" stop-opacity="0"/></radialGradient><linearGradient id="h" x1="400" y1="100" x2="240" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#e6eacb"/><stop offset="1" stop-color="#8da580"/></linearGradient></defs>
+ <circle cx="350" cy="270" r="270" fill="url(#g)"/>
+ <g stroke="#b9c99e" opacity=".18" transform="rotate(-28 335 260)"><rect x="52" y="78" width="570" height="360" rx="180"/><rect x="76" y="102" width="522" height="312" rx="156"/><rect x="100" y="126" width="474" height="264" rx="132"/><rect x="124" y="150" width="426" height="216" rx="108"/><path d="M400 78v72M424 78v72M448 78v72"/></g>
+ <g opacity=".7" stroke="#cedbab"><circle cx="498" cy="115" r="5"/><path d="M503 115h44M547 115v80M547 195h-35"/><circle cx="507" cy="195" r="5"/><path d="M495 115h-40v-36h-28"/><circle cx="422" cy="79" r="5"/></g>
+ <path d="M187 374c39-5 63-25 73-50 10-23 20-51 40-65 18-13 35-23 43-43l10-33-3-21 16 10 12-7 6-26 12 24c16 4 30 12 38 27l23 33c4 8 0 17-9 20l-17 1-23-15c-15 5-20 19-20 35l6 51c2 21-6 44-23 59l-15 44 27 29-11 11-41-34 7-53-24 19-43 30-13 45-17-3 5-56 39-43-56 20-20 38-37-4-1-13 26-5 10-31 24-20c-33 4-60 0-75 10-19 13-27 17-42 7l3-12c12 1 25-7 35-14 25-16 47-9 59-8z" fill="url(#h)"/>
+ <path d="M355 184c-9 12-23 20-28 38-7 25-11 36-33 48-3-17 8-39 18-51 13-16 25-26 43-35z" fill="#c8d7ac"/>
+ <path d="M358 190c-10 15-24 28-29 43M365 188c-5 17-18 36-28 45" stroke="#213c32" stroke-width="2" opacity=".45"/>
+ <circle cx="399" cy="192" r="3" fill="#213c32"/>
+ <path d="m409 204 23 13M388 202c4 10 11 19 20 22" stroke="#213c32" stroke-width="2" opacity=".5"/>
+ <ellipse cx="318" cy="452" rx="142" ry="8" fill="#172c24" opacity=".5"/>
+ <g fill="#d7e7a7"><circle cx="164" cy="133" r="3"/><circle cx="555" cy="344" r="3"/><path d="M127 299h14m-7-7v14M472 384h14m-7-7v14" stroke="#d7e7a7" stroke-width="1" opacity=".65"/></g>
+</svg>

@@ -1,0 +1,605 @@
+{
+  "method": "consistent-branches-v1",
+  "batches": [
+    {
+      "file": "ar-studbook-371725.json",
+      "recovered_at": "2026-11-12T18:08:15+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:371725",
+          "new_record": false,
+          "fields": {
+            "sire_id": "ar-studbook:43746",
+            "dam_id": "ar-studbook:44631",
+            "birth_country": "ARG",
+            "coat": "Zaino Colorado"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:44631",
+          "new_record": true,
+          "fields": {
+            "name": "GAZALA II",
+            "birth_year": 1964,
+            "sex": "H",
+            "sire_id": "ar-studbook:44632",
+            "dam_id": "ar-studbook:44633"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:44633",
+          "new_record": true,
+          "fields": {
+            "name": "BELLE ANGEVINE",
+            "birth_year": 1957,
+            "sex": "H",
+            "sire_id": "ar-studbook:44636",
+            "dam_id": "ar-studbook:44637"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:44636",
+          "new_record": true,
+          "fields": {
+            "name": "L'AMIRAL",
+            "birth_year": 1947,
+            "sex": "M",
+            "sire_id": "ar-studbook:47984",
+            "dam_id": "ar-studbook:47983"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:44637",
+          "new_record": true,
+          "fields": {
+            "name": "BELLA II",
+            "birth_year": 1945,
+            "sex": "H",
+            "sire_id": "ar-studbook:45312",
+            "dam_id": "ar-studbook:55085"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:47983",
+          "new_record": true,
+          "fields": {
+            "name": "HURRYLOR",
+            "birth_year": 1940,
+            "sex": "H"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:47984",
+          "new_record": true,
+          "fields": {
+            "name": "ADMIRAL DRAKE",
+            "birth_year": 1931,
+            "sex": "M"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        },
+        {
+          "id": "ar-studbook:55085",
+          "new_record": true,
+          "fields": {
+            "name": "BAYAN KARA",
+            "birth_year": 1936,
+            "sex": "H"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:44634",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:44634 (1942) / ar-studbook:43939 (1942)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371725/mississipian",
+          "observed_at": "2026-11-04T23:42:16+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-377928.json",
+      "recovered_at": "2026-11-12T18:08:15+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "ar-studbook:377928",
+          "reasons": [
+            "Difiere el campo conocido sire_id: uy-studbook:7854 / ar-studbook:43813.",
+            "Difiere el campo conocido dam_id: uy-studbook:47819 / ar-studbook:386602."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/377928/lauries-dancer",
+          "observed_at": "2026-11-04T23:35:17+00:00"
+        },
+        {
+          "id": "ar-studbook:44634",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:44634 (1942) / ar-studbook:43939 (1942)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/377928/lauries-dancer",
+          "observed_at": "2026-11-04T23:35:17+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-426042.json",
+      "recovered_at": "2026-11-12T18:08:16+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "ar-studbook:426042",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:426042 (1994) / ar-studbook:426043 (1994)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/426042/gold-rush-queen",
+          "observed_at": "2026-11-04T23:36:03+00:00"
+        },
+        {
+          "id": "ar-studbook:426043",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:426042 (1994) / ar-studbook:426043 (1994)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/426042/gold-rush-queen",
+          "observed_at": "2026-11-04T23:36:03+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-47493.json",
+      "recovered_at": "2026-11-12T18:08:16+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:47493",
+          "new_record": false,
+          "fields": {
+            "sire_id": "ar-studbook:44513",
+            "dam_id": "ar-studbook:47665",
+            "birth_country": "ARG",
+            "coat": "Zaino Colorado"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47493/mark-ye-well",
+          "observed_at": "2026-11-04T23:30:10+00:00"
+        },
+        {
+          "id": "ar-studbook:47665",
+          "new_record": true,
+          "fields": {
+            "name": "MAR-KELL",
+            "birth_year": 1939,
+            "sex": "H",
+            "sire_id": "ar-studbook:44753"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47493/mark-ye-well",
+          "observed_at": "2026-11-04T23:30:10+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:372015",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47493/mark-ye-well",
+          "observed_at": "2026-11-04T23:30:10+00:00"
+        },
+        {
+          "id": "ar-studbook:45996",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47493/mark-ye-well",
+          "observed_at": "2026-11-04T23:30:10+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-50180.json",
+      "recovered_at": "2026-11-12T18:08:17+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:50180",
+          "new_record": false,
+          "fields": {
+            "sire_id": "ar-studbook:50181",
+            "dam_id": "ar-studbook:44223",
+            "birth_country": "ARG",
+            "coat": "Alazan"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50180/orientation",
+          "observed_at": "2026-11-04T23:38:45+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:369290",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:369290 (1930) / ar-studbook:369393 (1930)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50180/orientation",
+          "observed_at": "2026-11-04T23:38:45+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-53197.json",
+      "recovered_at": "2026-11-12T18:08:17+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:53197",
+          "new_record": false,
+          "fields": {
+            "sire_id": "ar-studbook:44753",
+            "birth_country": "ARG",
+            "coat": "Zaino Colorado"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53197/nellie-l",
+          "observed_at": "2026-11-04T23:18:21+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:372015",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53197/nellie-l",
+          "observed_at": "2026-11-04T23:18:21+00:00"
+        },
+        {
+          "id": "ar-studbook:45996",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53197/nellie-l",
+          "observed_at": "2026-11-04T23:18:21+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-55163.json",
+      "recovered_at": "2026-11-12T18:08:18+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:55163",
+          "new_record": false,
+          "fields": {
+            "sire_id": "ar-studbook:43981",
+            "dam_id": "ar-studbook:50874",
+            "birth_country": "ARG",
+            "coat": "Tordillo"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55163/exclusive-dancer",
+          "observed_at": "2026-11-04T23:34:17+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:369290",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:369290 (1930) / ar-studbook:369393 (1930)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55163/exclusive-dancer",
+          "observed_at": "2026-11-04T23:34:17+00:00"
+        }
+      ]
+    },
+    {
+      "file": "uy-studbook-16139.json",
+      "recovered_at": "2026-11-12T18:08:18+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "uy-studbook:16139",
+          "reasons": [
+            "Cronología incompatible: uy-studbook:38166 (1947) / uy-studbook:16139 (1962)."
+          ],
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/16139",
+          "observed_at": "2026-11-04T23:32:11+00:00"
+        }
+      ]
+    },
+    {
+      "file": "uy-studbook-73026.json",
+      "recovered_at": "2026-11-12T18:08:19+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "uy-studbook:36730",
+          "new_record": true,
+          "fields": {
+            "name": "CHAPARRAL (FR)",
+            "birth_year": 1966,
+            "sex": "M",
+            "sire_id": "uy-studbook:8057",
+            "dam_id": "uy-studbook:37348",
+            "birth_country": "FRA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:37344",
+          "new_record": true,
+          "fields": {
+            "name": "SENECA (FR)",
+            "birth_year": 1973,
+            "sex": "H",
+            "sire_id": "uy-studbook:36730",
+            "dam_id": "uy-studbook:37347",
+            "birth_country": "FRA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:37347",
+          "new_record": true,
+          "fields": {
+            "name": "SCHONBRUNN (GER)",
+            "birth_year": 1966,
+            "sex": "H",
+            "sire_id": "uy-studbook:15330",
+            "birth_country": "DEU",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:37348",
+          "new_record": true,
+          "fields": {
+            "name": "NICCOLINA (GB)",
+            "birth_year": 1950,
+            "sex": "H",
+            "birth_country": "GBR",
+            "coat": "A."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:50542",
+          "new_record": true,
+          "fields": {
+            "name": "HAGLEY (USA)",
+            "birth_year": 1967,
+            "sex": "M",
+            "sire_id": "uy-studbook:24995",
+            "dam_id": "uy-studbook:50543",
+            "birth_country": "USA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:50543",
+          "new_record": true,
+          "fields": {
+            "name": "TEO PEPI (USA)",
+            "birth_year": 1961,
+            "sex": "H",
+            "sire_id": "uy-studbook:8958",
+            "dam_id": "uy-studbook:50544",
+            "birth_country": "USA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:50544",
+          "new_record": true,
+          "fields": {
+            "name": "SHERRY L. (USA)",
+            "birth_year": 1950,
+            "sex": "H",
+            "birth_country": "USA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:73023",
+          "new_record": true,
+          "fields": {
+            "name": "SUCRETTE (USA)",
+            "birth_year": 1958,
+            "sex": "H",
+            "birth_country": "USA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:73024",
+          "new_record": true,
+          "fields": {
+            "name": "HAGLETTE (USA)",
+            "birth_year": 1978,
+            "sex": "H",
+            "sire_id": "uy-studbook:50542",
+            "dam_id": "uy-studbook:73023",
+            "birth_country": "USA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:73025",
+          "new_record": true,
+          "fields": {
+            "name": "SAGACE (FR)",
+            "birth_year": 1980,
+            "sex": "M",
+            "sire_id": "uy-studbook:14810",
+            "dam_id": "uy-studbook:37344",
+            "birth_country": "FRA",
+            "coat": "Z."
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        },
+        {
+          "id": "uy-studbook:73026",
+          "new_record": false,
+          "fields": {
+            "sire_id": "uy-studbook:73025",
+            "dam_id": "uy-studbook:73024"
+          },
+          "source_id": "uy-studbook",
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "uy-studbook:38079",
+          "reasons": [
+            "Cronología incompatible: uy-studbook:15863 (1916) / uy-studbook:38079 (1952)."
+          ],
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/73026",
+          "observed_at": "2026-11-04T23:29:41+00:00"
+        }
+      ]
+    },
+    {
+      "file": "uy-studbook-81476.json",
+      "recovered_at": "2026-11-12T18:08:19+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "uy-studbook:81476",
+          "reasons": [
+            "Cronología incompatible: uy-studbook:81477 (1974) / uy-studbook:81476 (1974)."
+          ],
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/81476",
+          "observed_at": "2026-11-04T23:42:15+00:00"
+        }
+      ]
+    },
+    {
+      "file": "uy-studbook-84228.json",
+      "recovered_at": "2026-11-12T18:08:20+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "uy-studbook:84228",
+          "reasons": [
+            "Cronología incompatible: uy-studbook:84229 (1988) / uy-studbook:84228 (1988)."
+          ],
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/84228",
+          "observed_at": "2026-11-04T23:42:29+00:00"
+        }
+      ]
+    },
+    {
+      "file": "ar-studbook-47665.json",
+      "recovered_at": "2026-11-12T18:10:00+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [
+        {
+          "id": "ar-studbook:47665",
+          "new_record": false,
+          "fields": {
+            "birth_country": "ARG",
+            "coat": "Zaino Colorado"
+          },
+          "source_id": "ar-studbook",
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47665/mar-kell",
+          "observed_at": "2026-11-12T18:08:25+00:00"
+        }
+      ],
+      "quarantined": [
+        {
+          "id": "ar-studbook:372015",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47665/mar-kell",
+          "observed_at": "2026-11-12T18:08:25+00:00"
+        },
+        {
+          "id": "ar-studbook:45996",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:45996 (1932) / ar-studbook:372015 (1932)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47665/mar-kell",
+          "observed_at": "2026-11-12T18:08:25+00:00"
+        }
+      ]
+    },
+    {
+      "file": "uy-studbook-37347.json",
+      "recovered_at": "2026-11-12T18:10:00+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "uy-studbook:38079",
+          "reasons": [
+            "Cronología incompatible: uy-studbook:15863 (1916) / uy-studbook:38079 (1952)."
+          ],
+          "source_url": "https://www.studbook.com.uy/online-volume/horse/37347",
+          "observed_at": "2026-11-12T18:08:35+00:00"
+        }
+      ]
+    }
+  ]
+}

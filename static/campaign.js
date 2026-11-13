@@ -1,0 +1,29 @@
+const labels={complete_in_source:'Completa en esta fuente',partial_in_source:'Campaña parcial',no_records_in_source:'Cero carreras declaradas en esta fuente',unavailable:'Fuente no disponible',pending_identity:'Identidad de carreras pendiente',pending:'Pendiente de consultar'};
+export const detailLabels={race_number:'N.º de carrera',published_order:'Orden publicado (O)',post_position:'Gatera',program_number:'Número de programa',category:'Categoría',conditions:'Condiciones',going:'Estado de pista',going_code:'Estado de pista (código original)',weather:'Tiempo meteorológico',horse_weight_kg:'Peso del caballo (kg)',carried_weight_kg:'Peso en primera pesada del jinete (kg)',trainer:'Entrenador',stable:'Caballeriza',earnings_ars:'Premios publicados (ARS)',earnings_usd_source:'Premios en USD según la fuente',odds:'Pago / dividendo publicado',margin:'Diferencia al ganador',winner_time:'Tiempo del ganador',official_time:'Tiempo individual oficial'};
+
+export function campaignSection(rows,reviews,esc,safeURL,demo=false){
+  const wins=rows.filter(r=>r.position===1).length;
+  return `<section class="campaign-section" data-campaign aria-label="Campaña del caballo"><div class="campaign-heading"><div><span class="eyebrow">SU RECORRIDO EN PISTA</span><h3>Campaña y carreras</h3></div><span class="tag blue">${rows.length} actuaciones guardadas · ${wins} triunfos</span></div>
+    ${demo?'<p class="subtle-note">Perfil ficticio, sin actuaciones reales.</p>':reviews.length?reviews.map(r=>`<div class="campaign-coverage"><strong>${esc(labels[r.status]||r.status)}</strong><span>${r.observed_starts} actuaciones recuperadas${Number.isInteger(r.expected_starts)?' / '+r.expected_starts+' declaradas por la fuente':''}</span><p>${esc(r.scope)} ${esc(r.message)}</p><a class="text-link" href="${safeURL(r.source_url)}" target="_blank" rel="noopener noreferrer">Consultar campaña de origen ↗</a><small>Consulta: ${esc(r.observed_at?.slice(0,10)||'Sin fecha')}</small></div>`).join(''):'<div class="campaign-coverage"><strong>Campaña pendiente de verificar</strong><p>Este registro todavía no tiene una revisión de su historial completo. La ausencia de actuaciones guardadas no significa que nunca haya corrido.</p></div>'}
+    ${!demo?'<p class="subtle-note">La cobertura se comprueba por fuente y circuito. Puede haber actuaciones en otros países aún sin incorporar.</p>':''}
+    ${rows.length?`<div class="campaign-filters"><label>Año<select data-campaign-year><option value="">Todos los años</option>${[...new Set(rows.map(r=>r.date.slice(0,4)))].sort().reverse().map(y=>`<option>${esc(y)}</option>`).join('')}</select></label><label>Hipódromo<select data-campaign-track><option value="">Todos los hipódromos</option>${[...new Set(rows.map(r=>r.track))].sort().map(t=>`<option>${esc(t)}</option>`).join('')}</select></label></div><div data-campaign-rows></div>`:'<p class="subtle-note">No hay carreras enlazadas a este ID. No se asignan resultados de otro registro sólo porque coincida el nombre.</p>'}
+  </section>`;
+}
+
+export function bindCampaign(root,rows,esc,safeURL,dateFormat){
+  if(!root||!rows.length)return;
+  const year=root.querySelector('[data-campaign-year]'),track=root.querySelector('[data-campaign-track]'),target=root.querySelector('[data-campaign-rows]');
+  let page=1;const size=20;
+  function render(){
+    const selected=rows.filter(r=>(!year.value||r.date.startsWith(year.value))&&(!track.value||r.track===track.value)).sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
+    const pages=Math.max(1,Math.ceil(selected.length/size));page=Math.min(page,pages);
+    target.innerHTML=`<p class="subtle-note" aria-live="polite">${selected.length} actuaciones coinciden · Página ${page} de ${pages}</p><div class="table-scroll"><table class="horse-table campaign-table"><thead><tr><th>Fecha y pista</th><th>Carrera</th><th>Distancia / superficie</th><th>Llegada</th><th>Jinete</th><th>Detalles</th></tr></thead><tbody>${selected.slice((page-1)*size,page*size).map(r=>{
+      const d=r.details||{};
+      const facts={...d};if(r.time)facts[r.time_kind==='individual'?'official_time':'winner_time']=r.time;
+      return `<tr><td>${esc(dateFormat(r.date))}<small>${esc(r.track)} · ${esc(r.country)}</small></td><td><a class="text-link" href="${safeURL(d.race_url||r.source_url)}" target="_blank" rel="noopener noreferrer">${esc(r.race_name)} ↗</a></td><td>${r.distance?esc(r.distance)+' m':'Distancia sin publicar'}<small>${esc(r.surface||'Superficie sin publicar')}</small></td><td><strong>${Number.isInteger(r.position)?r.position+'º':esc(r.finish_status||'Sin puesto publicado')}</strong>${r.field_size?'<small>de '+r.field_size+' participantes</small>':''}</td><td>${esc(r.jockey||'Sin publicar')}</td><td><details class="race-details"><summary>Ver detalles</summary><dl>${Object.entries(detailLabels).filter(([k])=>facts[k]!=null&&facts[k]!=='').map(([k,label])=>`<div><dt>${esc(label)}</dt><dd>${esc(facts[k])}</dd></div>`).join('')}</dl>${d.video_url?`<a href="${safeURL(d.video_url)}" target="_blank" rel="noopener noreferrer">Ver video ↗</a><br>`:''}<a href="${safeURL(r.source_url)}" target="_blank" rel="noopener noreferrer">Fuente de la actuación ↗</a><small>Consulta: ${esc(r.fetched_at?.slice(0,10)||'Sin fecha')}</small></details></td></tr>`;
+    }).join('')}</tbody></table></div><div class="campaign-pagination"><button class="button light" data-campaign-prev ${page===1?'disabled':''}>Anterior</button><span>${page} / ${pages}</span><button class="button light" data-campaign-next ${page===pages?'disabled':''}>Siguiente</button></div>`;
+    target.querySelector('[data-campaign-prev]').onclick=()=>{page--;render()};
+    target.querySelector('[data-campaign-next]').onclick=()=>{page++;render()};
+  }
+  year.onchange=track.onchange=()=>{page=1;render()};render();
+}
