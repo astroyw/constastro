@@ -12064,6 +12064,51 @@
         }
       ],
       "applied_at": "2026-11-12T18:10:02+00:00"
+    },
+    {
+      "id": "uy-studbook:13948",
+      "counterpart_id": "ar-studbook:44016",
+      "fields": {
+        "birth_year": 1933,
+        "sire_id": "ar-studbook:47023",
+        "dam_id": "ar-studbook:370495"
+      },
+      "source_id": "ar-studbook",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/26783/aulisary-gb",
+      "observed_at": "2026-11-04T23:44:00+00:00",
+      "identity_basis": "Progenitor identificado por registros de hijos coincidentes en nombre, año y ambos padres entre dos editores; todos los candidatos del otro editor señalan el mismo ID parental. Correspondencia parental recíproca única; no fusiona los IDs de los hijos.",
+      "child_evidence": [
+        {
+          "child_id": "uy-studbook:8652",
+          "other_child_id": "ar-studbook:44777",
+          "role": "dam_id",
+          "child_identity_supported": false,
+          "convergent_child_candidates": [
+            "ar-studbook:44777",
+            "ar-studbook:46793"
+          ],
+          "first_url": "https://www.studbook.com.uy/online-volume/horse/36885",
+          "second_url": "https://www.studbook.org.ar/ejemplares/perfil/149032/political-ambition-usa",
+          "first_observed_at": "2026-11-04T23:23:43+00:00",
+          "second_observed_at": "2026-11-04T23:12:06+00:00"
+        },
+        {
+          "child_id": "uy-studbook:8652",
+          "other_child_id": "ar-studbook:46793",
+          "role": "dam_id",
+          "child_identity_supported": false,
+          "convergent_child_candidates": [
+            "ar-studbook:44777",
+            "ar-studbook:46793"
+          ],
+          "first_url": "https://www.studbook.com.uy/online-volume/horse/36885",
+          "second_url": "https://www.studbook.org.ar/ejemplares/perfil/56867/monarchy",
+          "first_observed_at": "2026-11-04T23:23:43+00:00",
+          "second_observed_at": "2026-11-04T23:34:25+00:00"
+        }
+      ],
+      "applied_at": "2026-11-13T18:16:19+00:00",
+      "method": "documented-child-parent-v2"
     }
   ],
   "rejected": [

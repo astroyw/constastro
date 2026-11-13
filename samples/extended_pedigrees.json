@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated_at": "2026-11-12T18:11:43+00:00",
+    "generated_at": "2026-11-13T18:23:51+00:00",
     "target_birth_year": 1935,
     "original_targets": 2452,
     "records_after_expansion": 11842,
     "added_records": 9390,
-    "trees_complete": 257,
-    "trees_pending": 2195,
+    "trees_complete": 258,
+    "trees_pending": 2194,
     "verification_status": {
       "single_source": 2066,
       "review_candidates": 45,
@@ -14,7 +14,7 @@
     },
     "all_data_two_sources_verified": 0,
     "scope": "Targets fixed before expansion. New ancestors only support their branches until documented birth <=1935. Distinct publisher records are compared without merging identities. Earnings and campaigns still lack independent corroboration.",
-    "unique_pending_relationships": 2193
+    "unique_pending_relationships": 2191
   },
   "horses": [
     {
@@ -67222,17 +67222,17 @@
       "id": "uy-studbook:13948",
       "name": "FEOLA (GB)",
       "country": "URU",
-      "birth_year": null,
+      "birth_year": 1933,
       "sex": "H",
       "coat": "",
-      "sire_id": null,
-      "dam_id": null,
+      "sire_id": "ar-studbook:47023",
+      "dam_id": "ar-studbook:370495",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/14391",
       "source_id": "uy-studbook",
-      "fetched_at": "2026-11-04T23:31:39+00:00",
+      "fetched_at": "2026-11-13T18:20:39+00:00",
       "is_demo": 0,
       "featured": 0,
-      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales.",
+      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales. Complemento documentado de ar-studbook:44016 (https://www.studbook.org.ar/ejemplares/perfil/26783/aulisary-gb); filiaciones coincidentes en dos Stud Books con candidatos convergentes al mismo ID parental. Ver auditoría de conciliación; el dato complementado puede tener una sola fuente.",
       "birth_country": "GBR"
     },
     {

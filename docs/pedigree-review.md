@@ -33,6 +33,8 @@ El Excel mantiene **Caballos** como tabla normalizada con todas las generaciones
 
 Se añaden únicamente años o enlaces publicados en la observación del registro correspondiente del otro Stud Book. No se fusionan IDs ni se reemplazan campos conocidos. El grafo vuelve a validar sexo, cronología y ciclos. Cada complemento conserva ambas fichas del hijo, la ficha del progenitor que publica el dato, fechas y valores exactos en `samples/pedigree_reconciliations.json`. Un complemento documentado puede tener una sola fuente para el dato añadido: **no se lo presenta como corroborado en dos fuentes**. Las discrepancias se dejan pendientes. Sólo se completan los nodos necesarios para los 2.452 objetivos originales hasta 1935.
 
+Cuando hay varios IDs candidatos para un hijo en el otro editor, se puede respaldar **sólo su progenitor** si todos los candidatos coinciden en nombre, año y ambos padres, no contradicen sexo ni país de nacimiento y señalan exactamente el mismo ID parental. La correspondencia del progenitor debe seguir siendo recíproca y única. Los IDs de los hijos permanecen separados y su identidad no se presenta como confirmada. La auditoría enumera todos los candidatos convergentes. Si difieren los IDs parentales, se conserva el pendiente.
+
 ## Revisión de PedigreeQuery y recuperación de lotes
 
 El 12/11/2026 a las 18:04:31 UTC se volvió a consultar `https://www.pedigreequery.com/robots.txt`. Respondió **HTTP 403**, con una página de verificación de Cloudflare. No se pudieron revisar ni importar sus pedigrees. La comprobación fechada está en `samples/source_access_checks.json`, en la página de fuentes y en el Excel. No representa disponibilidad en vivo ni datos verificados de esa referencia.

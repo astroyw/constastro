@@ -14,3 +14,15 @@ class ReconciliationTests(unittest.TestCase):
  def test_only_required_nodes_and_only_missing_facts(self):
   h=family();self.assertEqual(proposals(h,{x['id']:x for x in h},set()),[])
   h[2]['sire_id']='known';self.assertEqual(proposals(h,{x['id']:x for x in h},{'as'}),[])
+ def test_duplicate_child_records_may_confirm_one_unambiguous_parent(self):
+  h=family();h.append({**h[1],'id':'b-duplicate'})
+  p=proposals(h,{x['id']:x for x in h},{'as'})
+  self.assertEqual(p[0]['fields'],{'sire_id':'old'})
+  self.assertFalse(p[0]['child_evidence'][0]['child_identity_supported'])
+  self.assertEqual(set(p[0]['child_evidence'][0]['convergent_child_candidates']),{'b','b-duplicate'})
+ def test_duplicate_candidates_with_different_parent_ids_are_not_resolved_by_name(self):
+  h=family();h.extend([{**h[1],'id':'b-duplicate','sire_id':'bs2'},{**h[4],'id':'bs2'}])
+  self.assertEqual(proposals(h,{x['id']:x for x in h},{'as'}),[])
+ def test_any_candidate_with_different_parent_name_prevents_parent_confirmation(self):
+  h=family();h.extend([{**h[1],'id':'b-duplicate','sire_id':'bs2'},{**h[4],'id':'bs2','name':'Other father'}])
+  self.assertEqual(proposals(h,{x['id']:x for x in h},{'as'}),[])

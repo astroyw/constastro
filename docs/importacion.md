@@ -44,6 +44,8 @@ Seleccionar la fuente argentina y pegar una URL de perfil como `https://www.stud
 
 - **Caballos y pedigree:** obtiene el ejemplar y sus 14 ancestros hasta bisabuelos desde `#table-pedigree`. Conserva los IDs numéricos del registro y las relaciones de cada columna; no vincula por nombre.
 - **Resultados:** importa la campaña individual del perfil e incluye su pedigree para que las actuaciones queden vinculadas al ejemplar. No es la clasificación completa de cada carrera. Sólo se guarda el tiempo del ganador cuando la posición del caballo es 1; no se atribuye el tiempo ganador a los otros puestos.
+
+`python scripts/import_argentina_campaigns.py` consulta de forma secuencial las fichas de los 100 objetivos originales del ranking argentino. Reutiliza el caché fechado en `data/campaign_cache/`, verifica ID, nombre y nacimiento frente a la base y no sobrescribe posiciones o distancias conocidas contradictorias. Conserva las actuaciones publicadas con puesto numérico en `samples/campaign_results.json`, que se incorpora a una instalación nueva y a la edición estática. No afirma haber descargado toda la campaña histórica de cada caballo ni completa cantidades de participantes ausentes. Una respuesta con control de acceso detiene las consultas.
 - `country=ARG` significa que el dato proviene del registro argentino. No implica nacimiento en Argentina: los nombres de los ancestros conservan sus sufijos y las notas aclaran el significado.
 - Se validó una ficha real consultada el 20/10/2026; la estructura de otros perfiles puede variar y un cambio de columnas detiene la importación.
 - `samples/argentina_official.json` permite reproducir la muestra obtenida sin volver a consultar la web. Es un archivo histórico con procedencia, no una actualización automática.

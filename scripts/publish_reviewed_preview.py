@@ -28,7 +28,7 @@ def main():
    entries.append(mode+' '+git('hash-object','-w',str(path))+'\t'+name)
   subprocess.run(['git','update-index','--index-info'],cwd=ROOT,env=env,input='\n'.join(entries)+'\n',text=True,check=True)
   tree=subprocess.check_output(['git','write-tree'],cwd=ROOT,env=env,text=True).strip()
- commit=git('commit-tree',tree,'-p',parent,input='Recover documented pedigree branches, fix import validation and expose unresolved links\n')
+ commit=git('commit-tree',tree,'-p',parent,input='Continue documented pedigrees and calculate regularized distance indices from archived campaigns\n')
  subprocess.run(['git','push','origin',commit+':refs/heads/main'],cwd=ROOT,check=True)
  for name,path in artifacts.items():
   expected=hashlib.sha256(path.read_bytes()).hexdigest()

@@ -30,5 +30,9 @@ if not already:
     if extension.exists():
         saved=save_batch(json.loads(extension.read_text())['horses'],[])
         print('Ascendencia histórica archivada:',saved)
+    campaigns=ROOT/'samples'/'campaign_results.json'
+    if campaigns.exists():
+        saved=save_batch([],json.loads(campaigns.read_text())['results'])
+        print('Actuaciones documentadas archivadas:',saved)
 else:
     print('Base real existente conservada.')

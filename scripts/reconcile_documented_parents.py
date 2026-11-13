@@ -18,7 +18,7 @@ for p in candidates:
  with db.connection() as con:h=dict(con.execute('SELECT * FROM horses WHERE id=?',(p['id'],)).fetchone())
  fields={k:v for k,v in p['fields'].items() if not h.get(k)}
  if not fields:continue
- note=' Complemento documentado de '+p['counterpart_id']+' ('+p['source_url']+'); identidad como progenitor de un hijo corroborado en dos Stud Books. Ver auditoría de conciliación; el dato complementado puede tener una sola fuente.'
+ note=' Complemento documentado de '+p['counterpart_id']+' ('+p['source_url']+'); filiaciones coincidentes en dos Stud Books con candidatos convergentes al mismo ID parental. Ver auditoría de conciliación; el dato complementado puede tener una sola fuente.'
  try:
   save_batch([{'id':h['id'],'name':h['name'],**fields,'notes':h['notes'][:max(0,2000-len(note))]+note}],[])
   h.update(fields);p['fields']=fields;p['applied_at']=db.now();report['applied'].append(p)
