@@ -7,7 +7,7 @@ from typing import Literal
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator,model_validator
 
 from . import db
 from .catalog import COUNTRIES, SOURCES
@@ -16,6 +16,7 @@ from .verification import compare_all
 from .evidence import load_evidence
 from .ancestry import original_targets,audit
 from .source_checks import reference_checks
+from .manual_reviews import manual_reviews
 from .genetics import analyze, pedigree, validate_graph
 from .scraper import ScrapeError, fetch_public, parse_horses, parse_results, source_by_id, validate_url
 from .argentina import parse_profile, parse_campaign
@@ -93,7 +94,9 @@ class RaceResult(BaseModel):
     race_name:str=Field(min_length=1,max_length=200)
     distance:int|None=Field(default=None,gt=0,le=20000)
     surface:str=Field(default="",max_length=100)
-    position:int=Field(ge=1,le=100)
+    position:int|None=Field(default=None,ge=1,le=100)
+    finish_status:str=Field(default='',max_length=120)
+    details:dict[str,str]=Field(default_factory=dict)
     horse_name:str=Field(min_length=1,max_length=200)
     horse_id:str|None=None
     jockey:str=Field(default="",max_length=150)
@@ -103,6 +106,16 @@ class RaceResult(BaseModel):
     time_kind:Literal["winner","individual","unknown"]="unknown"
     scope:Literal["partial","full"]="partial"
     field_size:int|None=Field(default=None,ge=1,le=100)
+
+    @model_validator(mode='after')
+    def finish_required(self):
+        if self.position is None and not self.finish_status:
+            raise ValueError('Indicá un puesto numérico o el estado de llegada publicado.')
+        if self.field_size and self.position and self.position>self.field_size:
+            raise ValueError('El puesto supera los participantes oficiales.')
+        if len(self.details)>50 or any(len(k)>80 or len(v)>5000 for k,v in self.details.items()):
+            raise ValueError('Los detalles de la actuación superan los límites admitidos.')
+        return self
 
     @field_validator("country")
     @classmethod
@@ -120,10 +133,36 @@ class RaceResult(BaseModel):
         return value
 
 
+class CampaignReview(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    horse_id:str=Field(min_length=1,max_length=180)
+    source_id:str=Field(min_length=1,max_length=100)
+    status:Literal['complete_in_source','partial_in_source','no_records_in_source','unavailable','pending_identity','pending']
+    expected_starts:int|None=Field(default=None,ge=0)
+    observed_starts:int=Field(ge=0)
+    source_url:str=Field(min_length=8,max_length=2000)
+    observed_at:str=Field(max_length=80)
+    scope:str=Field(max_length=2000)
+    message:str=Field(default='',max_length=5000)
+
+    @field_validator('source_url')
+    @classmethod
+    def https_url(cls,value):return RaceResult.http_url(value)
+
+    @model_validator(mode='after')
+    def consistent_total(self):
+        if self.status=='complete_in_source' and (not self.expected_starts or self.expected_starts!=self.observed_starts):
+            raise ValueError('Una campaña completa en la fuente requiere total conocido y coincidente.')
+        if self.status=='no_records_in_source' and (self.expected_starts!=0 or self.observed_starts!=0):
+            raise ValueError('Cero carreras requiere total declarado cero y ninguna actuación.')
+        return self
+
+
 class ImportBatch(BaseModel):
     model_config=ConfigDict(extra="forbid")
     horses:list[Horse]=Field(default_factory=list,max_length=50000)
-    results:list[RaceResult]=Field(default_factory=list,max_length=20000)
+    results:list[RaceResult]=Field(default_factory=list,max_length=500000)
+    campaign_reviews:list[CampaignReview]=Field(default_factory=list,max_length=100000)
 
 
 class Cross(BaseModel):
@@ -186,7 +225,7 @@ def save_batch(horses,results):
         for r in results:
             model=RaceResult.model_validate({k:v for k,v in r.items() if k not in ('is_demo','fetched_at')})
             previous_row=con.execute('SELECT * FROM results WHERE id=? AND is_demo=0',(model.id,)).fetchone()
-            previous=dict(previous_row) if previous_row else {}
+            previous=db.result_record(previous_row) if previous_row else {}
             parsed={**previous,**model.model_dump(mode='json',exclude_unset=bool(previous))}
             if parsed['horse_id'] and parsed['horse_id'] not in existing:
                 raise ValueError("El resultado referencia un caballo que no está en la base real.")
@@ -194,6 +233,8 @@ def save_batch(horses,results):
                 raise ValueError("ID reservado para demostración.")
             parsed['fetched_at']=r.get('fetched_at') or db.now()
             parsed['is_demo']=0
+            import json
+            parsed['details']=json.dumps(parsed.get('details',{}),ensure_ascii=False)
             keys=list(parsed)
             con.execute(f"INSERT INTO results ({','.join(keys)}) VALUES ({','.join('?' for _ in keys)}) ON CONFLICT(id) DO UPDATE SET {','.join(f'{k}=excluded.{k}' for k in keys if k!='id')}",[parsed[k] for k in keys])
     return {"horses":len(horses),"results":len(results)}
@@ -239,8 +280,8 @@ def horse(horse_id:str,demo:bool=False):
     nodes={h['id']:h for h in db.horse_rows(demo)}
     if horse_id not in nodes: raise HTTPException(404,"No se encontró el caballo en esta base.")
     with db.connection() as con:
-        campaign=[dict(r) for r in con.execute('SELECT * FROM results WHERE horse_id=? AND is_demo=? ORDER BY date DESC,position',(horse_id,int(demo)))]
-    return {"horse":nodes[horse_id],"pedigree":pedigree(horse_id,nodes),"campaign":campaign,"original_target":None if demo else horse_id in original_targets(),"verification":None if demo else compare_all(list(nodes.values()),load_evidence())[horse_id]}
+        campaign=[db.result_record(r) for r in con.execute('SELECT * FROM results WHERE horse_id=? AND is_demo=? ORDER BY date DESC,position',(horse_id,int(demo)))]
+    return {"horse":nodes[horse_id],"pedigree":pedigree(horse_id,nodes),"campaign":campaign,"reviewed_enrichments":[] if demo else [r for r in manual_reviews() if r['id']==horse_id],"campaign_reviews":[] if demo else [r for r in db.campaign_reviews() if r['horse_id']==horse_id],"original_target":None if demo else horse_id in original_targets(),"verification":None if demo else compare_all(list(nodes.values()),load_evidence())[horse_id]}
 
 
 @app.post("/api/compatibility")
@@ -256,7 +297,7 @@ def results(country:str="URU",track:str="",on_date:str=""):
         try: on_date=Date.fromisoformat(on_date).isoformat()
         except ValueError as e: raise HTTPException(422,"La fecha debe tener formato AAAA-MM-DD.") from e
     with db.connection() as con:
-        rows=[dict(r) for r in con.execute("SELECT * FROM results WHERE is_demo=0 AND country=? ORDER BY date DESC,track,race_name,position",(country,))]
+        rows=[db.result_record(r) for r in con.execute("SELECT * FROM results WHERE is_demo=0 AND country=? ORDER BY date DESC,track,race_name,position",(country,))]
     return [r for r in rows if (not track or r['track']==track) and (not on_date or r['date']==on_date)]
 
 
@@ -325,14 +366,23 @@ def stats(demo:bool=False):
     if not demo and targets and targets.issubset(nodes):
         finished=sum(audit(i,nodes)['complete'] for i in targets)
         historical_review={'targets':len(targets),'complete':finished,'pending':len(targets)-finished}
-    return {"historical_review":historical_review,"horses":len(rows),"featured":sum(bool(h['featured']) for h in rows),"ranked_horses":ranked,"complete_pedigrees":complete,"results":n,"countries":len(COUNTRIES),"demo":demo}
+    campaign_summary=None
+    if not demo:
+        from .campaigns import coverage
+        with db.connection() as con:
+            starts=[dict(r) for r in con.execute('SELECT horse_id FROM results WHERE is_demo=0')]
+        campaign_summary={k:v for k,v in coverage(rows,starts,db.campaign_reviews()).items() if k!='horses'}
+    return {"historical_review":historical_review,"campaign_summary":campaign_summary,"horses":len(rows),"featured":sum(bool(h['featured']) for h in rows),"ranked_horses":ranked,"complete_pedigrees":complete,"results":n,"countries":len(COUNTRIES),"demo":demo}
 
 
 @app.post("/api/import")
 def import_json(body:ImportBatch):
-    if not body.horses and not body.results: raise HTTPException(422,"El archivo no contiene registros.")
+    if not body.horses and not body.results and not body.campaign_reviews: raise HTTPException(422,"El archivo no contiene registros.")
     try:
+        known={h['id'] for h in db.horse_rows(False)}|{h.id for h in body.horses}
+        if any(r.horse_id not in known for r in body.campaign_reviews):raise ValueError('Una revisión de campaña referencia un caballo ausente.')
         saved=save_batch([h.model_dump(exclude_unset=True) for h in body.horses],[r.model_dump(mode='json',exclude_unset=True) for r in body.results])
+        for r in body.campaign_reviews:db.save_campaign_review(r.horse_id,r.source_id,r.model_dump())
     except ValueError as e: raise HTTPException(422,str(e)) from e
     db.record_import('manual','','json','success',sum(saved.values()),'Importación validada; procedencia declarada por el usuario.')
     return {"status":"imported",**saved}
@@ -362,10 +412,10 @@ def scrape(body:ScrapeRequest):
 @app.get("/api/export.xlsx")
 def excel(demo:bool=False):
     with db.connection() as con:
-        rs=[] if demo else [dict(r) for r in con.execute("SELECT * FROM results WHERE is_demo=0")]
+        rs=[] if demo else [db.result_record(r) for r in con.execute("SELECT * FROM results WHERE is_demo=0")]
         logs=[dict(r) for r in con.execute("SELECT * FROM imports ORDER BY id DESC")]
     from .rankings import export_rankings
-    content=export_workbook(db.horse_rows(demo),rs,logs,demo,rankings=None if demo else export_rankings())
+    content=export_workbook(db.horse_rows(demo),rs,logs,demo,rankings=None if demo else export_rankings(),campaign_reviews=[] if demo else db.campaign_reviews())
     name="Linaje_DEMOSTRACION.xlsx" if demo else "Linaje_pedigrees.xlsx"
     return Response(content,media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",headers={"Content-Disposition":f'attachment; filename="{name}"'})
 
@@ -374,6 +424,6 @@ def excel(demo:bool=False):
 def export_json():
     hs=[{k:v for k,v in h.items() if k not in ('is_demo','fetched_at')} for h in db.horse_rows(False)]
     with db.connection() as con:
-        rs=[{k:v for k,v in dict(r).items() if k not in ('is_demo','fetched_at')} for r in con.execute("SELECT * FROM results WHERE is_demo=0")]
+        rs=[{k:v for k,v in db.result_record(r).items() if k not in ('is_demo','fetched_at')} for r in con.execute("SELECT * FROM results WHERE is_demo=0")]
     from fastapi.responses import JSONResponse
-    return JSONResponse({"horses":hs,"results":rs},headers={"Content-Disposition":'attachment; filename="Linaje_datos.json"'})
+    return JSONResponse({"horses":hs,"results":rs,"campaign_reviews":db.campaign_reviews()},headers={"Content-Disposition":'attachment; filename="Linaje_datos.json"'})

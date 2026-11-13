@@ -16,7 +16,7 @@ PATHS=[("Padre","s"),("Madre","d"),("Abuelo paterno","ss"),("Abuela paterna","sd
        ("Bisabuelo MPP","dss"),("Bisabuela MPM","dsd"),("Bisabuelo MMP","dds"),("Bisabuela MMM","ddd")]
 
 
-def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_576,rankings=None):
+def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_576,rankings=None,campaign_reviews=None):
     # Streaming workbook: split sheets at Excel's hard limit instead of truncating records.
     wb=Workbook(write_only=True)
     from openpyxl.cell import WriteOnlyCell
@@ -105,8 +105,27 @@ def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_57
                 for c in v['comparisons'] or [None]:
                     yield [h['id'],h['name'],v['status'],h.get('source_id'),v['primary_url'],c['source_id'] if c else '',c['id'] if c else '',c['url'] if c else '',c['observed_at'] if c else '',bool(c and c['identity_supported']),', '.join(v['confirmed_fields']),', '.join(v['pending_fields']),'; '.join(f"{d['field']}: {d['value']} / {d['other']}" for d in c['differences']) if c else '',v['scope']]
         sheet('Contraste fuentes',['ID','Nombre','Estado','Fuente inicial','URL inicial','Segunda fuente','Segundo ID','Segunda URL','Consulta segunda fuente','Identidad respaldada','Campos corroborados','Campos pendientes','Diferencias','Alcance'],verification_rows())
-    sheet("Resultados",["ID","País","Hipódromo","Fecha","Carrera","Distancia m","Pista","Puesto","Caballo","Caballo ID","Jinete","Tiempo","URL","Consultado UTC","Carrera ID","Tipo de tiempo","Cobertura","Participantes oficiales"],
-          ([r.get(k) for k in ['id','country','track','date','race_name','distance','surface','position','horse_name','horse_id','jockey','time','source_url','fetched_at','race_id','time_kind','scope','field_size']] for r in results))
+    detail_headers={'distance_raw':'Distancia original sin valor utilizable','time_raw':'Tiempo original sin valor utilizable','race_url':'URL carrera','race_number':'N.º carrera','published_order':'Orden publicado (O)','post_position':'Gatera','program_number':'Número de programa','category':'Categoría','conditions':'Condiciones','going':'Estado pista','going_code':'Estado pista (código)','weather':'Meteorología','horse_weight_kg':'Peso caballo kg','carried_weight_kg':'Peso primera pesada jinete kg','trainer':'Entrenador','stable':'Caballeriza','earnings_ars':'Premios ARS publicados','earnings_usd_source':'Premios USD según fuente','odds':'Pago / dividendo','margin':'Diferencia al ganador','winner_time':'Tiempo ganador','official_time':'Tiempo individual oficial','video_url':'URL video'}
+    def result_rows():
+        import json
+        for r in results:
+            details=r.get('details') or {}
+            if isinstance(details,str):details=json.loads(details)
+            yield [r.get(k) for k in ['id','country','track','date','race_name','distance','surface','position','horse_name','horse_id','jockey','time','source_url','fetched_at','race_id','time_kind','scope','field_size','finish_status']]+[details.get(k) for k in detail_headers]
+    sheet("Resultados",["ID","País","Hipódromo","Fecha","Carrera","Distancia m","Pista","Puesto","Caballo","Caballo ID","Jinete","Tiempo","URL","Consultado UTC","Carrera ID","Tipo de tiempo","Cobertura clasificación","Participantes oficiales","Estado de llegada"]+list(detail_headers.values()),result_rows())
+    if not demo:
+        from .campaigns import coverage,STATUS_LABELS
+        def campaign_rows():
+            for row in coverage(horses,results,campaign_reviews or [])['horses']:
+                for review in row['reviews'] or [{}]:
+                    yield [row['horse_id'],row['name'],row['starts'],STATUS_LABELS.get(review.get('status',row['status'])),review.get('expected_starts'),review.get('observed_starts'),review.get('source_id'),review.get('source_url'),review.get('observed_at'),review.get('scope','Campaña todavía sin revisar.'),review.get('message',''), 'No acreditada']
+        sheet('Cobertura campañas',['Caballo ID','Nombre','Actuaciones guardadas','Estado de consulta','Total declarado fuente','Actuaciones recuperadas fuente','Fuente ID','URL fuente','Consulta UTC','Ámbito de la fuente','Detalle','Campaña mundial completa'],campaign_rows())
+        from .manual_reviews import manual_reviews
+        reviewed=[r for r in manual_reviews() if r['id'] in nodes]
+        if reviewed:
+            sheet('Ampliaciones documentadas',['Caballo ID','Nombre','Campo','Valor anterior','Valor añadido','Fuente','Fecha de consulta','Dato publicado','Identidad documentada','Limitaciones'],
+                  ([r['id'],r['name'],field,r['before'].get(field),value,ref['url'],ref['observed_at'],ref['facts'],r['identity_basis'],r['limitations']]
+                   for r in reviewed for field,value in r['fields'].items() for ref in r['references']))
     source_rows=[[s['id'],s['country'],s['name'],s['kind'],s['url'],"Directorio; conexión y esquema requieren validación en origen"] for s in SOURCES]
     source_rows.extend([s['id'],'Internacional',s['name'],'Referencia adicional',s['url'],s['checked_at']+' · '+s['message']] for s in reference_checks())
     sheet("Fuentes",["ID","País","Organismo","Tipo","URL","Estado"],source_rows)
@@ -121,6 +140,8 @@ def export_workbook(horses,results,imports,demo=False,*,sheet_row_limit=1_048_57
         ['is_demo','1: ejemplo ficticio. 0: registro importado. No equivale a validación oficial.'],
         ['fetched_at','Fecha de incorporación UTC. No es la fecha de la carrera.'],
         ['time_kind','winner: tiempo del ganador; individual: tiempo de ese caballo; unknown: tipo no identificado.'],
+        ['Cobertura campañas','Una fila por caballo y fuente consultada, incluidos los registros sin actuaciones. Completa en esta fuente significa que el total declarado coincide con las carreras recuperadas, sólo dentro de su ámbito. No acredita una campaña mundial completa.'],
+        ['Detalles de carrera','Datos publicados de pista, jinete, entrenador, peso, premios y video. Se conservan códigos sin interpretación cuando falta una equivalencia documentada. C en campañas argentinas significa Césped; se conserva también el código original. Un puesto vacío puede indicar llegada no numérica: ver Estado de llegada.'],
         ['scope / field_size','full: tantas llegadas numéricas como participantes oficiales; partial: clasificación incompleta. field_size contiene el número oficial de participantes cuando se conoce.'],
         ['P / M','En las rutas de ancestros, P significa padre y M significa madre, desde el caballo hacia atrás.'],
         ['Estimaciones por distancia','Índice orientativo 0–100, método campana-regularizada-v2. Siempre ofrece un número para un cruce válido. Sin actuaciones utilizables: 50/100, base neutral explícita y confianza Sin evidencia. No es probabilidad de ganar ni predicción genética validada.'],

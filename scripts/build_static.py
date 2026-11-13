@@ -27,7 +27,7 @@ def build():
         if source.is_file() and source.suffix in ('.js','.css','.svg'):
             shutil.copy2(source,out/'static'/source.name)
     index=(ROOT/'static'/'index.html').read_text()
-    index=index.replace('<script type="module"', '<script src="/static/deployment.js"></script>\n  <script type="module"',1)
+    index=index.replace('<script type="module"', '<script src="static/deployment.js"></script>\n  <script type="module"',1)
     (out/'index.html').write_text(index)
     (out/'static'/'deployment.js').write_text('globalThis.LINAJE_STATIC = true;\n')
     previous=os.environ.get('CONSTASTRO_DB')
@@ -36,12 +36,12 @@ def build():
             os.environ['CONSTASTRO_DB']=str(Path(tmp)/'snapshot.sqlite3')
             subprocess.run([sys.executable,str(ROOT/'scripts'/'seed.py')],check=True,cwd=ROOT)
             with db.connection() as con:
-                results=[dict(r) for r in con.execute('SELECT * FROM results WHERE is_demo=0 ORDER BY date DESC,track,race_name,position')]
+                results=[db.result_record(r) for r in con.execute('SELECT * FROM results WHERE is_demo=0 ORDER BY date DESC,track,race_name,position')]
             horses={'real':db.horse_rows(False),'demo':db.horse_rows(True)}
             for rows in horses.values():validate_graph(rows)
-            payload={'reference_checks':main.reference_checks(),'original_targets':sorted(original_targets()),'verification':compare_all(horses['real'],load_evidence()),'horses':horses,'countries':main.COUNTRIES,'sources':main.sources(),
+            payload={'manual_reviews':main.manual_reviews(),'reference_checks':main.reference_checks(),'original_targets':sorted(original_targets()),'verification':compare_all(horses['real'],load_evidence()),'horses':horses,'countries':main.COUNTRIES,'sources':main.sources(),
                      'stats':{'real':main.stats(False),'demo':main.stats(True)},
-                     'results':results,'ranking_sets':list_rankings(),'rankings':export_rankings()}
+                     'results':results,'campaign_reviews':db.campaign_reviews(),'ranking_sets':list_rankings(),'rankings':export_rankings()}
             (out/'data'/'site.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')))
             for demo,name in ((False,'Linaje_pedigrees.xlsx'),(True,'Linaje_DEMOSTRACION.xlsx')):
                 (out/'downloads'/name).write_bytes(main.excel(demo).body)
@@ -55,6 +55,8 @@ def build():
     if reconciliations.exists():shutil.copy2(reconciliations,out/'downloads'/'Linaje_conciliaciones.json')
     recoveries=ROOT/'samples'/'pedigree_recoveries.json'
     if recoveries.exists():shutil.copy2(recoveries,out/'downloads'/'Linaje_recuperaciones.json')
+    manual=ROOT/'samples'/'pedigree_manual_reviews.json'
+    if manual.exists():shutil.copy2(manual,out/'downloads'/'Linaje_revision_individual.json')
     (out/'data'/'health.json').write_text(json.dumps({'status':'ok','edition':'static'}))
     (out/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n')
     (out/'_redirects').write_text('/api/health /data/health.json 200\n')

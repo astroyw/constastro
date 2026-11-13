@@ -1,0 +1,1226 @@
+{
+  "RacesRun": 7,
+  "RacesFirst": 5,
+  "RacesSecond": 0,
+  "RacesThird": 0,
+  "Horse": {
+    "Id": 71619,
+    "Name": "Es Patriarca",
+    "Sex": {
+      "Code": "M",
+      "Name": "Macho"
+    },
+    "BirthDate": "2023-09-17T00:00:00",
+    "Country": {
+      "Name": "Uruguay",
+      "IsoCode": "UY",
+      "CustomCode": "URU"
+    },
+    "Sire": {
+      "Id": 59005,
+      "Name": "Awesome Patriot",
+      "Sex": {
+        "Code": "M",
+        "Name": "Macho"
+      },
+      "BirthDate": "1900-07-01T00:00:00",
+      "Country": {
+        "CustomCode": "USA"
+      }
+    },
+    "Mare": {
+      "Id": 65362,
+      "Name": "Stormy Kindly",
+      "Sex": {
+        "Code": "H"
+      },
+      "BirthDate": "2026-11-13T00:00:00+00:00",
+      "Country": {
+        "CustomCode": "ARG"
+      },
+      "Sire": {
+        "Id": 23131,
+        "Name": "Bernstein",
+        "Sex": {
+          "Code": "M",
+          "Name": "Macho"
+        },
+        "BirthDate": "1990-04-19T00:00:00",
+        "Country": {
+          "CustomCode": "USA"
+        }
+      }
+    }
+  },
+  "Performances": [
+    {
+      "PostPosition": 8,
+      "ProgramNumber": "8  ",
+      "HorseWeight": {
+        "Value": 476.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 5.0,
+      "Result": {
+        "InitialTime": "00:02:37.2290000",
+        "OfficialTime": "00:02:37.2290000",
+        "FinalTime": "00:02:37.2290000",
+        "InitialFinishPosition": 5,
+        "OfficialFinishPosition": 5,
+        "FinalFinishPosition": 5,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 1200,
+        "LengthsFromFirstText": "12 Cpos.",
+        "LengthsFromPrev": 85,
+        "LengthsFromPrevText": "3/4 Cpo.",
+        "JockeyWeightFirstScale": {
+          "Value": 57.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 57.5,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Héctor F. Lazo"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 47471,
+        "Number": 10,
+        "RacingDate": {
+          "Date": "2026-11-08T00:00:00",
+          "FormattedDate": "8 de Noviembre",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1274,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "GRAN PREMIO NACIONAL (G 2)",
+        "Distance": {
+          "Value": 2500.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para productos nacidos desde el 1° de Julio de 2023. Peso: machos 57 kg., hembras 55 kg. Sin descargo para los aprendices."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "G 2"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:02:35.0840000",
+          "NumberOfStarters": 8,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "B",
+            "Name": "Bueno"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-11-08T00:00:00",
+                  "RaceNumber": 10,
+                  "Url": "https://www.youtube.com/watch?v=Dg0l2eYGaMY"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 9,
+      "ProgramNumber": "9  ",
+      "HorseWeight": {
+        "Value": 490.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 2.7,
+      "Result": {
+        "InitialTime": "00:02:03.4560000",
+        "OfficialTime": "00:02:03.4560000",
+        "FinalTime": "00:02:03.4560000",
+        "InitialFinishPosition": 4,
+        "OfficialFinishPosition": 4,
+        "FinalFinishPosition": 4,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 665,
+        "LengthsFromFirstText": "6 1/2 Cpos.",
+        "LengthsFromPrev": 24,
+        "LengthsFromPrevText": "1/2 Pzo.",
+        "JockeyWeightFirstScale": {
+          "Value": 56.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 56.6,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 47222,
+        "Number": 11,
+        "RacingDate": {
+          "Date": "2026-10-04T00:00:00",
+          "FormattedDate": "4 de Octubre",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1269,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "GRAN PREMIO JOCKEY CLUB (G 3)",
+        "Distance": {
+          "Value": 2000.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para productos nacidos desde el 1° de julio de 2023. Sin descargo para los aprendices. Machos: 56 kilos, hembras 2 kg. menos."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "G 3"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:02:02.3590000",
+          "NumberOfStarters": 11,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "HU",
+            "Name": "HÚMEDA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "B",
+            "Name": "Bueno"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-10-04T00:00:00",
+                  "RaceNumber": 11,
+                  "Url": "https://www.youtube.com/watch?v=fotROnHe6ig"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 5,
+      "ProgramNumber": "5  ",
+      "HorseWeight": {
+        "Value": 480.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 1.8,
+      "Result": {
+        "InitialTime": "00:01:36.6290000",
+        "OfficialTime": "00:01:36.6290000",
+        "FinalTime": "00:01:36.6290000",
+        "InitialFinishPosition": 1,
+        "OfficialFinishPosition": 1,
+        "FinalFinishPosition": 1,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 0,
+        "LengthsFromFirstText": "",
+        "LengthsFromPrev": 0,
+        "LengthsFromPrevText": "",
+        "JockeyWeightFirstScale": {
+          "Value": 56.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 56.5,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 47050,
+        "Number": 10,
+        "RacingDate": {
+          "Date": "2026-09-06T00:00:00",
+          "FormattedDate": "6 de Setiembre",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1265,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "CL GRAN PREMIO POLLA DE POTRILLOS (G 3)",
+        "Distance": {
+          "Value": 1600.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para potrillos nacidos desde el 1° de julio de 2023 . Sin descargo para los aprendices."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "G 3"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:01:36.6290000",
+          "NumberOfStarters": 11,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "L",
+            "Name": "Nublado"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-09-06T00:00:00",
+                  "RaceNumber": 10,
+                  "Url": "https://www.youtube.com/watch?v=BYXv0if7IgQ"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 4,
+      "ProgramNumber": "4  ",
+      "HorseWeight": {
+        "Value": 490.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 2.2,
+      "Result": {
+        "InitialTime": "00:01:24.2180000",
+        "OfficialTime": "00:01:24.2180000",
+        "FinalTime": "00:01:24.2180000",
+        "InitialFinishPosition": 1,
+        "OfficialFinishPosition": 1,
+        "FinalFinishPosition": 1,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 0,
+        "LengthsFromFirstText": "",
+        "LengthsFromPrev": 0,
+        "LengthsFromPrevText": "",
+        "JockeyWeightFirstScale": {
+          "Value": 55.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 56.1,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 46635,
+        "Number": 8,
+        "RacingDate": {
+          "Date": "2026-06-28T00:00:00",
+          "FormattedDate": "28 de Junio",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1255,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "PREMIO: GRAN PREMIO GRAN CRITERIUM (POTRILLOS) (L)",
+        "Distance": {
+          "Value": 1400.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para potrillos nacidos desde el 1° de julio de 2023. Sin descargo para los aprendices."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "L"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:01:24.2180000",
+          "NumberOfStarters": 10,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "L",
+            "Name": "Nublado"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-06-28T00:00:00",
+                  "RaceNumber": 8,
+                  "Url": "https://www.youtube.com/watch?v=v73_aNy_yz4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 3,
+      "ProgramNumber": "3  ",
+      "HorseWeight": {
+        "Value": 484.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 2.0,
+      "Result": {
+        "InitialTime": "00:01:23.8110000",
+        "OfficialTime": "00:01:23.8110000",
+        "FinalTime": "00:01:23.8110000",
+        "InitialFinishPosition": 1,
+        "OfficialFinishPosition": 1,
+        "FinalFinishPosition": 1,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 0,
+        "LengthsFromFirstText": "",
+        "LengthsFromPrev": 0,
+        "LengthsFromPrevText": "",
+        "JockeyWeightFirstScale": {
+          "Value": 55.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 55.9,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 46506,
+        "Number": 9,
+        "RacingDate": {
+          "Date": "2026-06-07T00:00:00",
+          "FormattedDate": "7 de Junio",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1252,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "CL CAMPEONES JUVENILE",
+        "Distance": {
+          "Value": 1400.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para potrillos nacidos desde el 1° de julio de 2023. Sin descargo para los aprendices."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "S C"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:01:23.8110000",
+          "NumberOfStarters": 10,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "L",
+            "Name": "Nublado"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-06-07T00:00:00",
+                  "RaceNumber": 9,
+                  "Url": "https://www.youtube.com/watch?v=fHaqDnEO2k4"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 5,
+      "ProgramNumber": "5  ",
+      "HorseWeight": {
+        "Value": 486.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 1.6,
+      "Result": {
+        "InitialTime": "00:01:16.8030000",
+        "OfficialTime": "00:01:16.8030000",
+        "FinalTime": "00:01:16.8030000",
+        "InitialFinishPosition": 1,
+        "OfficialFinishPosition": 1,
+        "FinalFinishPosition": 1,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 0,
+        "LengthsFromFirstText": "",
+        "LengthsFromPrev": 0,
+        "LengthsFromPrevText": "",
+        "JockeyWeightFirstScale": {
+          "Value": 55.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 55.8,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 46223,
+        "Number": 6,
+        "RacingDate": {
+          "Date": "2026-04-25T00:00:00",
+          "FormattedDate": "25 de Abril",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1246,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": "CL LAVALLEJA (L)",
+        "Distance": {
+          "Value": 1300.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para potrillos nacidos desde el 1° de julio de 2023. Sin descargo para los aprendices."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "L"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:01:16.8030000",
+          "NumberOfStarters": 5,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "L",
+            "Name": "Nublado"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-04-25T00:00:00",
+                  "RaceNumber": 6,
+                  "Url": "https://www.youtube.com/watch?v=-0IU1k8Yu9E"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "PostPosition": 9,
+      "ProgramNumber": "9  ",
+      "HorseWeight": {
+        "Value": 478.0,
+        "Unit": {
+          "Name": "Kilos",
+          "ShortCode": "kg",
+          "Code": "kgms",
+          "TypeId": 1
+        }
+      },
+      "StatusText": {
+        "TextTranslations": [
+          {
+            "LanguageId": 1,
+            "Value": ""
+          }
+        ]
+      },
+      "Odds": 2.1,
+      "Result": {
+        "InitialTime": "00:01:12.2020000",
+        "OfficialTime": "00:01:12.2020000",
+        "FinalTime": "00:01:12.2020000",
+        "InitialFinishPosition": 1,
+        "OfficialFinishPosition": 1,
+        "FinalFinishPosition": 1,
+        "DeadHeat": false,
+        "FinishStatusId": 0,
+        "LengthsFromFirst": 0,
+        "LengthsFromFirstText": "",
+        "LengthsFromPrev": 0,
+        "LengthsFromPrevText": "",
+        "JockeyWeightFirstScale": {
+          "Value": 55.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "JockeyWeightSecondScale": {
+          "Value": 56.0,
+          "Unit": {
+            "Name": "Kilos",
+            "ShortCode": "kg",
+            "Code": "kgms",
+            "TypeId": 1
+          }
+        },
+        "PaidOdds": []
+      },
+      "Horse": {
+        "Id": 71619,
+        "Name": "Es Patriarca"
+      },
+      "Jockey": {
+        "Name": "Waldemar Maciel"
+      },
+      "Trainer": {
+        "Name": "Roberto Solanes"
+      },
+      "Stud": {
+        "Name": "Compac"
+      },
+      "Race": {
+        "Id": 45823,
+        "Number": 11,
+        "RacingDate": {
+          "Date": "2026-02-22T00:00:00",
+          "FormattedDate": "22 de Febrero",
+          "Ordinal": 0,
+          "RacingPeriod": {
+            "Id": 1237,
+            "RaceTrack": {
+              "Id": 1,
+              "Name": "MAROÑAS",
+              "ShortName": "MRÑ",
+              "Country": {
+                "CustomCode": "URU"
+              },
+              "Logo": {
+                "Id": 371,
+                "ImageTypeId": 0
+              },
+              "Tracks": [],
+              "InternationalCode": "MRN"
+            }
+          },
+          "RacingDateStatusesEnum": 0,
+          "ProgramStatusId": 0,
+          "IsPreProgram": false
+        },
+        "Name": " SOAPY SKY (2020)",
+        "Distance": {
+          "Value": 1200.0,
+          "Unit": {
+            "Code": "mts       ",
+            "TypeId": 0
+          }
+        },
+        "ConditionText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "Para potrillos de 2 años, perdedores en HNM o su equivalente. Peso: 55 kilos. Sin descargo para los aprendices. Los potrillos nacidos en el pais que obtengan premios recibirán un incremento del 30%."
+            }
+          ]
+        },
+        "GroupText": {
+          "TextTranslations": [
+            {
+              "LanguageId": 1,
+              "Value": "S C"
+            }
+          ]
+        },
+        "StatusId": 6,
+        "SurfaceType": {
+          "Id": "A",
+          "Description": {
+            "TextTranslations": [
+              {
+                "LanguageId": 1,
+                "Value": "Arena"
+              }
+            ]
+          }
+        },
+        "RaceTrack": {
+          "Id": 1,
+          "Name": "MAROÑAS",
+          "Country": {
+            "CustomCode": "URU"
+          }
+        },
+        "Result": {
+          "FinalWinningTime": "00:01:12.2020000",
+          "NumberOfStarters": 9,
+          "CourseCondition": {
+            "Id": 0,
+            "Code": "BU",
+            "Name": "BUENA"
+          },
+          "WeatherCondition": {
+            "Id": 0,
+            "Code": "L",
+            "Name": "Nublado"
+          },
+          "MultimediaResources": [
+            {
+              "MultimediaType": 1,
+              "MultimediaResourceItems": [
+                {
+                  "RaceTrackId": 1,
+                  "RaceDate": "2026-02-22T00:00:00",
+                  "RaceNumber": 11,
+                  "Url": "https://www.youtube.com/watch?v=5-7BuUStFZY"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

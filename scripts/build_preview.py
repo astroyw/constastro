@@ -44,18 +44,18 @@ document.addEventListener('click',event=>{
 '''
         for dependency in (DIST/'static').glob('*.js'):
             source=source.replace('./'+dependency.name,'linaje/'+dependency.stem)
-        source=source.replace('/static/horse-art.svg',data_url(DIST/'static'/'horse-art.svg','image/svg+xml'))
+        source=source.replace('static/horse-art.svg',data_url(DIST/'static'/'horse-art.svg','image/svg+xml'))
         imports['linaje/'+path.stem]='data:text/javascript;base64,'+base64.b64encode(source.encode()).decode()
     html=(DIST/'index.html').read_text()
-    html=html.replace('/static/favicon.svg',data_url(DIST/'static'/'favicon.svg','image/svg+xml'))
-    html=html.replace('<link rel="stylesheet" href="/static/styles.css">','<style>'+(DIST/'static'/'styles.css').read_text()+'</style>')
-    html=html.replace('<script src="/static/deployment.js"></script>','')
+    html=html.replace('static/favicon.svg',data_url(DIST/'static'/'favicon.svg','image/svg+xml'))
+    html=html.replace('<link rel="stylesheet" href="static/styles.css">','<style>'+(DIST/'static'/'styles.css').read_text()+'</style>')
+    html=html.replace('<script src="static/deployment.js"></script>','')
     payload=(DIST/'data'/'site.json').read_text().replace('<','\\u003c')
     scripts='<script>globalThis.LINAJE_STATIC=true;</script>'
     scripts+='<script type="application/json" id="linaje-data">'+payload+'</script>'
     scripts+='<script type="importmap">'+json.dumps({'imports':imports})+'</script>'
     scripts+='<script type="module">import "linaje/app";</script>'
-    html=html.replace('<script type="module" src="/static/app.js"></script>',scripts)
+    html=html.replace('<script type="module" src="static/app.js"></script>',scripts)
     (out/'index.html').write_text(html)
     (ROOT/'exports'/'Linaje-interactiva.html').write_text(html)
     print('HTML interactivo generado:',len(html.encode()),'bytes; datos, módulos, estilos y descargas incluidos.')

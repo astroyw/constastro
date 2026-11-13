@@ -133,7 +133,7 @@ class RankingPersistenceTests(unittest.TestCase):
         save_ranking(meta(ident='pending',status='blocked',count=100),[])
         data=self.client.get('/api/export.xlsx').content
         wb=load_workbook(io.BytesIO(data))
-        self.assertEqual(len(wb.sheetnames),12)
+        self.assertEqual(len(wb.sheetnames),13)
         self.assertEqual(wb['Ramas pendientes']['E1'].value,'Objetivos originales afectados')
         self.assertEqual(wb['Cobertura 1935']['C2'].value,'Pendiente')
         self.assertEqual(wb['Ganancias'].max_row,2)

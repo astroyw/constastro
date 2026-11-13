@@ -79,10 +79,30 @@ def init():
             'time_kind':"TEXT NOT NULL DEFAULT 'unknown'",
             'scope':"TEXT NOT NULL DEFAULT 'partial'",
             'field_size':'INTEGER',
+            'finish_status':"TEXT NOT NULL DEFAULT ''",
+            'details':"TEXT NOT NULL DEFAULT '{}'",
         }
         for name,definition in additions.items():
             if name not in columns:
                 con.execute(f'ALTER TABLE results ADD COLUMN {name} {definition}')
+        if any(r['name']=='position' and r['notnull'] for r in con.execute('PRAGMA table_info(results)')):
+            # Non-numeric official finishes (e.g. disqualified) are starts too.
+            # Preserve the entire existing table while removing only NOT NULL.
+            sql=con.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='results'").fetchone()[0]
+            import re
+            sql=re.sub(r'CREATE TABLE\s+["\[]?results["\]]?', 'CREATE TABLE results_nullable',sql,count=1,flags=re.I)
+            sql=re.sub(r'position\s+INTEGER\s+NOT NULL','position INTEGER',sql,flags=re.I)
+            con.execute(sql)
+            cols=','.join(r['name'] for r in con.execute('PRAGMA table_info(results)'))
+            con.execute(f'INSERT INTO results_nullable ({cols}) SELECT {cols} FROM results')
+            con.execute('DROP TABLE results')
+            con.execute('ALTER TABLE results_nullable RENAME TO results')
+            con.execute('CREATE INDEX results_date_idx ON results(country,date)')
+        con.execute("""CREATE TABLE IF NOT EXISTS campaign_reviews (
+            horse_id TEXT NOT NULL REFERENCES horses(id), source_id TEXT NOT NULL,
+            status TEXT NOT NULL, expected_starts INTEGER, observed_starts INTEGER NOT NULL DEFAULT 0,
+            source_url TEXT NOT NULL, observed_at TEXT NOT NULL, scope TEXT NOT NULL,
+            message TEXT NOT NULL DEFAULT '', PRIMARY KEY(horse_id,source_id))""")
         # Earlier archived Argentine campaigns have stable race IDs in their result IDs.
         con.execute("""UPDATE results SET race_id='ar-race:' || substr(id,11,instr(substr(id,11),':')-1),
             time_kind=CASE WHEN time<>'' THEN 'winner' ELSE 'unknown' END
@@ -120,6 +140,24 @@ def init():
 def horse_rows(demo=False):
     with connection() as con:
         return [dict(r) for r in con.execute("SELECT * FROM horses WHERE is_demo=? ORDER BY featured DESC,name", (int(demo),))]
+
+
+def result_record(row):
+    record=dict(row)
+    if isinstance(record.get('details'),str):record['details']=json.loads(record['details'] or '{}')
+    return record
+
+
+def campaign_reviews():
+    with connection() as con:
+        return [dict(r) for r in con.execute('SELECT * FROM campaign_reviews ORDER BY horse_id,source_id')]
+
+
+def save_campaign_review(horse_id,source_id,report):
+    keys=('status','expected_starts','observed_starts','source_url','observed_at','scope','message')
+    with connection() as con:
+        con.execute('INSERT INTO campaign_reviews (horse_id,source_id,'+','.join(keys)+') VALUES ('+','.join('?' for _ in range(9))+') ON CONFLICT(horse_id,source_id) DO UPDATE SET '+','.join(k+'=excluded.'+k for k in keys),
+                    [horse_id,source_id,*[report.get(k) for k in keys]])
 
 
 def record_import(source, url, kind, status, count=0, message=""):

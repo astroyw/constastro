@@ -22,7 +22,7 @@ export function createSnapshotAPI(data) {
     if(p.startsWith('/api/horses/')) {
       const id=decodeURIComponent(p.slice('/api/horses/'.length)),horse=maps[mode].get(id);
       if(!horse)throw new Error('No se encontró el caballo en esta base.');
-      return {horse,original_target:demo?null:(data.original_targets||[]).includes(id),verification:demo?null:data.verification?.[id],pedigree:pedigree(id,maps[mode]),campaign:demo?[]:data.results.filter(r=>r.horse_id===id)};
+      return {horse,reviewed_enrichments:demo?[]:(data.manual_reviews||[]).filter(r=>r.id===id),original_target:demo?null:(data.original_targets||[]).includes(id),verification:demo?null:data.verification?.[id],pedigree:pedigree(id,maps[mode]),campaign:demo?[]:data.results.filter(r=>r.horse_id===id),campaign_reviews:demo?[]:(data.campaign_reviews||[]).filter(r=>r.horse_id===id)};
     }
     if(p==='/api/rankings')return data.ranking_sets;
     if(p.startsWith('/api/rankings/')) {
@@ -40,7 +40,7 @@ export function createSnapshotAPI(data) {
 
 let snapshot;
 export async function api(path,options) {
-  if(!snapshot)snapshot=fetch('/data/site.json').then(r=>{
+  if(!snapshot)snapshot=fetch(new URL('../data/site.json',import.meta.url)).then(r=>{
     if(!r.ok)throw new Error('No se pudo cargar la base publicada.');
     return r.json();
   }).then(createSnapshotAPI).catch(e=>{snapshot=undefined;throw e});

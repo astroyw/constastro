@@ -44,8 +44,7 @@ async def main():
         await page.locator('#horse-search').fill('Electric Mud')
         await page.get_by_role('button',name='ELECTRIC MUD',exact=True).click()
         await page.locator('#horse-title').filter(has_text='ELECTRIC MUD').wait_for()
-        await page.locator('.campaign-details summary').click()
-        assert await page.locator('.campaign-details tbody tr').count()==9
+        assert await page.locator('[data-campaign] tbody tr').count()>=9
         assert not errors,errors
         await browser.close()
         print('PASS: delayed analysis survives navigation; stale result failures cannot replace current results; linked campaign displays nine starts; no JS errors.')

@@ -60,8 +60,10 @@ async def main():
         text=(await page.locator('.coefficient').inner_text()).replace('%','').replace(',','.').strip()
         assert abs(float(text)-expected['coefficient'])<0.0001
         await page.goto(BASE+'/#resultados')
-        await page.locator('.result-panel').wait_for()
-        assert await page.locator('.result-panel tbody tr').count()==6
+        await page.locator('.result-panel').first.wait_for()
+        assert await page.locator('.result-panel tbody tr').count()==sum(r['country']=='URU' for r in data['results'])
+        await page.locator('#result-date').fill('2026-10-18')
+        await page.wait_for_function("document.querySelectorAll('.result-panel tbody tr').length===6")
         await page.locator('#result-date').fill('2026-01-01')
         await page.locator('#results-content .empty-state').wait_for()
         await page.goto(BASE+'/#datos')

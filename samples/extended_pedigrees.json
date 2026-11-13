@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated_at": "2026-11-13T18:23:51+00:00",
+    "generated_at": "2026-11-13T18:48:18+00:00",
     "target_birth_year": 1935,
     "original_targets": 2452,
     "records_after_expansion": 11842,
     "added_records": 9390,
-    "trees_complete": 258,
-    "trees_pending": 2194,
+    "trees_complete": 260,
+    "trees_pending": 2192,
     "verification_status": {
       "single_source": 2066,
       "review_candidates": 45,
@@ -14,7 +14,7 @@
     },
     "all_data_two_sources_verified": 0,
     "scope": "Targets fixed before expansion. New ancestors only support their branches until documented birth <=1935. Distinct publisher records are compared without merging identities. Earnings and campaigns still lack independent corroboration.",
-    "unique_pending_relationships": 2191
+    "unique_pending_relationships": 2187
   },
   "horses": [
     {
@@ -58385,14 +58385,14 @@
       "birth_year": 1939,
       "sex": "H",
       "coat": "ZN.",
-      "sire_id": null,
-      "dam_id": null,
+      "sire_id": "ar-studbook:370367",
+      "dam_id": "ar-studbook:370368",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/93992",
       "source_id": "uy-studbook",
       "fetched_at": "2026-11-04T23:21:13+00:00",
       "is_demo": 0,
       "featured": 0,
-      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales.",
+      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales. Revisión documentada 13/11/2026: Año discordante de Eclair: Uruguay publica 1939 y Argentina 1930. No se reemplaza el año ni se declara corroborado; sólo se añaden ambos progenitores documentados. Fuentes adicionales y fundamento en la auditoría de revisión manual. https://en.wikipedia.org/w/index.php?title=Khaled_(horse)&oldid=1370001059",
       "birth_country": "GBR"
     },
     {
@@ -134984,7 +134984,7 @@
       "id": "uy-studbook:15332",
       "name": "PAPYRUS (GB)",
       "country": "URU",
-      "birth_year": null,
+      "birth_year": 1920,
       "sex": "M",
       "coat": "",
       "sire_id": null,
@@ -134994,7 +134994,7 @@
       "fetched_at": "2026-11-04T23:32:33+00:00",
       "is_demo": 0,
       "featured": 0,
-      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales.",
+      "notes": "Consulta al servicio público del Stud Book Uruguayo. URU indica el registro de origen, no el país de nacimiento. Las fechas históricas 01/01 pueden ser convencionales. Revisión documentada 13/11/2026: Sólo se completa el año desconocido. No certifica la campaña ni todos los campos del registro. Fuentes adicionales y fundamento en la auditoría de revisión manual. https://en.wikipedia.org/w/index.php?title=Papyrus_(horse)&oldid=1379509411",
       "birth_country": "GBR"
     },
     {

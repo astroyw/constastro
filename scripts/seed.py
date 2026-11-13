@@ -34,5 +34,7 @@ if not already:
     if campaigns.exists():
         saved=save_batch([],json.loads(campaigns.read_text())['results'])
         print('Actuaciones documentadas archivadas:',saved)
+        for review in json.loads(campaigns.read_text()).get('reviews',[]):
+            db.save_campaign_review(review['horse_id'],review['source_id'],review)
 else:
     print('Base real existente conservada.')

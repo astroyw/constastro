@@ -4,10 +4,10 @@
     "name": "PedigreeQuery",
     "url": "https://www.pedigreequery.com/",
     "checked_url": "https://www.pedigreequery.com/robots.txt",
-    "checked_at": "2026-11-12T18:04:31+00:00",
+    "checked_at": "2026-11-13T18:42:00+00:00",
     "status": "blocked",
     "http_status": 403,
     "imported_records": 0,
-    "message": "Cloudflare rechazó la consulta de robots.txt (HTTP 403). No fue posible revisar sus pedigrees desde este entorno. No se importaron datos de esta referencia."
+    "message": "Cloudflare rechazó nuevamente robots.txt con HTTP 403 el 13/11/2026. No fue posible consultar sus pedigrees desde este entorno. No se importaron datos de esta referencia."
   }
 ]

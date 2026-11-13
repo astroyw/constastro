@@ -9,6 +9,6 @@ with http.server.ThreadingHTTPServer(('127.0.0.1',0),handler) as server:
  thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
  try:
   env={**os.environ,'STATIC_SITE_URL':f'http://127.0.0.1:{server.server_port}'}
-  for script in ['browser_ancestry.py','browser_static.py','browser_search.py']:
+  for script in ['browser_ancestry.py','browser_static.py','browser_search.py','browser_campaigns.py']:
    subprocess.run(['python3',str(ROOT/'scripts'/script)],cwd=ROOT,env=env,check=True)
  finally:server.shutdown();thread.join()

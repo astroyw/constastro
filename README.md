@@ -20,14 +20,14 @@ El servidor usa el puerto 8000, configurable mediante `PORT`. `GET /api/health` 
 
 - Panorama con foco en Uruguay y separación entre datos reales y demostración.
 - Biblioteca de caballos, búsqueda por nombre, país de registro y sexo, con páginas de 50 registros.
-- Fichas con padres, cuatro abuelos y ocho bisabuelos; navegación a cada ancestro y campaña de resultados vinculados por ID.
+- Fichas con padres, cuatro abuelos y ocho bisabuelos; navegación a cada ancestro y campaña de resultados vinculados por ID, filtros por año e hipódromo y detalles de cada actuación.
 - Análisis de parentesco de un padrillo y una yegua: F esperado de la cría (Wright), cobertura y ancestros compartidos. Usa el árbol disponible completo; cobertura y ancestros compartidos resumen tres generaciones.
 - Resultados persistidos, filtros por país, pista y fecha, enlace a la fuente. Cada carrera distingue clasificación completa de posiciones parciales; cada tiempo indica si es individual o del ganador.
 - Directorio de fuentes para Uruguay, Estados Unidos, Francia, Gran Bretaña, Japón, Hong Kong, Brasil, Argentina y Chile.
 - Búsqueda e importación de pedigrees del Stud Book Uruguayo; resultados de Maroñas por pista, fecha y número de carrera. Consultas anónimas a los servicios públicos que usan ambos sitios.
 - Importador específico de perfiles y campañas públicas del Stud Book Argentino; importador genérico de tablas compatibles para otras fuentes y carga atómica de registros JSON con IDs explícitos.
 - Rankings por ganancias con puestos, moneda, alcance de fuente y país de nacimiento separado del registro; acceso a cada pedigree y búsqueda en la lista.
-- Exportación XLSX con once hojas reales (siete en demostración), y respaldo JSON reimportable de caballos y resultados.
+- Exportación XLSX con catorce hojas en la edición actual (siete en demostración), y respaldo JSON reimportable de caballos, resultados y revisiones de campañas.
 
 **Muestra original de partida (20/10/2026):** 53 registros reales: 38 del Stud Book Uruguayo (incluyen los pedigrees de Invasor, China Invasora y Mad Sharp) y 15 del Stud Book Argentino (Electric Mud y sus ancestros). Hay seis llegadas oficiales de Maroñas, carrera 1 del 18/10/2026, y nueve actuaciones individuales de Electric Mud en La Plata. La clasificación de Maroñas está completa respecto de sus seis participantes; las actuaciones argentinas son parciales. Se conservan, por separado, 29 caballos ficticios de demostración. La web abre la base real.
 
@@ -37,7 +37,7 @@ Las muestras originales están archivadas en `samples/uruguay_official.json` y `
 
 El acceso a los servicios uruguayos, inicialmente bloqueado, ya respondió. Se validaron en vivo la búsqueda, la importación de tres pedigrees y la importación de una clasificación de seis llegadas. El servicio de Maroñas presenta demoras y errores intermitentes; el cliente espera hasta 45 segundos por solicitud, conserva la última importación válida y no guarda datos parciales si falla la descarga. Las pistas disponibles en el formulario provienen del catálogo público; esta validación de resultados corresponde a Maroñas, no a todas las pistas.
 
-El resto de los países sigue como directorio de fuentes e importador genérico. Sus estructuras requieren conectores específicos y verificación. No hay sincronización masiva ni una integración comprobada de todos los organismos.
+El resto de los países sigue como directorio de fuentes e importador genérico. Sus estructuras requieren conectores específicos y verificación. Hay un recolector reanudable de campañas argentinas y de IDs uruguayos reconciliados; no hay integración comprobada de todos los organismos.
 
 Los stud books publican genealogías; los organismos y operadores hípicos publican resultados. Algunas páginas pueden requerir suscripción, autorización, JavaScript o tener prohibida la automatización. El importador consulta `robots.txt`, limita las solicitudes y no evade restricciones. [Fuentes y estado](docs/fuentes.md).
 
@@ -48,7 +48,7 @@ La instalación crea estos archivos en `exports/`:
 - `Linaje_pedigrees.xlsx`: base real, con los registros de Uruguay y Argentina y sus resultados; preparada para incorporar más datos.
 - `Linaje_DEMOSTRACION.xlsx`: registros ficticios para mostrar el esquema y los árboles completos.
 
-Hojas: **Leer primero, Caballos, Pedigree 3G, Resultados, Fuentes, Importaciones, Diccionario, Cobertura 1935, Contraste fuentes, Rankings y Ganancias**. Las dos últimas pertenecen a la base real. Pedigree 3G contiene una fila por caballo, con nombres e IDs de los 14 ancestros. Caballos conserva las relaciones normalizadas por ID. El exportador crea hojas adicionales si una tabla supera las 1.048.575 filas de datos permitidas por Excel. Los importes de rankings se conservan como texto decimal exacto junto a su moneda; no se convierten ni se suman monedas distintas. Los archivos están sujetos a los recursos del equipo; no se promete tamaño ilimitado.
+Hojas: **Leer primero, Caballos, Pedigree 3G, Resultados, Fuentes, Importaciones, Diccionario, Cobertura 1935, Contraste fuentes, Ramas pendientes, Cobertura campañas, Ampliaciones documentadas, Rankings y Ganancias**. Las dos últimas pertenecen a la base real. Pedigree 3G contiene una fila por caballo, con nombres e IDs de los 14 ancestros. Caballos conserva las relaciones normalizadas por ID. El exportador crea hojas adicionales si una tabla supera las 1.048.575 filas de datos permitidas por Excel. Los importes de rankings se conservan como texto decimal exacto junto a su moneda; no se convierten ni se suman monedas distintas. Los archivos están sujetos a los recursos del equipo; no se promete tamaño ilimitado.
 
 La interfaz exporta siempre el estado actual de la base. Para regenerar archivos en disco:
 
@@ -98,3 +98,10 @@ La ampliación histórica conserva ese conjunto de 2.452 objetivos e incorpora s
 Las estimaciones por distancia usan `static/performance.js`: escala orientativa **0–100**, con regularización y base neutral de **50** cuando no hay actuaciones utilizables. Con evidencia se combinan posiciones relativas (participantes oficiales conocidos) o un indicador auxiliar de puesto recíproco con menor peso, conservando sus fuentes y limitaciones. Cada rama aporta la mitad; los ancestros lejanos y las muestras pequeñas tienen menos influencia. La interfaz explica fórmula, datos usados y confianza descriptiva. No es probabilidad de ganar ni predicción genética validada. [Método completo](docs/publicacion.md#búsqueda-e-índice-de-campañas). `node tests/performance.mjs` comprueba la base neutral, evidencia parcial, duplicados y ponderación. La función antigua de `affinity.js` no se presenta como rendimiento.
 
 `python3 scripts/check_publication.py` inicia su propio servidor de prueba en un puerto libre, lo cierra al terminar y comprueba la edición HTML con Chromium. Evita depender de un servidor de otra sesión.
+
+
+## Campañas de toda la biblioteca
+
+La revisión incluye los 11.842 registros reales, también los ancestros. Cada ficha informa las actuaciones recuperadas y si coinciden con el total de la fuente; esa coincidencia sólo acredita el ámbito del organismo consultado. Los registros sin consulta o con fuentes inaccesibles permanecen pendientes. El Excel incluye el estado individual de todos. [Método, detalles y reanudación](docs/campanas.md).
+
+La revisión individual de Papyrus y Eclair se conserva en `samples/pedigree_manual_reviews.json`, con enlaces y limitaciones. El nacimiento de Eclair discrepa entre Uruguay (1939) y Argentina (1930); no se sustituyó por una fecha elegida sin resolver el conflicto. Los nuevos progenitores se respaldan por la identidad documentada de su hijo Khaled y dos referencias adicionales.

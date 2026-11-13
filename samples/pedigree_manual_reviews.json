@@ -1,0 +1,80 @@
+{
+  "reviewed_at": "2026-11-13T18:47:12+00:00",
+  "method": "Individual reviewed context; not a general fuzzy-name rule. No existing names, dates or parents overwritten.",
+  "original_trees_complete_before": 258,
+  "original_trees_complete_after": 260,
+  "changes": [
+    {
+      "id": "uy-studbook:15332",
+      "name": "PAPYRUS (GB)",
+      "fields": {
+        "birth_year": 1920
+      },
+      "identity_basis": "Padre de Cosquilla (1933), que es madre de Princequillo (1940) por Prince Rose, documentado en ambos stud books y el pedigree de Princequillo. La variante Quick Tought / Quick Thought en la otra rama se conserva sin fusionar IDs.",
+      "references": [
+        {
+          "url": "https://www.studbook.com.uy/online-volume/horse/36200",
+          "observed_at": "2026-11-13T18:47:12+00:00",
+          "facts": "Cosquilla 1933: padre Papyrus ID 15332; madre Quick Tought ID 40923."
+        },
+        {
+          "url": "https://www.studbook.org.ar/ejemplares/perfil/375615/quillopoly",
+          "observed_at": "2026-11-04T23:33:13+00:00",
+          "facts": "Papyrus ID 48349, nacimiento 1920; registro independiente, no se fusiona."
+        },
+        {
+          "url": "https://en.wikipedia.org/w/index.php?title=Papyrus_(horse)&oldid=1379509411",
+          "observed_at": "2026-11-13T18:47:12+00:00",
+          "facts": "Papyrus, semental nacido en 1920, por Tracery y Miss Matty."
+        },
+        {
+          "url": "https://en.wikipedia.org/w/index.php?title=Princequillo&oldid=1379163879",
+          "observed_at": "2026-11-13T18:47:12+00:00",
+          "facts": "Princequillo 1940, por Prince Rose y Cosquilla; Cosquilla por Papyrus y Quick Thought."
+        }
+      ],
+      "limitations": "Sólo se completa el año desconocido. No certifica la campaña ni todos los campos del registro.",
+      "before": {
+        "birth_year": null
+      },
+      "reviewed_at": "2026-11-13T18:47:12+00:00"
+    },
+    {
+      "id": "uy-studbook:38571",
+      "name": "ECLAIR (GB)",
+      "fields": {
+        "sire_id": "ar-studbook:370367",
+        "dam_id": "ar-studbook:370368"
+      },
+      "identity_basis": "Madre de Khaled (1943) por Hyperion en Uruguay, Argentina y el pedigree publicado de Khaled. Este contexto documentado permite identificar la relación maternal sin fusionar registros.",
+      "references": [
+        {
+          "url": "https://www.studbook.com.uy/online-volume/horse/4648",
+          "observed_at": "2026-11-04T23:04:39+00:00",
+          "facts": "Khaled 1943 por Hyperion y Eclair ID 38571."
+        },
+        {
+          "url": "https://www.studbook.org.ar/ejemplares/perfil/369320/affectionately",
+          "observed_at": "2026-11-04T23:25:03+00:00",
+          "facts": "Eclair, madre de Khaled, por Ethnarch ID 370367 y Black Ray ID 370368."
+        },
+        {
+          "url": "https://en.wikipedia.org/w/index.php?title=Khaled_(horse)&oldid=1370001059",
+          "observed_at": "2026-11-13T18:47:12+00:00",
+          "facts": "Khaled 1943, madre Eclair por Ethnarch y Black Ray."
+        },
+        {
+          "url": "https://www.tbheritage.com/Portraits/Hyperion.html#Khaled",
+          "observed_at": "2026-11-13T18:47:12+00:00",
+          "facts": "Khaled 1943, por Hyperion y Eclair por Ethnarch."
+        }
+      ],
+      "limitations": "Año discordante de Eclair: Uruguay publica 1939 y Argentina 1930. No se reemplaza el año ni se declara corroborado; sólo se añaden ambos progenitores documentados.",
+      "before": {
+        "sire_id": null,
+        "dam_id": null
+      },
+      "reviewed_at": "2026-11-13T18:47:12+00:00"
+    }
+  ]
+}
