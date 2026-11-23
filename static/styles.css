@@ -28,3 +28,13 @@
 .campaign-table{min-width:780px}.campaign-table td{vertical-align:top}.campaign-table td small{display:block;margin-top:5px}.race-details{min-width:135px}.race-details summary{cursor:pointer;font-weight:600;color:#166244;white-space:nowrap}
 .race-details dl{min-width:220px;white-space:normal;margin:14px 0}.race-details dl div{margin-bottom:10px}.race-details dt{font-size:11px;color:#68776e}.race-details dd{margin:3px 0 0;font-size:13px;overflow-wrap:anywhere}
 .campaign-pagination{display:flex;gap:15px;justify-content:center;align-items:center;margin-top:15px}.campaign-pagination button:disabled{opacity:.4;cursor:default}
+
+:root[data-theme="dark"] {
+  color-scheme:dark; --bg:#151d19; --white:#202b25; --ink:#ebf1e8; --muted:#bdc9be;
+  --line:#425248; --green:#99c5a5; --pale:#303f32; --lime:#deedac; --orange:#dfad7b;
+}
+[data-theme="dark"] :is(.sidebar,.topbar,dialog,.panel,.stat,.ranking-card,.input,.global-search,.table-scroll,.dialog-header,.dialog-content,select,input,textarea,details,.horse-table th,.horse-table td,.button.light,.icon-button,.pedigree-node,.campaign-coverage,.race-details,.toolbar) {background-color:var(--white);color:var(--ink);border-color:var(--line)}
+[data-theme="dark"] :is(.notice,.tag,.horse-initial,.uruguay-note,.ranking-method,.ranking-position,.nav-link.active,.pedigree-node.maternal,.pedigree-node.unknown,.ranking-card.selected,.campaign-heading,.autocomplete-list,.empty-state,.pedigree-legend,.dialog-note) {background:#314335;color:#e2eddf;border-color:var(--line)}
+[data-theme="dark"] :is(.nav-link,.subtle-note,.meta,.label,small,.eyebrow,.text-link,.horse-name-button,.panel-header p,.intro p,.ranking-birth,.count) {color:#c6d7c5}
+[data-theme="dark"] :is(.brand-mark,.button.primary) {background:#30553d;color:#eff6df}
+[data-theme="dark"] .horse-table tr:hover td {background:#2b3b31}

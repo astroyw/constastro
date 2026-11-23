@@ -24,6 +24,7 @@ export function createSnapshotAPI(data) {
       if(!horse)throw new Error('No se encontró el caballo en esta base.');
       return {horse,reviewed_enrichments:demo?[]:(data.manual_reviews||[]).filter(r=>r.id===id),original_target:demo?null:(data.original_targets||[]).includes(id),verification:demo?null:data.verification?.[id],pedigree:pedigree(id,maps[mode]),campaign:demo?[]:data.results.filter(r=>r.horse_id===id),campaign_reviews:demo?[]:(data.campaign_reviews||[]).filter(r=>r.horse_id===id)};
     }
+    if(p==='/api/win-rates')return data.win_rates||[];
     if(p==='/api/rankings')return data.ranking_sets;
     if(p.startsWith('/api/rankings/')) {
       const ranking=data.rankings.find(r=>r.ranking.id===decodeURIComponent(p.slice('/api/rankings/'.length)));
