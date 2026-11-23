@@ -1,20 +1,20 @@
 {
   "summary": {
-    "generated_at": "2026-11-13T18:48:18+00:00",
+    "generated_at": "2026-11-23T20:51:42+00:00",
     "target_birth_year": 1935,
     "original_targets": 2452,
-    "records_after_expansion": 11842,
-    "added_records": 9390,
+    "records_after_expansion": 11854,
+    "added_records": 9402,
     "trees_complete": 260,
     "trees_pending": 2192,
     "verification_status": {
-      "single_source": 2066,
-      "review_candidates": 45,
+      "single_source": 2065,
+      "review_candidates": 46,
       "partial_agreement": 341
     },
     "all_data_two_sources_verified": 0,
     "scope": "Targets fixed before expansion. New ancestors only support their branches until documented birth <=1935. Distinct publisher records are compared without merging identities. Earnings and campaigns still lack independent corroboration.",
-    "unique_pending_relationships": 2187
+    "unique_pending_relationships": 2177
   },
   "horses": [
     {
@@ -3074,10 +3074,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9534904&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9534904",
@@ -3085,10 +3085,14 @@
           },
           {
             "id": "equibase:T:8081070",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1365869",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8081070",
+            "id": "equibase:T:1365869",
             "role": "dam_id"
           }
         ],
@@ -3304,10 +3308,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9314281&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 4,
+        "max_generation": 4,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 6,
         "unresolved": [
           {
             "id": "equibase:T:9314281",
@@ -3315,10 +3319,22 @@
           },
           {
             "id": "equibase:T:7766522",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7766522",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -3350,10 +3366,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8331153&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8331153",
@@ -3361,10 +3377,14 @@
           },
           {
             "id": "equibase:T:6277345",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:901764",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6277345",
+            "id": "equibase:T:901764",
             "role": "dam_id"
           }
         ],
@@ -3442,10 +3462,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10246686&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10246686",
@@ -3453,10 +3473,14 @@
           },
           {
             "id": "equibase:T:6801271",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6801271",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -3663,10 +3687,10 @@
         ],
         "comparisons": [
           {
-            "id": "uy-studbook:36709",
-            "source_id": "uy-studbook",
-            "url": "https://www.studbook.com.uy/online-volume/horse/103227",
-            "observed_at": "2026-10-20T21:29:30+00:00",
+            "id": "ar-studbook:385036",
+            "source_id": "ar-studbook",
+            "url": "https://www.studbook.org.ar/ejemplares/perfil/385036/awesome-again-can",
+            "observed_at": "2026-11-04T23:35:23+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -3682,10 +3706,10 @@
             ]
           },
           {
-            "id": "ar-studbook:385036",
-            "source_id": "ar-studbook",
-            "url": "https://www.studbook.org.ar/ejemplares/perfil/385036/awesome-again-can",
-            "observed_at": "2026-11-04T23:35:23+00:00",
+            "id": "uy-studbook:36709",
+            "source_id": "uy-studbook",
+            "url": "https://www.studbook.com.uy/online-volume/horse/103227",
+            "observed_at": "2026-10-20T21:29:30+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -5908,10 +5932,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9116772&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9116772",
@@ -5919,10 +5943,14 @@
           },
           {
             "id": "equibase:T:5342834",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:798893",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5342834",
+            "id": "equibase:T:798893",
             "role": "dam_id"
           }
         ],
@@ -5954,10 +5982,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8884841&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8884841",
@@ -5965,10 +5993,14 @@
           },
           {
             "id": "equibase:T:6848321",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1394342",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6848321",
+            "id": "equibase:T:1394342",
             "role": "dam_id"
           }
         ],
@@ -6230,10 +6262,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9694770&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9694770",
@@ -6241,10 +6273,14 @@
           },
           {
             "id": "equibase:T:4297000",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:935962",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4297000",
+            "id": "equibase:T:935962",
             "role": "dam_id"
           }
         ],
@@ -6912,15 +6948,11 @@
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/427395/capitan-kid",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 395,
+        "ancestor_count": 400,
         "max_generation": 11,
         "oldest_year": 1911,
-        "missing_links": 18,
+        "missing_links": 17,
         "unresolved": [
-          {
-            "id": "ar-studbook:397026",
-            "role": "sire_id"
-          },
           {
             "id": "ar-studbook:397026",
             "role": "dam_id"
@@ -6990,7 +7022,7 @@
             "role": "dam_id"
           }
         ],
-        "terminals_1935": 146,
+        "terminals_1935": 148,
         "nearco": [
           {
             "id": "ar-studbook:43738",
@@ -9678,10 +9710,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10259223&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10259223",
@@ -9689,10 +9721,14 @@
           },
           {
             "id": "equibase:T:4434181",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:984265",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4434181",
+            "id": "equibase:T:984265",
             "role": "dam_id"
           }
         ],
@@ -9770,10 +9806,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9704540&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9704540",
@@ -9781,10 +9817,14 @@
           },
           {
             "id": "equibase:T:7789704",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396994",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7789704",
+            "id": "equibase:T:1396994",
             "role": "dam_id"
           }
         ],
@@ -9974,10 +10014,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10297778&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10297778",
@@ -9989,10 +10029,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -14050,10 +14094,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10988974&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10988974",
@@ -14065,10 +14109,14 @@
           },
           {
             "id": "equibase:T:5331310",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1046512",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5331310",
+            "id": "equibase:T:1046512",
             "role": "dam_id"
           }
         ],
@@ -19735,10 +19783,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10435982&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10435982",
@@ -19746,10 +19794,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -21065,10 +21117,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10963699&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10963699",
@@ -21080,10 +21132,14 @@
           },
           {
             "id": "equibase:T:7789704",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396994",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7789704",
+            "id": "equibase:T:1396994",
             "role": "dam_id"
           }
         ],
@@ -21161,10 +21217,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10425358&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10425358",
@@ -21172,10 +21228,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -21299,10 +21359,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8322290&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8322290",
@@ -21310,10 +21370,14 @@
           },
           {
             "id": "equibase:T:4472854",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:334449",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4472854",
+            "id": "equibase:T:334449",
             "role": "dam_id"
           }
         ],
@@ -21391,10 +21455,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9330751&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9330751",
@@ -21402,10 +21466,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -23848,10 +23916,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10997731&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10997731",
@@ -23859,10 +23927,18 @@
           },
           {
             "id": "equibase:T:9493840",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7407836",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439212",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9493840",
+            "id": "equibase:T:1439212",
             "role": "dam_id"
           }
         ],
@@ -24174,10 +24250,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9496167&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9496167",
@@ -24185,10 +24261,14 @@
           },
           {
             "id": "equibase:T:5902892",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1327154",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5902892",
+            "id": "equibase:T:1327154",
             "role": "dam_id"
           }
         ],
@@ -24220,10 +24300,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9679803&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:9679803",
@@ -24231,10 +24311,18 @@
           },
           {
             "id": "equibase:T:8266889",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4966077",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8266889",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -25749,10 +25837,10 @@
         ],
         "comparisons": [
           {
-            "id": "uy-studbook:71014",
-            "source_id": "uy-studbook",
-            "url": "https://www.studbook.com.uy/online-volume/horse/93929",
-            "observed_at": "2026-10-20T21:32:12+00:00",
+            "id": "ar-studbook:374178",
+            "source_id": "ar-studbook",
+            "url": "https://www.studbook.org.ar/ejemplares/perfil/422229/happy-happy-day",
+            "observed_at": "2026-10-20T21:48:06+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -25768,10 +25856,10 @@
             ]
           },
           {
-            "id": "ar-studbook:374178",
-            "source_id": "ar-studbook",
-            "url": "https://www.studbook.org.ar/ejemplares/perfil/422229/happy-happy-day",
-            "observed_at": "2026-10-20T21:48:06+00:00",
+            "id": "uy-studbook:71014",
+            "source_id": "uy-studbook",
+            "url": "https://www.studbook.com.uy/online-volume/horse/93929",
+            "observed_at": "2026-10-20T21:32:12+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -25797,10 +25885,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9479612&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9479612",
@@ -25808,10 +25896,14 @@
           },
           {
             "id": "equibase:T:6252387",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:2441280",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6252387",
+            "id": "equibase:T:2441280",
             "role": "dam_id"
           }
         ],
@@ -25935,10 +26027,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10799548&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10799548",
@@ -25946,10 +26038,14 @@
           },
           {
             "id": "equibase:T:5902892",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1327154",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5902892",
+            "id": "equibase:T:1327154",
             "role": "dam_id"
           }
         ],
@@ -25981,10 +26077,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9122103&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9122103",
@@ -25992,10 +26088,14 @@
           },
           {
             "id": "equibase:T:7086287",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396750",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7086287",
+            "id": "equibase:T:1396750",
             "role": "dam_id"
           }
         ],
@@ -26027,10 +26127,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10439301&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10439301",
@@ -26038,10 +26138,18 @@
           },
           {
             "id": "equibase:T:8859882",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8859882",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -28126,15 +28234,11 @@
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/432636/kingsfield",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 534,
+        "ancestor_count": 539,
         "max_generation": 12,
         "oldest_year": 1911,
-        "missing_links": 28,
+        "missing_links": 27,
         "unresolved": [
-          {
-            "id": "ar-studbook:397026",
-            "role": "sire_id"
-          },
           {
             "id": "ar-studbook:397026",
             "role": "dam_id"
@@ -28244,7 +28348,7 @@
             "role": "dam_id"
           }
         ],
-        "terminals_1935": 194,
+        "terminals_1935": 196,
         "nearco": [
           {
             "id": "ar-studbook:43738",
@@ -28563,10 +28667,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10049303&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10049303",
@@ -28574,10 +28678,18 @@
           },
           {
             "id": "equibase:T:8562865",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8562865",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -34784,10 +34896,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9910104&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9910104",
@@ -34795,10 +34907,14 @@
           },
           {
             "id": "equibase:T:6875760",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4005090",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6875760",
+            "id": "equibase:T:4005090",
             "role": "dam_id"
           }
         ],
@@ -34880,10 +34996,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9500592&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9500592",
@@ -34891,10 +35007,14 @@
           },
           {
             "id": "equibase:T:5331310",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1046512",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5331310",
+            "id": "equibase:T:1046512",
             "role": "dam_id"
           }
         ],
@@ -35064,10 +35184,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9892147&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:9892147",
@@ -35075,10 +35195,18 @@
           },
           {
             "id": "equibase:T:8333257",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8333257",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -35206,10 +35334,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10124157&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10124157",
@@ -35221,10 +35349,14 @@
           },
           {
             "id": "equibase:T:4480431",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1318476",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4480431",
+            "id": "equibase:T:1318476",
             "role": "dam_id"
           }
         ],
@@ -35256,10 +35388,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8377751&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8377751",
@@ -35267,10 +35399,14 @@
           },
           {
             "id": "equibase:T:4480431",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1318476",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4480431",
+            "id": "equibase:T:1318476",
             "role": "dam_id"
           }
         ],
@@ -35302,10 +35438,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10296312&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10296312",
@@ -35313,10 +35449,18 @@
           },
           {
             "id": "equibase:T:5342927",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5342927",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -35348,10 +35492,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10955504&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10955504",
@@ -35359,10 +35503,14 @@
           },
           {
             "id": "equibase:T:8890672",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7436720",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8890672",
+            "id": "equibase:T:7436720",
             "role": "dam_id"
           }
         ],
@@ -37974,10 +38122,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10777616&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10777616",
@@ -37985,10 +38133,14 @@
           },
           {
             "id": "equibase:T:7789704",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396994",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7789704",
+            "id": "equibase:T:1396994",
             "role": "dam_id"
           }
         ],
@@ -38158,10 +38310,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9492600&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9492600",
@@ -38169,10 +38321,14 @@
           },
           {
             "id": "equibase:T:8292193",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4001105",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8292193",
+            "id": "equibase:T:4001105",
             "role": "dam_id"
           }
         ],
@@ -38204,10 +38360,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10979733&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10979733",
@@ -38219,10 +38375,14 @@
           },
           {
             "id": "equibase:T:8292193",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4001105",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8292193",
+            "id": "equibase:T:4001105",
             "role": "dam_id"
           }
         ],
@@ -45351,10 +45511,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10630286&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10630286",
@@ -45362,10 +45522,18 @@
           },
           {
             "id": "equibase:T:9526872",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7147650",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1365869",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9526872",
+            "id": "equibase:T:1365869",
             "role": "dam_id"
           }
         ],
@@ -45581,10 +45749,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9883026&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9883026",
@@ -45592,10 +45760,14 @@
           },
           {
             "id": "equibase:T:6252387",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:2441280",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6252387",
+            "id": "equibase:T:2441280",
             "role": "dam_id"
           }
         ],
@@ -45677,10 +45849,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8250825&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:8250825",
@@ -45688,10 +45860,18 @@
           },
           {
             "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5378341",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -50057,10 +50237,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10761322&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 5,
+        "max_generation": 5,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 7,
         "unresolved": [
           {
             "id": "equibase:T:10761322",
@@ -50068,10 +50248,26 @@
           },
           {
             "id": "equibase:T:9662832",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:8598977",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9662832",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -50103,10 +50299,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8593380&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:8593380",
@@ -50114,10 +50310,18 @@
           },
           {
             "id": "equibase:T:6132134",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6132134",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -50195,10 +50399,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10458625&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10458625",
@@ -50206,10 +50410,14 @@
           },
           {
             "id": "equibase:T:4966077",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4966077",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -50287,10 +50495,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9338334&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:9338334",
@@ -50298,10 +50506,18 @@
           },
           {
             "id": "equibase:T:5342927",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5342927",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -50333,10 +50549,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10963584&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 2,
-        "max_generation": 2,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 4,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10963584",
@@ -50348,10 +50564,14 @@
           },
           {
             "id": "equibase:T:5902892",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1327154",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5902892",
+            "id": "equibase:T:1327154",
             "role": "dam_id"
           }
         ],
@@ -51037,10 +51257,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=8576985&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8576985",
@@ -51048,10 +51268,14 @@
           },
           {
             "id": "equibase:T:6252387",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:2441280",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6252387",
+            "id": "equibase:T:2441280",
             "role": "dam_id"
           }
         ],
@@ -51302,10 +51526,10 @@
         ],
         "comparisons": [
           {
-            "id": "uy-studbook:64795",
-            "source_id": "uy-studbook",
-            "url": "https://www.studbook.com.uy/online-volume/horse/87059",
-            "observed_at": "2026-10-20T21:32:59+00:00",
+            "id": "ar-studbook:390374",
+            "source_id": "ar-studbook",
+            "url": "https://www.studbook.org.ar/ejemplares/perfil/390374/sunday-silence-usa",
+            "observed_at": "2026-11-04T23:19:12+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -51321,10 +51545,10 @@
             ]
           },
           {
-            "id": "ar-studbook:390374",
-            "source_id": "ar-studbook",
-            "url": "https://www.studbook.org.ar/ejemplares/perfil/390374/sunday-silence-usa",
-            "observed_at": "2026-11-04T23:19:12+00:00",
+            "id": "uy-studbook:64795",
+            "source_id": "uy-studbook",
+            "url": "https://www.studbook.com.uy/online-volume/horse/87059",
+            "observed_at": "2026-10-20T21:32:59+00:00",
             "identity_supported": false,
             "agreed_fields": [
               "name",
@@ -54868,10 +55092,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10053442&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:10053442",
@@ -54879,10 +55103,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -55302,10 +55530,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9064185&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9064185",
@@ -55313,10 +55541,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -55713,10 +55945,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9097137&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9097137",
@@ -55724,10 +55956,14 @@
           },
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -58333,10 +58569,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10596731&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:10596731",
@@ -58344,10 +58580,18 @@
           },
           {
             "id": "equibase:T:9118822",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9118822",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -58587,10 +58831,10 @@
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7999682&registry=T&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 1,
-        "max_generation": 1,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 3,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:7999682",
@@ -58598,10 +58842,14 @@
           },
           {
             "id": "equibase:T:4680072",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1394342",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4680072",
+            "id": "equibase:T:1394342",
             "role": "dam_id"
           }
         ],
@@ -66465,17 +66713,33 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 4,
+        "max_generation": 4,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 6,
         "unresolved": [
           {
             "id": "equibase:T:9662832",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:8598977",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9662832",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -66591,17 +66855,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:7086287",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396750",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7086287",
+            "id": "equibase:T:1396750",
             "role": "dam_id"
           }
         ],
@@ -69518,15 +69786,11 @@
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/427395/capitan-kid",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 201,
+        "ancestor_count": 208,
         "max_generation": 10,
         "oldest_year": 1911,
-        "missing_links": 12,
+        "missing_links": 11,
         "unresolved": [
-          {
-            "id": "ar-studbook:397026",
-            "role": "sire_id"
-          },
           {
             "id": "ar-studbook:397026",
             "role": "dam_id"
@@ -69572,7 +69836,7 @@
             "role": "dam_id"
           }
         ],
-        "terminals_1935": 81,
+        "terminals_1935": 84,
         "nearco": [
           {
             "id": "ar-studbook:43738",
@@ -71035,7 +71299,7 @@
     {
       "id": "ar-studbook:49048",
       "name": "BLUSHING GROOM (FR)",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/366124/kind",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "ancestry": {
         "complete": true,
         "ancestor_count": 22,
@@ -71284,7 +71548,7 @@
       "verification": {
         "primary_url": "https://www.studbook.org.ar/ejemplares/perfil/420870/mister-coquette",
         "primary_observed_at": "2026-10-20T21:46:29+00:00",
-        "status": "single_source",
+        "status": "review_candidates",
         "confirmed_fields": [],
         "pending_fields": [
           "name",
@@ -71295,7 +71559,27 @@
           "birth_country",
           "coat"
         ],
-        "comparisons": [],
+        "comparisons": [
+          {
+            "id": "equibase:T:8598977",
+            "source_id": "us-equibase",
+            "url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2012&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+            "observed_at": "2026-11-20T20:19:59+00:00",
+            "identity_supported": false,
+            "agreed_fields": [
+              "name",
+              "sire"
+            ],
+            "differences": [],
+            "uncompared_fields": [
+              "birth_year",
+              "sex",
+              "dam",
+              "birth_country",
+              "coat"
+            ]
+          }
+        ],
         "all_data_verified": false,
         "scope": "Contraste de ficha y progenitores directos. No verifica el árbol completo, las ganancias ni las actuaciones. No fusiona IDs de distintas fuentes."
       }
@@ -71804,15 +72088,11 @@
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/397024/born-something",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 88,
+        "ancestor_count": 96,
         "max_generation": 8,
         "oldest_year": 1911,
-        "missing_links": 6,
+        "missing_links": 5,
         "unresolved": [
-          {
-            "id": "ar-studbook:397026",
-            "role": "sire_id"
-          },
           {
             "id": "ar-studbook:397026",
             "role": "dam_id"
@@ -71834,7 +72114,7 @@
             "role": "dam_id"
           }
         ],
-        "terminals_1935": 39,
+        "terminals_1935": 43,
         "nearco": [
           {
             "id": "ar-studbook:43738",
@@ -74091,17 +74371,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6801271",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6801271",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -83831,17 +84115,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:5902892",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1327154",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5902892",
+            "id": "equibase:T:1327154",
             "role": "dam_id"
           }
         ],
@@ -83999,17 +84287,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9526872",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7147650",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1365869",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9526872",
+            "id": "equibase:T:1365869",
             "role": "dam_id"
           }
         ],
@@ -85098,15 +85394,11 @@
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/427395/capitan-kid",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 251,
+        "ancestor_count": 256,
         "max_generation": 11,
         "oldest_year": 1911,
-        "missing_links": 12,
+        "missing_links": 11,
         "unresolved": [
-          {
-            "id": "ar-studbook:397026",
-            "role": "sire_id"
-          },
           {
             "id": "ar-studbook:397026",
             "role": "dam_id"
@@ -85152,7 +85444,7 @@
             "role": "dam_id"
           }
         ],
-        "terminals_1935": 99,
+        "terminals_1935": 101,
         "nearco": [
           {
             "id": "ar-studbook:43738",
@@ -93218,17 +93510,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8266889",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4966077",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8266889",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -93428,17 +93728,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9493840",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7407836",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439212",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9493840",
+            "id": "equibase:T:1439212",
             "role": "dam_id"
           }
         ],
@@ -93554,17 +93862,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4472854",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:334449",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4472854",
+            "id": "equibase:T:334449",
             "role": "dam_id"
           }
         ],
@@ -99767,17 +100079,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:6132134",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6132134",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -99893,17 +100213,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5378341",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -115431,17 +115759,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:5342927",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5342927",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -115473,17 +115809,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4297000",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:935962",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4297000",
+            "id": "equibase:T:935962",
             "role": "dam_id"
           }
         ],
@@ -115557,17 +115897,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:8890672",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:7436720",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8890672",
+            "id": "equibase:T:7436720",
             "role": "dam_id"
           }
         ],
@@ -122943,17 +123287,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6848321",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1394342",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6848321",
+            "id": "equibase:T:1394342",
             "role": "dam_id"
           }
         ],
@@ -133915,17 +134263,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6252387",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:2441280",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6252387",
+            "id": "equibase:T:2441280",
             "role": "dam_id"
           }
         ],
@@ -142674,17 +143026,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6277345",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:901764",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6277345",
+            "id": "equibase:T:901764",
             "role": "dam_id"
           }
         ],
@@ -142758,17 +143114,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:8081070",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1365869",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8081070",
+            "id": "equibase:T:1365869",
             "role": "dam_id"
           }
         ],
@@ -151398,7 +151758,7 @@
     {
       "id": "ar-studbook:45324",
       "name": "MR. PROSPECTOR (USA)",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425873/baffled",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "ancestry": {
         "complete": true,
         "ancestor_count": 30,
@@ -152795,17 +153155,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4480431",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1318476",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4480431",
+            "id": "equibase:T:1318476",
             "role": "dam_id"
           }
         ],
@@ -152963,17 +153327,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6875760",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4005090",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6875760",
+            "id": "equibase:T:4005090",
             "role": "dam_id"
           }
         ],
@@ -153005,17 +153373,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4966077",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1245197",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4966077",
+            "id": "equibase:T:1245197",
             "role": "dam_id"
           }
         ],
@@ -159764,17 +160136,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:5342834",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:798893",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5342834",
+            "id": "equibase:T:798893",
             "role": "dam_id"
           }
         ],
@@ -159890,17 +160266,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8859882",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8859882",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -168102,17 +168486,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8562865",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1439425",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:779025",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8562865",
+            "id": "equibase:T:779025",
             "role": "dam_id"
           }
         ],
@@ -168144,17 +168536,29 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 3,
+        "max_generation": 3,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 5,
         "unresolved": [
           {
             "id": "equibase:T:7766522",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:5378341",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1108188",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:702640",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7766522",
+            "id": "equibase:T:702640",
             "role": "dam_id"
           }
         ],
@@ -168312,17 +168716,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:5331310",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1046512",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:5331310",
+            "id": "equibase:T:1046512",
             "role": "dam_id"
           }
         ],
@@ -169777,17 +170185,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:7789704",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1396994",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:7789704",
+            "id": "equibase:T:1396994",
             "role": "dam_id"
           }
         ],
@@ -175833,17 +176245,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:9118822",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:9118822",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -193053,17 +193473,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4434181",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:984265",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4434181",
+            "id": "equibase:T:984265",
             "role": "dam_id"
           }
         ],
@@ -200882,17 +201306,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:6106474",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -200924,17 +201352,25 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 2,
+        "max_generation": 2,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 4,
         "unresolved": [
           {
             "id": "equibase:T:8333257",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:6106474",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1442325",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8333257",
+            "id": "equibase:T:1442325",
             "role": "dam_id"
           }
         ],
@@ -202856,17 +203292,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:8292193",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:4001105",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:8292193",
+            "id": "equibase:T:4001105",
             "role": "dam_id"
           }
         ],
@@ -211185,17 +211625,21 @@
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "ancestry": {
         "complete": false,
-        "ancestor_count": 0,
-        "max_generation": 0,
+        "ancestor_count": 1,
+        "max_generation": 1,
         "oldest_year": null,
-        "missing_links": 2,
+        "missing_links": 3,
         "unresolved": [
           {
             "id": "equibase:T:4680072",
+            "role": "dam_id"
+          },
+          {
+            "id": "equibase:T:1394342",
             "role": "sire_id"
           },
           {
-            "id": "equibase:T:4680072",
+            "id": "equibase:T:1394342",
             "role": "dam_id"
           }
         ],
@@ -212708,7 +213152,7 @@
       "name": "RUDE AWAKENING",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/375607/royal-stance",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369901/rude-awakening",
       "affected_targets": 484
     },
     {
@@ -212716,7 +213160,7 @@
       "name": "RUDE AWAKENING",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/375607/royal-stance",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369901/rude-awakening",
       "affected_targets": 484
     },
     {
@@ -212756,7 +213200,7 @@
       "name": "HOSTILITY",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/45940/miss-glamour",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/44576/hostility",
       "affected_targets": 186
     },
     {
@@ -212772,7 +213216,7 @@
       "name": "BOUDOIR (GB)",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/68418",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39025",
       "affected_targets": 148
     },
     {
@@ -212780,7 +213224,7 @@
       "name": "BOUDOIR (GB)",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/68418",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39025",
       "affected_targets": 148
     },
     {
@@ -212788,7 +213232,7 @@
       "name": "IRIBELLE",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/208351/beth-s-melody-can",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370969/iribelle",
       "affected_targets": 145
     },
     {
@@ -212796,7 +213240,7 @@
       "name": "IRIBELLE",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/208351/beth-s-melody-can",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370969/iribelle",
       "affected_targets": 145
     },
     {
@@ -212868,7 +213312,7 @@
       "name": "WE HAIL",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369384/relaunch-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53348/we-hail",
       "affected_targets": 133
     },
     {
@@ -212876,7 +213320,7 @@
       "name": "WE HAIL",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369384/relaunch-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53348/we-hail",
       "affected_targets": 133
     },
     {
@@ -212932,7 +213376,7 @@
       "name": "MASHAQ (GB)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/24248",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38266",
       "affected_targets": 127
     },
     {
@@ -212940,7 +213384,7 @@
       "name": "MASHAQ (GB)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/24248",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38266",
       "affected_targets": 127
     },
     {
@@ -213012,7 +213456,7 @@
       "name": "BROWN BISCUIT",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368184/sand-buggy",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50952/brown-biscuit",
       "affected_targets": 115
     },
     {
@@ -213020,7 +213464,7 @@
       "name": "BROWN BISCUIT",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368184/sand-buggy",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50952/brown-biscuit",
       "affected_targets": 115
     },
     {
@@ -213076,7 +213520,7 @@
       "name": "SALAMINIA",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/192689/ivory-saint-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369350/salaminia",
       "affected_targets": 103
     },
     {
@@ -213084,7 +213528,7 @@
       "name": "SALAMINIA",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/192689/ivory-saint-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369350/salaminia",
       "affected_targets": 103
     },
     {
@@ -213092,7 +213536,7 @@
       "name": "MACON",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/35232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/14828",
       "affected_targets": 102
     },
     {
@@ -213100,7 +213544,7 @@
       "name": "MACON",
       "birth_year": null,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/35232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/14828",
       "affected_targets": 102
     },
     {
@@ -213188,7 +213632,7 @@
       "name": "WE HAIL (USA)",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/76128",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/50072",
       "affected_targets": 92
     },
     {
@@ -213196,7 +213640,7 @@
       "name": "WE HAIL (USA)",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/76128",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/50072",
       "affected_targets": 92
     },
     {
@@ -213204,7 +213648,7 @@
       "name": "NAVARRA (ITY)",
       "birth_year": 1948,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/25180",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38212",
       "affected_targets": 86
     },
     {
@@ -213212,7 +213656,7 @@
       "name": "NAVARRA (ITY)",
       "birth_year": 1948,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/25180",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38212",
       "affected_targets": 86
     },
     {
@@ -213220,7 +213664,7 @@
       "name": "EQUESTRIAN",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50136/rare-treat",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371806/equestrian",
       "affected_targets": 82
     },
     {
@@ -213228,7 +213672,7 @@
       "name": "EQUESTRIAN",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50136/rare-treat",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371806/equestrian",
       "affected_targets": 82
     },
     {
@@ -213260,7 +213704,7 @@
       "name": "FLYWEIGHT",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/382858/beware-of-the-cat",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/382432/flyweight",
       "affected_targets": 77
     },
     {
@@ -213284,7 +213728,7 @@
       "name": "SAFARI MOON",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378913/join-the-waves-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/48453/safari-moon",
       "affected_targets": 73
     },
     {
@@ -213436,7 +213880,7 @@
       "name": "DIPSY DOODLE",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/382858/beware-of-the-cat",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369914/dipsy-doodle",
       "affected_targets": 62
     },
     {
@@ -213444,7 +213888,7 @@
       "name": "DIPSY DOODLE",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/382858/beware-of-the-cat",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369914/dipsy-doodle",
       "affected_targets": 62
     },
     {
@@ -213468,7 +213912,7 @@
       "name": "THE SOLICITOR II (GB)",
       "birth_year": 1941,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/22568",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48669",
       "affected_targets": 62
     },
     {
@@ -213476,7 +213920,7 @@
       "name": "THE SOLICITOR II (GB)",
       "birth_year": 1941,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/22568",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48669",
       "affected_targets": 62
     },
     {
@@ -213484,7 +213928,7 @@
       "name": "LA MELODIE (15)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/44153",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38855",
       "affected_targets": 60
     },
     {
@@ -213492,7 +213936,7 @@
       "name": "LA MELODIE (15)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/44153",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38855",
       "affected_targets": 60
     },
     {
@@ -213500,7 +213944,7 @@
       "name": "JENNIE (FR)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/69634",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/50354",
       "affected_targets": 57
     },
     {
@@ -213508,7 +213952,7 @@
       "name": "JENNIE (FR)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/69634",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/50354",
       "affected_targets": 57
     },
     {
@@ -213516,7 +213960,7 @@
       "name": "CHANTERELLE",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373822/kris-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53316/chanterelle",
       "affected_targets": 56
     },
     {
@@ -213524,7 +213968,7 @@
       "name": "KING COLE",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/391265/stormy-but-valid",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369458/king-cole",
       "affected_targets": 56
     },
     {
@@ -213532,7 +213976,7 @@
       "name": "KING COLE",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/391265/stormy-but-valid",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369458/king-cole",
       "affected_targets": 56
     },
     {
@@ -213540,7 +213984,7 @@
       "name": "MAJANO",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373822/kris-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368679/majano",
       "affected_targets": 56
     },
     {
@@ -213548,7 +213992,7 @@
       "name": "MAJANO",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373822/kris-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368679/majano",
       "affected_targets": 56
     },
     {
@@ -213620,7 +214064,7 @@
       "name": "SUN MIXA",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/381821/secret-valley",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370870/sun-mixa",
       "affected_targets": 50
     },
     {
@@ -213628,7 +214072,7 @@
       "name": "SUN MIXA",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/381821/secret-valley",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370870/sun-mixa",
       "affected_targets": 50
     },
     {
@@ -213684,7 +214128,7 @@
       "name": "SCHIAPARELLI (GB)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/56309",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40018",
       "affected_targets": 48
     },
     {
@@ -213692,7 +214136,7 @@
       "name": "SCHIAPARELLI (GB)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/56309",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40018",
       "affected_targets": 48
     },
     {
@@ -213748,7 +214192,7 @@
       "name": "JAYJEAN",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371453/iaround",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371455/jayjean",
       "affected_targets": 43
     },
     {
@@ -213756,7 +214200,7 @@
       "name": "JAYJEAN",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371453/iaround",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371455/jayjean",
       "affected_targets": 43
     },
     {
@@ -213780,7 +214224,7 @@
       "name": "TIDY WHISK",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368184/sand-buggy",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373046/tidy-whisk",
       "affected_targets": 43
     },
     {
@@ -213788,7 +214232,7 @@
       "name": "TIDY WHISK",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368184/sand-buggy",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373046/tidy-whisk",
       "affected_targets": 43
     },
     {
@@ -213828,7 +214272,7 @@
       "name": "OLYMPIA DELL",
       "birth_year": 1953,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/396568/mr-greeley-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/381695/olympia-dell",
       "affected_targets": 41
     },
     {
@@ -213836,7 +214280,7 @@
       "name": "PANDORA",
       "birth_year": 1947,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/56788/sleek-dancer",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/383289/pandora",
       "affected_targets": 41
     },
     {
@@ -213844,7 +214288,7 @@
       "name": "PANDORA",
       "birth_year": 1947,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/56788/sleek-dancer",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/383289/pandora",
       "affected_targets": 41
     },
     {
@@ -213868,7 +214312,7 @@
       "name": "WOMEN'S LEGION",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/386592/hypatia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47467/women-s-legion",
       "affected_targets": 41
     },
     {
@@ -213876,7 +214320,7 @@
       "name": "WOMEN'S LEGION",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/386592/hypatia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47467/women-s-legion",
       "affected_targets": 41
     },
     {
@@ -213964,7 +214408,7 @@
       "name": "SALAMINIA (USA)",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48957",
       "affected_targets": 36
     },
     {
@@ -213972,7 +214416,7 @@
       "name": "SALAMINIA (USA)",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48957",
       "affected_targets": 36
     },
     {
@@ -213980,7 +214424,7 @@
       "name": "ALERIA",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393067/hasili",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370829/aleria",
       "affected_targets": 35
     },
     {
@@ -213988,7 +214432,7 @@
       "name": "ALERIA",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393067/hasili",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370829/aleria",
       "affected_targets": 35
     },
     {
@@ -214044,7 +214488,7 @@
       "name": "TELLARIS (FR)",
       "birth_year": 1947,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/76359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40066",
       "affected_targets": 34
     },
     {
@@ -214052,7 +214496,7 @@
       "name": "TELLARIS (FR)",
       "birth_year": 1947,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/76359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40066",
       "affected_targets": 34
     },
     {
@@ -214076,7 +214520,7 @@
       "name": "IRIBELLE (USA)",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/70793",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47818",
       "affected_targets": 32
     },
     {
@@ -214084,7 +214528,7 @@
       "name": "IRIBELLE (USA)",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/70793",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47818",
       "affected_targets": 32
     },
     {
@@ -214108,7 +214552,7 @@
       "name": "DANGEROUS DAME",
       "birth_year": 1951,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/226543/acceptable-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/52235/dangerous-dame",
       "affected_targets": 30
     },
     {
@@ -214180,7 +214624,7 @@
       "name": "BASTIA (FR)",
       "birth_year": 1951,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/72596",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37257",
       "affected_targets": 27
     },
     {
@@ -214188,7 +214632,7 @@
       "name": "BASTIA (FR)",
       "birth_year": 1951,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/72596",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37257",
       "affected_targets": 27
     },
     {
@@ -214212,7 +214656,7 @@
       "name": "DOGANADOBLE",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/51217/pink-silk",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388300/doganadoble",
       "affected_targets": 26
     },
     {
@@ -214220,7 +214664,7 @@
       "name": "DOGANADOBLE",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/51217/pink-silk",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388300/doganadoble",
       "affected_targets": 26
     },
     {
@@ -214268,7 +214712,7 @@
       "name": "MINCEPIE (FR)",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/70825",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15005",
       "affected_targets": 26
     },
     {
@@ -214276,7 +214720,7 @@
       "name": "MINCEPIE (FR)",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/70825",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15005",
       "affected_targets": 26
     },
     {
@@ -214300,7 +214744,7 @@
       "name": "DINNER HORN",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393394/turkish-tryst",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371862/dinner-horn",
       "affected_targets": 25
     },
     {
@@ -214308,7 +214752,7 @@
       "name": "DINNER HORN",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393394/turkish-tryst",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/371862/dinner-horn",
       "affected_targets": 25
     },
     {
@@ -214396,7 +214840,7 @@
       "name": "DHOTI (GB)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8477",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59570",
       "affected_targets": 24
     },
     {
@@ -214404,7 +214848,7 @@
       "name": "DHOTI (GB)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8477",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59570",
       "affected_targets": 24
     },
     {
@@ -214444,7 +214888,7 @@
       "name": "ISOLDE (USA)",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/49157",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/17933",
       "affected_targets": 24
     },
     {
@@ -214452,7 +214896,7 @@
       "name": "ISOLDE (USA)",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/49157",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/17933",
       "affected_targets": 24
     },
     {
@@ -214476,7 +214920,7 @@
       "name": "QUITTANCE",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/184450/bella-stampa-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369449/quittance",
       "affected_targets": 24
     },
     {
@@ -214484,7 +214928,7 @@
       "name": "QUITTANCE",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/184450/bella-stampa-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369449/quittance",
       "affected_targets": 24
     },
     {
@@ -214524,7 +214968,7 @@
       "name": "ASTER",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388510/alameda",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/367965/aster",
       "affected_targets": 23
     },
     {
@@ -214532,7 +214976,7 @@
       "name": "ASTER",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388510/alameda",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/367965/aster",
       "affected_targets": 23
     },
     {
@@ -214556,7 +215000,7 @@
       "name": "CALDARIUM (FR)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59561",
       "affected_targets": 23
     },
     {
@@ -214564,7 +215008,7 @@
       "name": "CALDARIUM (FR)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59561",
       "affected_targets": 23
     },
     {
@@ -214588,7 +215032,7 @@
       "name": "ATE",
       "birth_year": 1941,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378766/holy-bull",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/372380/ate",
       "affected_targets": 22
     },
     {
@@ -214596,7 +215040,7 @@
       "name": "ATE",
       "birth_year": 1941,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378766/holy-bull",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/372380/ate",
       "affected_targets": 22
     },
     {
@@ -214604,7 +215048,7 @@
       "name": "MOONSTONE (GB)",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/45861",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48424",
       "affected_targets": 22
     },
     {
@@ -214612,7 +215056,7 @@
       "name": "MOONSTONE (GB)",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/45861",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48424",
       "affected_targets": 22
     },
     {
@@ -214620,7 +215064,7 @@
       "name": "STAUNTON (GB)",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/56132",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/68222",
       "affected_targets": 22
     },
     {
@@ -214628,7 +215072,7 @@
       "name": "STAUNTON (GB)",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/56132",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/68222",
       "affected_targets": 22
     },
     {
@@ -214668,7 +215112,7 @@
       "name": "BALLA TRYST",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/44193/nonoalco",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/372609/balla-tryst",
       "affected_targets": 21
     },
     {
@@ -214676,7 +215120,7 @@
       "name": "BALLA TRYST",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/44193/nonoalco",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/372609/balla-tryst",
       "affected_targets": 21
     },
     {
@@ -214748,7 +215192,7 @@
       "name": "SCARLET RIBBON (USA)",
       "birth_year": 1957,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8848",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8853",
       "affected_targets": 21
     },
     {
@@ -214756,7 +215200,7 @@
       "name": "SCARLET RIBBON (USA)",
       "birth_year": 1957,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8848",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8853",
       "affected_targets": 21
     },
     {
@@ -214764,7 +215208,7 @@
       "name": "WHITE SAMITE",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369551/mt-livermore-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369859/white-samite",
       "affected_targets": 21
     },
     {
@@ -214772,7 +215216,7 @@
       "name": "WHITE SAMITE",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369551/mt-livermore-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369859/white-samite",
       "affected_targets": 21
     },
     {
@@ -214884,7 +215328,7 @@
       "name": "TEZA (USA)",
       "birth_year": 1945,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/65289",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38279",
       "affected_targets": 20
     },
     {
@@ -214892,7 +215336,7 @@
       "name": "TEZA (USA)",
       "birth_year": 1945,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/65289",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38279",
       "affected_targets": 20
     },
     {
@@ -214932,7 +215376,7 @@
       "name": "BANQUET BELL (USA)",
       "birth_year": 1948,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/52859",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47883",
       "affected_targets": 19
     },
     {
@@ -214940,7 +215384,7 @@
       "name": "BANQUET BELL (USA)",
       "birth_year": 1948,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/52859",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47883",
       "affected_targets": 19
     },
     {
@@ -214980,7 +215424,7 @@
       "name": "EPATANTE (ARG)",
       "birth_year": 1947,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/9232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8082",
       "affected_targets": 19
     },
     {
@@ -214988,7 +215432,7 @@
       "name": "EPATANTE (ARG)",
       "birth_year": 1947,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/9232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8082",
       "affected_targets": 19
     },
     {
@@ -214996,7 +215440,7 @@
       "name": "VERDUN (FR)",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/35232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/16497",
       "affected_targets": 19
     },
     {
@@ -215004,7 +215448,7 @@
       "name": "VERDUN (FR)",
       "birth_year": null,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/35232",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/16497",
       "affected_targets": 19
     },
     {
@@ -215012,7 +215456,7 @@
       "name": "YOUNG EMPRESS",
       "birth_year": 1957,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378727/great-lady-m",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368769/young-empress",
       "affected_targets": 19
     },
     {
@@ -215020,7 +215464,7 @@
       "name": "YOUNG EMPRESS",
       "birth_year": 1957,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378727/great-lady-m",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368769/young-empress",
       "affected_targets": 19
     },
     {
@@ -215036,7 +215480,7 @@
       "name": "ITSADATE",
       "birth_year": 1944,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55935/itsadate",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55934/date-with-june",
       "affected_targets": 18
     },
     {
@@ -215044,7 +215488,7 @@
       "name": "MALINDI (GB)",
       "birth_year": 1947,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/49980",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/35745",
       "affected_targets": 18
     },
     {
@@ -215052,7 +215496,7 @@
       "name": "MALINDI (GB)",
       "birth_year": 1947,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/49980",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/35745",
       "affected_targets": 18
     },
     {
@@ -215076,7 +215520,7 @@
       "name": "NO ANGEL (GB)",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373822/kris-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373783/no-angel-gb",
       "affected_targets": 18
     },
     {
@@ -215084,7 +215528,7 @@
       "name": "NO ANGEL (GB)",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373822/kris-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/373783/no-angel-gb",
       "affected_targets": 18
     },
     {
@@ -215132,7 +215576,7 @@
       "name": "BEAU PRINCE (GB)",
       "birth_year": 1952,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48540",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/36990",
       "affected_targets": 17
     },
     {
@@ -215140,7 +215584,7 @@
       "name": "BEAU PRINCE (GB)",
       "birth_year": 1952,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48540",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/36990",
       "affected_targets": 17
     },
     {
@@ -215164,7 +215608,7 @@
       "name": "COMMEMORATION (GB)",
       "birth_year": 1954,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48540",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40179",
       "affected_targets": 17
     },
     {
@@ -215172,7 +215616,7 @@
       "name": "COMMEMORATION (GB)",
       "birth_year": 1954,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48540",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40179",
       "affected_targets": 17
     },
     {
@@ -215212,7 +215656,7 @@
       "name": "FORTUNATE ISLE (USA)",
       "birth_year": 1959,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/416444/parlez",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/377937/fortunate-isle-usa",
       "affected_targets": 17
     },
     {
@@ -215220,7 +215664,7 @@
       "name": "FORTUNATE ISLE (USA)",
       "birth_year": 1959,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/416444/parlez",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/377937/fortunate-isle-usa",
       "affected_targets": 17
     },
     {
@@ -215228,7 +215672,7 @@
       "name": "GAMBETTA",
       "birth_year": 1952,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388687/saint-nichole",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370688/gambetta",
       "affected_targets": 17
     },
     {
@@ -215236,7 +215680,7 @@
       "name": "GAMBETTA",
       "birth_year": 1952,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388687/saint-nichole",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370688/gambetta",
       "affected_targets": 17
     },
     {
@@ -215372,7 +215816,7 @@
       "name": "BLUE CROSS (GB)",
       "birth_year": 1946,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/51669",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/51672",
       "affected_targets": 16
     },
     {
@@ -215380,7 +215824,7 @@
       "name": "BLUE CROSS (GB)",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/51669",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/51672",
       "affected_targets": 16
     },
     {
@@ -215388,7 +215832,7 @@
       "name": "CAMBRIDGES (FR)",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/42609",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/42611",
       "affected_targets": 16
     },
     {
@@ -215396,7 +215840,7 @@
       "name": "CAMBRIDGES (FR)",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/42609",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/42611",
       "affected_targets": 16
     },
     {
@@ -215436,7 +215880,7 @@
       "name": "ITS ANN (USA)",
       "birth_year": 1956,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/69982",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47819",
       "affected_targets": 16
     },
     {
@@ -215444,7 +215888,7 @@
       "name": "ITS ANN (USA)",
       "birth_year": 1956,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/69982",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47819",
       "affected_targets": 16
     },
     {
@@ -215496,6 +215940,22 @@
       "affected_targets": 16
     },
     {
+      "id": "equibase:T:1365869",
+      "name": "Smart Strike",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 16
+    },
+    {
+      "id": "equibase:T:1365869",
+      "name": "Smart Strike",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 16
+    },
+    {
       "id": "uy-studbook:16264",
       "name": "TERRA (GER)",
       "birth_year": null,
@@ -215516,7 +215976,7 @@
       "name": "ALMS",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50883/first-feather",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369939/alms",
       "affected_targets": 15
     },
     {
@@ -215524,7 +215984,7 @@
       "name": "ALMS",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/50883/first-feather",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369939/alms",
       "affected_targets": 15
     },
     {
@@ -215564,7 +216024,7 @@
       "name": "EGYPTIAN",
       "birth_year": 1953,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/390390/whalah",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369355/egyptian",
       "affected_targets": 15
     },
     {
@@ -215572,7 +216032,7 @@
       "name": "EGYPTIAN",
       "birth_year": 1953,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/390390/whalah",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369355/egyptian",
       "affected_targets": 15
     },
     {
@@ -215580,7 +216040,7 @@
       "name": "FARANDULA (ARG)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/3700",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39259",
       "affected_targets": 15
     },
     {
@@ -215588,7 +216048,7 @@
       "name": "FARANDULA (ARG)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/3700",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39259",
       "affected_targets": 15
     },
     {
@@ -215596,7 +216056,7 @@
       "name": "JAZZ BABAY (USA)",
       "birth_year": 1946,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/47679",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47796",
       "affected_targets": 15
     },
     {
@@ -215604,7 +216064,7 @@
       "name": "JAZZ BABAY (USA)",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/47679",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/47796",
       "affected_targets": 15
     },
     {
@@ -215644,7 +216104,7 @@
       "name": "NOW WHAT (GB)",
       "birth_year": 1956,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/81477",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40523",
       "affected_targets": 15
     },
     {
@@ -215652,7 +216112,7 @@
       "name": "NOW WHAT (GB)",
       "birth_year": 1956,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/81477",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40523",
       "affected_targets": 15
     },
     {
@@ -215676,7 +216136,7 @@
       "name": "SILVER MOON (GB)",
       "birth_year": 1943,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/72596",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37253",
       "affected_targets": 15
     },
     {
@@ -215684,7 +216144,7 @@
       "name": "SILVER MOON (GB)",
       "birth_year": 1943,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/72596",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37253",
       "affected_targets": 15
     },
     {
@@ -215740,7 +216200,7 @@
       "name": "ASPHODELE (FR)",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40691",
       "affected_targets": 14
     },
     {
@@ -215748,7 +216208,7 @@
       "name": "ASPHODELE (FR)",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40691",
       "affected_targets": 14
     },
     {
@@ -215756,7 +216216,7 @@
       "name": "BLACK BROOK (FR)",
       "birth_year": 1945,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/43945",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/56377",
       "affected_targets": 14
     },
     {
@@ -215764,7 +216224,7 @@
       "name": "BLACK BROOK (FR)",
       "birth_year": 1945,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/43945",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/56377",
       "affected_targets": 14
     },
     {
@@ -215772,7 +216232,7 @@
       "name": "CROWFOOT (USA)",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48751",
       "affected_targets": 14
     },
     {
@@ -215780,7 +216240,7 @@
       "name": "CROWFOOT (USA)",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48751",
       "affected_targets": 14
     },
     {
@@ -215788,7 +216248,7 @@
       "name": "EAST SIDE II (GB)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/43945",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/56376",
       "affected_targets": 14
     },
     {
@@ -215796,7 +216256,7 @@
       "name": "EAST SIDE II (GB)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/43945",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/56376",
       "affected_targets": 14
     },
     {
@@ -215804,7 +216264,7 @@
       "name": "GUERSANT (FR)",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/45197",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8976",
       "affected_targets": 14
     },
     {
@@ -215812,7 +216272,7 @@
       "name": "GUERSANT (FR)",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/45197",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/8976",
       "affected_targets": 14
     },
     {
@@ -215836,7 +216296,7 @@
       "name": "POESY (USA)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48750",
       "affected_targets": 14
     },
     {
@@ -215844,7 +216304,7 @@
       "name": "POESY (USA)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48750",
       "affected_targets": 14
     },
     {
@@ -215868,7 +216328,7 @@
       "name": "SEA ELF (USA)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48752",
       "affected_targets": 14
     },
     {
@@ -215876,7 +216336,7 @@
       "name": "SEA ELF (USA)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48752",
       "affected_targets": 14
     },
     {
@@ -215884,7 +216344,7 @@
       "name": "SIR PENNANT (USA)",
       "birth_year": 1943,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48749",
       "affected_targets": 14
     },
     {
@@ -215892,7 +216352,7 @@
       "name": "SIR PENNANT (USA)",
       "birth_year": 1943,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/166",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48749",
       "affected_targets": 14
     },
     {
@@ -215980,7 +216440,7 @@
       "name": "BLUE SMOKE (GB)",
       "birth_year": 1942,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55685",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40812",
       "affected_targets": 12
     },
     {
@@ -215988,7 +216448,7 @@
       "name": "BLUE SMOKE (GB)",
       "birth_year": 1942,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55685",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40812",
       "affected_targets": 12
     },
     {
@@ -216044,7 +216504,7 @@
       "name": "CHAVALON",
       "birth_year": 1963,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/385036/awesome-again-can",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/375481/chavalon",
       "affected_targets": 12
     },
     {
@@ -216052,7 +216512,7 @@
       "name": "CHAVALON",
       "birth_year": 1963,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/385036/awesome-again-can",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/375481/chavalon",
       "affected_targets": 12
     },
     {
@@ -216116,7 +216576,7 @@
       "name": "FANTINE (ARG)",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/57359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37326",
       "affected_targets": 12
     },
     {
@@ -216124,7 +216584,7 @@
       "name": "FANTINE (ARG)",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/57359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/37326",
       "affected_targets": 12
     },
     {
@@ -216164,7 +216624,7 @@
       "name": "KANLAST (USA)",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/2367",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/45591",
       "affected_targets": 12
     },
     {
@@ -216172,7 +216632,7 @@
       "name": "KANLAST (USA)",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/2367",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/45591",
       "affected_targets": 12
     },
     {
@@ -216180,7 +216640,7 @@
       "name": "LADY OF ARAN",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55744/violetta-iii",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/49798/lady-of-aran",
       "affected_targets": 12
     },
     {
@@ -216188,7 +216648,7 @@
       "name": "LADY OF ARAN",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/55744/violetta-iii",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/49798/lady-of-aran",
       "affected_targets": 12
     },
     {
@@ -216228,7 +216688,7 @@
       "name": "MADONNA (2)",
       "birth_year": 1945,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38630",
       "affected_targets": 12
     },
     {
@@ -216236,7 +216696,7 @@
       "name": "MADONNA (2)",
       "birth_year": 1945,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38630",
       "affected_targets": 12
     },
     {
@@ -216244,7 +216704,7 @@
       "name": "MATADOR (GB)",
       "birth_year": 1953,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/73594",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40344",
       "affected_targets": 12
     },
     {
@@ -216252,7 +216712,7 @@
       "name": "MATADOR (GB)",
       "birth_year": 1953,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/73594",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40344",
       "affected_targets": 12
     },
     {
@@ -216260,7 +216720,7 @@
       "name": "MELUSINE (ARG)",
       "birth_year": 1959,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/47922",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40777",
       "affected_targets": 12
     },
     {
@@ -216268,7 +216728,7 @@
       "name": "MELUSINE (ARG)",
       "birth_year": 1959,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/47922",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40777",
       "affected_targets": 12
     },
     {
@@ -216276,7 +216736,7 @@
       "name": "MI CONDESA (FR)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/64794",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/36644",
       "affected_targets": 12
     },
     {
@@ -216284,7 +216744,7 @@
       "name": "MI CONDESA (FR)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/64794",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/36644",
       "affected_targets": 12
     },
     {
@@ -216340,7 +216800,7 @@
       "name": "ORTHODOX (GB)",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/51664",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/41190",
       "affected_targets": 12
     },
     {
@@ -216348,7 +216808,7 @@
       "name": "ORTHODOX (GB)",
       "birth_year": 1938,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/51664",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/41190",
       "affected_targets": 12
     },
     {
@@ -216397,6 +216857,22 @@
       "birth_year": 1947,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/30708",
+      "affected_targets": 12
+    },
+    {
+      "id": "equibase:T:1442325",
+      "name": "Pulpit",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2004&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 12
+    },
+    {
+      "id": "equibase:T:1442325",
+      "name": "Pulpit",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2004&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 12
     },
     {
@@ -216444,7 +216920,7 @@
       "name": "ROYAL FAN",
       "birth_year": 1951,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/162771/escorada-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369303/royal-fan",
       "affected_targets": 12
     },
     {
@@ -216452,7 +216928,7 @@
       "name": "ROYAL FAN",
       "birth_year": 1951,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/162771/escorada-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369303/royal-fan",
       "affected_targets": 12
     },
     {
@@ -216488,18 +216964,10 @@
       "affected_targets": 12
     },
     {
-      "id": "equibase:T:1365869",
-      "name": "Smart Strike",
+      "id": "equibase:T:6106474",
+      "name": "Tapit",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 12
-    },
-    {
-      "id": "equibase:T:1365869",
-      "name": "Smart Strike",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 12
     },
@@ -216597,6 +217065,14 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/35238",
+      "affected_targets": 11
+    },
+    {
+      "id": "equibase:T:7147650",
+      "name": "Curlin",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7147650&registry=T&rbt=TB",
       "affected_targets": 11
     },
     {
@@ -216628,7 +217104,7 @@
       "name": "MUMTAZ",
       "birth_year": 1954,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/391561/elissa-beethoven-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/54485/mumtaz",
       "affected_targets": 11
     },
     {
@@ -216636,7 +217112,7 @@
       "name": "MUMTAZ",
       "birth_year": 1954,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/391561/elissa-beethoven-gb",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/54485/mumtaz",
       "affected_targets": 11
     },
     {
@@ -216660,7 +217136,7 @@
       "name": "SANLINEA (GB)",
       "birth_year": 1947,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/31615",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/53940",
       "affected_targets": 11
     },
     {
@@ -216668,7 +217144,7 @@
       "name": "SANLINEA (GB)",
       "birth_year": 1947,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/31615",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/53940",
       "affected_targets": 11
     },
     {
@@ -216708,7 +217184,7 @@
       "name": "BLACK BROOK",
       "birth_year": 1945,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/387670/heraklia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369499/black-brook",
       "affected_targets": 10
     },
     {
@@ -216716,7 +217192,7 @@
       "name": "BLACK BROOK",
       "birth_year": 1945,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/387670/heraklia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369499/black-brook",
       "affected_targets": 10
     },
     {
@@ -216724,7 +217200,7 @@
       "name": "DANSE D'ESPOIR (GB)",
       "birth_year": 1946,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/41026",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38402",
       "affected_targets": 10
     },
     {
@@ -216732,7 +217208,23 @@
       "name": "DANSE D'ESPOIR (GB)",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/41026",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38402",
+      "affected_targets": 10
+    },
+    {
+      "id": "equibase:T:779025",
+      "name": "Deputy Minister",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 10
+    },
+    {
+      "id": "equibase:T:779025",
+      "name": "Deputy Minister",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 10
     },
     {
@@ -216740,7 +217232,7 @@
       "name": "EAST SIDE",
       "birth_year": 1939,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/387670/heraklia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369500/east-side",
       "affected_targets": 10
     },
     {
@@ -216748,7 +217240,7 @@
       "name": "EAST SIDE",
       "birth_year": 1939,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/387670/heraklia",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/369500/east-side",
       "affected_targets": 10
     },
     {
@@ -216765,6 +217257,22 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/35307",
+      "affected_targets": 10
+    },
+    {
+      "id": "equibase:T:702640",
+      "name": "Fappiano",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 10
+    },
+    {
+      "id": "equibase:T:702640",
+      "name": "Fappiano",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 10
     },
     {
@@ -216920,43 +217428,43 @@
       "affected_targets": 10
     },
     {
-      "id": "uy-studbook:40664",
-      "name": "CASTLE HYDE (USA)",
-      "birth_year": 1968,
-      "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/40664",
-      "affected_targets": 9
-    },
-    {
-      "id": "uy-studbook:40664",
-      "name": "CASTLE HYDE (USA)",
-      "birth_year": 1968,
-      "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/40664",
-      "affected_targets": 9
-    },
-    {
-      "id": "uy-studbook:67630",
-      "name": "CHAVALON (USA)",
-      "birth_year": 1963,
-      "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/67630",
-      "affected_targets": 9
-    },
-    {
-      "id": "uy-studbook:67630",
-      "name": "CHAVALON (USA)",
-      "birth_year": 1963,
-      "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/67630",
-      "affected_targets": 9
-    },
-    {
-      "id": "equibase:T:7147650",
-      "name": "Curlin",
+      "id": "equibase:T:1439425",
+      "name": "Awesome Again",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7147650&registry=T&rbt=TB",
+      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=1439425&registry=T&rbt=TB",
+      "affected_targets": 9
+    },
+    {
+      "id": "uy-studbook:40664",
+      "name": "CASTLE HYDE (USA)",
+      "birth_year": 1968,
+      "role": "dam_id",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40664",
+      "affected_targets": 9
+    },
+    {
+      "id": "uy-studbook:40664",
+      "name": "CASTLE HYDE (USA)",
+      "birth_year": 1968,
+      "role": "sire_id",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40664",
+      "affected_targets": 9
+    },
+    {
+      "id": "uy-studbook:67630",
+      "name": "CHAVALON (USA)",
+      "birth_year": 1963,
+      "role": "dam_id",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/67630",
+      "affected_targets": 9
+    },
+    {
+      "id": "uy-studbook:67630",
+      "name": "CHAVALON (USA)",
+      "birth_year": 1963,
+      "role": "sire_id",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/67630",
       "affected_targets": 9
     },
     {
@@ -216964,7 +217472,7 @@
       "name": "DEMING",
       "birth_year": 1955,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/390701/divided-we-fall",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/378737/deming",
       "affected_targets": 9
     },
     {
@@ -217120,6 +217628,14 @@
       "affected_targets": 9
     },
     {
+      "id": "equibase:T:1108188",
+      "name": "Unbridled",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=1108188&registry=T&rbt=TB",
+      "affected_targets": 9
+    },
+    {
       "id": "ar-studbook:50471",
       "name": "VERITY",
       "birth_year": 1936,
@@ -217132,7 +217648,7 @@
       "name": "AIRY (USA)",
       "birth_year": 1945,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55343",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40467",
       "affected_targets": 8
     },
     {
@@ -217140,7 +217656,7 @@
       "name": "AIRY (USA)",
       "birth_year": 1945,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55343",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40467",
       "affected_targets": 8
     },
     {
@@ -217228,7 +217744,7 @@
       "name": "B. FLAT (GB)",
       "birth_year": 1958,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40901",
       "affected_targets": 8
     },
     {
@@ -217236,7 +217752,7 @@
       "name": "B. FLAT (GB)",
       "birth_year": 1958,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40901",
       "affected_targets": 8
     },
     {
@@ -217260,7 +217776,7 @@
       "name": "BANTA (GB)",
       "birth_year": 1949,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40191",
       "affected_targets": 8
     },
     {
@@ -217268,7 +217784,7 @@
       "name": "BANTA (GB)",
       "birth_year": 1949,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/55953",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/40191",
       "affected_targets": 8
     },
     {
@@ -217500,7 +218016,7 @@
       "name": "COMANDITA (ARG)",
       "birth_year": 1952,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/20491",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59488",
       "affected_targets": 8
     },
     {
@@ -217508,7 +218024,7 @@
       "name": "COMANDITA (ARG)",
       "birth_year": 1952,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/20491",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/59488",
       "affected_targets": 8
     },
     {
@@ -217724,7 +218240,7 @@
       "name": "FANTAN (USA)",
       "birth_year": 1952,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38187",
       "affected_targets": 8
     },
     {
@@ -217732,7 +218248,7 @@
       "name": "FANTAN (USA)",
       "birth_year": 1952,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/38858",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38187",
       "affected_targets": 8
     },
     {
@@ -217740,7 +218256,7 @@
       "name": "FANTINE (FR)",
       "birth_year": 1943,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/31058",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48467",
       "affected_targets": 8
     },
     {
@@ -217748,7 +218264,7 @@
       "name": "FANTINE (FR)",
       "birth_year": 1943,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/31058",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48467",
       "affected_targets": 8
     },
     {
@@ -217804,7 +218320,7 @@
       "name": "GOLD CLOUD (GB)",
       "birth_year": 1941,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/52859",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38467",
       "affected_targets": 8
     },
     {
@@ -217812,7 +218328,7 @@
       "name": "GOLD CLOUD (GB)",
       "birth_year": 1941,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/52859",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38467",
       "affected_targets": 8
     },
     {
@@ -217916,7 +218432,7 @@
       "name": "JOHNS JOY (USA)",
       "birth_year": 1946,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/6516",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/25493",
       "affected_targets": 8
     },
     {
@@ -217924,7 +218440,7 @@
       "name": "JOHNS JOY (USA)",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/6516",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/25493",
       "affected_targets": 8
     },
     {
@@ -218060,7 +218576,7 @@
       "name": "MI RUCIA (CHI)",
       "birth_year": 1959,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/80588",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/78758",
       "affected_targets": 8
     },
     {
@@ -218068,7 +218584,7 @@
       "name": "MI RUCIA (CHI)",
       "birth_year": 1959,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/80588",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/78758",
       "affected_targets": 8
     },
     {
@@ -218124,7 +218640,7 @@
       "name": "NATASHA (USA)",
       "birth_year": 1952,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/53527",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/35732",
       "affected_targets": 8
     },
     {
@@ -218132,7 +218648,7 @@
       "name": "NATASHA (USA)",
       "birth_year": 1952,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/53527",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/35732",
       "affected_targets": 8
     },
     {
@@ -218188,7 +218704,7 @@
       "name": "NIGUA (ARG)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/19926",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38636",
       "affected_targets": 8
     },
     {
@@ -218196,7 +218712,7 @@
       "name": "NIGUA (ARG)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/19926",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/38636",
       "affected_targets": 8
     },
     {
@@ -218396,7 +218912,7 @@
       "name": "SALMON TROUT (GB)",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8889",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15811",
       "affected_targets": 8
     },
     {
@@ -218404,7 +218920,7 @@
       "name": "SALMON TROUT (GB)",
       "birth_year": null,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/8889",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15811",
       "affected_targets": 8
     },
     {
@@ -218412,7 +218928,7 @@
       "name": "SANDJAR (FR)",
       "birth_year": 1944,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/57359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15826",
       "affected_targets": 8
     },
     {
@@ -218420,7 +218936,7 @@
       "name": "SANDJAR (FR)",
       "birth_year": 1944,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/57359",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/15826",
       "affected_targets": 8
     },
     {
@@ -218428,7 +218944,7 @@
       "name": "SIGNAL LIGHT (IRE)",
       "birth_year": 1936,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/24248",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/22554",
       "affected_targets": 8
     },
     {
@@ -218436,7 +218952,7 @@
       "name": "SIGNAL LIGHT (IRE)",
       "birth_year": 1936,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/24248",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/22554",
       "affected_targets": 8
     },
     {
@@ -218524,7 +219040,7 @@
       "name": "SUN HELMET",
       "birth_year": 1940,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53216/pass-the-glass",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368851/sun-helmet",
       "affected_targets": 8
     },
     {
@@ -218532,7 +219048,7 @@
       "name": "SUN HELMET",
       "birth_year": 1940,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/53216/pass-the-glass",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368851/sun-helmet",
       "affected_targets": 8
     },
     {
@@ -218596,7 +219112,7 @@
       "name": "TETRASIL (GB)",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48637",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48658",
       "affected_targets": 8
     },
     {
@@ -218604,7 +219120,7 @@
       "name": "TETRASIL (GB)",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/48637",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/48658",
       "affected_targets": 8
     },
     {
@@ -218672,22 +219188,6 @@
       "affected_targets": 8
     },
     {
-      "id": "equibase:T:6106474",
-      "name": "Tapit",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 8
-    },
-    {
-      "id": "equibase:T:6106474",
-      "name": "Tapit",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 8
-    },
-    {
       "id": "uy-studbook:46925",
       "name": "VALETA (GB)",
       "birth_year": null,
@@ -218740,7 +219240,7 @@
       "name": "VULCANIA",
       "birth_year": 1948,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393765/not-likely-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/49600/vulcania",
       "affected_targets": 8
     },
     {
@@ -218748,7 +219248,7 @@
       "name": "VULCANIA",
       "birth_year": 1948,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/393765/not-likely-usa",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/49600/vulcania",
       "affected_targets": 8
     },
     {
@@ -218916,7 +219416,7 @@
       "name": "DECIDIDA (ARG)",
       "birth_year": 1946,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/41026",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39329",
       "affected_targets": 7
     },
     {
@@ -218924,7 +219424,7 @@
       "name": "DECIDIDA (ARG)",
       "birth_year": 1946,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/41026",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/39329",
       "affected_targets": 7
     },
     {
@@ -218973,6 +219473,38 @@
       "birth_year": 1946,
       "role": "sire_id",
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/46836/elite",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:2441280",
+      "name": "El Prado (IRE)",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:2441280",
+      "name": "El Prado (IRE)",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:1396994",
+      "name": "Elusive Quality",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:1396994",
+      "name": "Elusive Quality",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 7
     },
     {
@@ -219037,6 +219569,22 @@
       "birth_year": 1948,
       "role": "sire_id",
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/370115/high-stepper-ii",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:7436720",
+      "name": "Into Mischief",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 7
+    },
+    {
+      "id": "equibase:T:7436720",
+      "name": "Into Mischief",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 7
     },
     {
@@ -219216,6 +219764,22 @@
       "affected_targets": 7
     },
     {
+      "id": "equibase:T:1245197",
+      "name": "A.P. Indy",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 6
+    },
+    {
+      "id": "equibase:T:1245197",
+      "name": "A.P. Indy",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 6
+    },
+    {
       "id": "uy-studbook:67390",
       "name": "AMALESIAN (USA)",
       "birth_year": 1962,
@@ -219405,6 +219969,14 @@
       "birth_year": 1949,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/48764",
+      "affected_targets": 6
+    },
+    {
+      "id": "equibase:T:5378341",
+      "name": "Empire Maker",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 6
     },
     {
@@ -219968,6 +220540,22 @@
       "affected_targets": 5
     },
     {
+      "id": "equibase:T:1396750",
+      "name": "Distorted Humor",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 5
+    },
+    {
+      "id": "equibase:T:1396750",
+      "name": "Distorted Humor",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 5
+    },
+    {
       "id": "uy-studbook:40213",
       "name": "EMOCION (ARG)",
       "birth_year": 1955,
@@ -220080,22 +220668,6 @@
       "affected_targets": 5
     },
     {
-      "id": "equibase:T:7436720",
-      "name": "Into Mischief",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 5
-    },
-    {
-      "id": "equibase:T:7436720",
-      "name": "Into Mischief",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 5
-    },
-    {
       "id": "uy-studbook:77114",
       "name": "JENJAY (USA)",
       "birth_year": 1951,
@@ -220196,14 +220768,6 @@
       "name": "RIVIERE D'OR",
       "birth_year": 1985,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/397026/riviere-d-or",
-      "affected_targets": 5
-    },
-    {
-      "id": "ar-studbook:397026",
-      "name": "RIVIERE D'OR",
-      "birth_year": 1985,
-      "role": "sire_id",
       "source_url": "https://www.studbook.org.ar/ejemplares/perfil/397026/riviere-d-or",
       "affected_targets": 5
     },
@@ -220820,7 +221384,7 @@
       "name": "BEDDARD",
       "birth_year": 1962,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388739/beddard",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "affected_targets": 4
     },
     {
@@ -220828,7 +221392,7 @@
       "name": "BEDDARD",
       "birth_year": 1962,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388739/beddard",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "affected_targets": 4
     },
     {
@@ -221720,8 +222284,16 @@
       "affected_targets": 4
     },
     {
-      "id": "equibase:T:5902892",
-      "name": "Candy Ride (ARG)",
+      "id": "equibase:T:901764",
+      "name": "Candy Stripes",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:901764",
+      "name": "Candy Stripes",
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
@@ -222664,6 +223236,22 @@
       "affected_targets": 4
     },
     {
+      "id": "equibase:T:1394342",
+      "name": "Hennessy",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2006&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:1394342",
+      "name": "Hennessy",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2006&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 4
+    },
+    {
       "id": "uy-studbook:42214",
       "name": "IMBERLINE (FR)",
       "birth_year": null,
@@ -222912,14 +223500,6 @@
       "affected_targets": 4
     },
     {
-      "id": "equibase:T:6252387",
-      "name": "Kitten's Joy",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 4
-    },
-    {
       "id": "uy-studbook:56469",
       "name": "LA BOBA (ARG)",
       "birth_year": 1944,
@@ -223020,7 +223600,7 @@
       "name": "LADY KING",
       "birth_year": 1970,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388740/lady-king",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "affected_targets": 4
     },
     {
@@ -223028,7 +223608,7 @@
       "name": "LADY KING",
       "birth_year": 1970,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/388740/lady-king",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/425968/the-hess-express",
       "affected_targets": 4
     },
     {
@@ -223036,7 +223616,7 @@
       "name": "LAMBERT SIMNEL",
       "birth_year": 1938,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/47580/lambert-simnel",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/48083/apace",
       "affected_targets": 4
     },
     {
@@ -223140,7 +223720,7 @@
       "name": "LITTLE RISK",
       "birth_year": 1937,
       "role": "dam_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368645/little-risk",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368643/cyclotron",
       "affected_targets": 4
     },
     {
@@ -223148,7 +223728,7 @@
       "name": "LITTLE RISK",
       "birth_year": 1937,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368645/little-risk",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/368643/cyclotron",
       "affected_targets": 4
     },
     {
@@ -223572,7 +224152,7 @@
       "name": "MEHRABI",
       "birth_year": 1951,
       "role": "sire_id",
-      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/367603/mehrabi",
+      "source_url": "https://www.studbook.org.ar/ejemplares/perfil/367602/ran-tan",
       "affected_targets": 4
     },
     {
@@ -223877,6 +224457,14 @@
       "birth_year": 1953,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/48644",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:4966077",
+      "name": "Mineshaft",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 4
     },
     {
@@ -224888,14 +225476,6 @@
       "affected_targets": 4
     },
     {
-      "id": "equibase:T:7789704",
-      "name": "Quality Road",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 4
-    },
-    {
       "id": "uy-studbook:40750",
       "name": "RAKAHANGA (USA)",
       "birth_year": 1957,
@@ -225304,6 +225884,22 @@
       "affected_targets": 4
     },
     {
+      "id": "equibase:T:1327154",
+      "name": "Ride the Rails",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:1327154",
+      "name": "Ride the Rails",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 4
+    },
+    {
       "id": "ar-studbook:358164",
       "name": "S S AROMA",
       "birth_year": 1981,
@@ -225636,7 +226232,7 @@
       "name": "SING BACK (USA)",
       "birth_year": 1973,
       "role": "dam_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/68692",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/55164",
       "affected_targets": 4
     },
     {
@@ -225644,7 +226240,7 @@
       "name": "SING BACK (USA)",
       "birth_year": 1973,
       "role": "sire_id",
-      "source_url": "https://www.studbook.com.uy/online-volume/horse/68692",
+      "source_url": "https://www.studbook.com.uy/online-volume/horse/55164",
       "affected_targets": 4
     },
     {
@@ -226160,6 +226756,22 @@
       "affected_targets": 4
     },
     {
+      "id": "equibase:T:935962",
+      "name": "Storm Cat",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:935962",
+      "name": "Storm Cat",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 4
+    },
+    {
       "id": "equibase:T:4531602",
       "name": "Street Cry (IRE)",
       "birth_year": null,
@@ -226421,6 +227033,22 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.studbook.com.uy/online-volume/horse/16440",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:1439212",
+      "name": "Tale of the Cat",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 4
+    },
+    {
+      "id": "equibase:T:1439212",
+      "name": "Tale of the Cat",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 4
     },
     {
@@ -226776,22 +227404,6 @@
       "affected_targets": 3
     },
     {
-      "id": "equibase:T:779025",
-      "name": "Deputy Minister",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:779025",
-      "name": "Deputy Minister",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
       "id": "equibase:T:835369",
       "name": "Devil's Bag",
       "birth_year": null,
@@ -226808,22 +227420,6 @@
       "affected_targets": 3
     },
     {
-      "id": "equibase:T:1396750",
-      "name": "Distorted Humor",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:1396750",
-      "name": "Distorted Humor",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
       "id": "equibase:T:1049059",
       "name": "Dynaformer",
       "birth_year": null,
@@ -226834,38 +227430,6 @@
     {
       "id": "equibase:T:1049059",
       "name": "Dynaformer",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:2441280",
-      "name": "El Prado (IRE)",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:2441280",
-      "name": "El Prado (IRE)",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:1396994",
-      "name": "Elusive Quality",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:1396994",
-      "name": "Elusive Quality",
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
@@ -226912,11 +227476,11 @@
       "affected_targets": 3
     },
     {
-      "id": "equibase:T:5342927",
-      "name": "Ghostzapper",
+      "id": "equibase:T:7407836",
+      "name": "Gio Ponti",
       "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7407836&registry=T&rbt=TB",
       "affected_targets": 3
     },
     {
@@ -226936,6 +227500,38 @@
       "affected_targets": 3
     },
     {
+      "id": "equibase:T:1318476",
+      "name": "Holy Bull",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2002&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 3
+    },
+    {
+      "id": "equibase:T:1318476",
+      "name": "Holy Bull",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2002&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 3
+    },
+    {
+      "id": "equibase:T:4001105",
+      "name": "Indian Charlie",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2010&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 3
+    },
+    {
+      "id": "equibase:T:4001105",
+      "name": "Indian Charlie",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2010&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 3
+    },
+    {
       "id": "equibase:T:4480431",
       "name": "Macho Uno",
       "birth_year": null,
@@ -226944,26 +227540,10 @@
       "affected_targets": 3
     },
     {
-      "id": "equibase:T:4480431",
-      "name": "Macho Uno",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
       "id": "equibase:T:5331310",
       "name": "Posse",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
-      "id": "equibase:T:5331310",
-      "name": "Posse",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 3
     },
@@ -227013,6 +227593,22 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 3
+    },
+    {
+      "id": "equibase:T:1046512",
+      "name": "Silver Deputy",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 3
+    },
+    {
+      "id": "equibase:T:1046512",
+      "name": "Silver Deputy",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2003&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 3
     },
     {
@@ -227056,14 +227652,6 @@
       "affected_targets": 3
     },
     {
-      "id": "equibase:T:8292193",
-      "name": "Uncle Mo",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 3
-    },
-    {
       "id": "equibase:T:624999",
       "name": "Affirmed",
       "birth_year": null,
@@ -227120,14 +227708,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:9662832",
-      "name": "Always Dreaming",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:1354309",
       "name": "Anabaa",
       "birth_year": null,
@@ -227152,14 +227732,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:7086287",
-      "name": "Any Given Saturday",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:4003359",
       "name": "Arch",
       "birth_year": null,
@@ -227173,14 +227745,6 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:1439425",
-      "name": "Awesome Again",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=1439425&registry=T&rbt=TB",
       "affected_targets": 2
     },
     {
@@ -227208,14 +227772,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:6801271",
-      "name": "Bernardini",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:4304973",
       "name": "Bernstein",
       "birth_year": null,
@@ -227229,6 +227785,14 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:8598977",
+      "name": "Bodemeister",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2017&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 2
     },
     {
@@ -227258,22 +227822,6 @@
     {
       "id": "equibase:T:620894",
       "name": "Buckaroo",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:901764",
-      "name": "Candy Stripes",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:901764",
-      "name": "Candy Stripes",
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
@@ -227292,14 +227840,6 @@
       "name": "Connect",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:9526872",
-      "name": "Connect",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -227368,14 +227908,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:8266889",
-      "name": "Dialed In",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:2071869",
       "name": "Double Bed (FR)",
       "birth_year": null,
@@ -227432,32 +227964,8 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:9493840",
-      "name": "Drefong",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:4472854",
       "name": "E Dubai",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:4472854",
-      "name": "E Dubai",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:6132134",
-      "name": "Eddington",
       "birth_year": null,
       "role": "dam_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
@@ -227467,23 +227975,7 @@
       "id": "equibase:T:6132134",
       "name": "Eddington",
       "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:5378341",
-      "name": "Empire Maker",
-      "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:5378341",
-      "name": "Empire Maker",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -227520,22 +228012,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:702640",
-      "name": "Fappiano",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:702640",
-      "name": "Fappiano",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:9104468",
       "name": "Fast Anna",
       "birth_year": null,
@@ -227592,14 +228068,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:4297000",
-      "name": "Giant's Causeway",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:6386448",
       "name": "Gold Allure (JPN)",
       "birth_year": null,
@@ -227624,11 +228092,19 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:8890672",
-      "name": "Goldencents",
+      "id": "equibase:T:984265",
+      "name": "Gone West",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2004&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:984265",
+      "name": "Gone West",
       "birth_year": null,
       "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2004&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 2
     },
     {
@@ -227724,14 +228200,6 @@
       "name": "Henny Hughes",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:6848321",
-      "name": "Henny Hughes",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -227848,14 +228316,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:6277345",
-      "name": "Leroidesanimaux (BRZ)",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:3032401",
       "name": "Linamix (FR)",
       "birth_year": null,
@@ -227876,14 +228336,6 @@
       "name": "Lookin At Lucky",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:8081070",
-      "name": "Lookin At Lucky",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -227968,14 +228420,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:6875760",
-      "name": "Midnight Lute",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:9500592",
       "name": "Mind Your Biscuits",
       "birth_year": null,
@@ -227984,22 +228428,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:4966077",
-      "name": "Mineshaft",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:4966077",
-      "name": "Mineshaft",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:1601031",
       "name": "Monsun (GER)",
       "birth_year": null,
@@ -228013,6 +228441,22 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:334449",
+      "name": "Mr. Prospector",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2001&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:334449",
+      "name": "Mr. Prospector",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2001&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 2
     },
     {
@@ -228168,14 +228612,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:5342834",
-      "name": "Offlee Wild",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:357857",
       "name": "Ole Bob Bowers",
       "birth_year": null,
@@ -228216,14 +228652,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:8859882",
-      "name": "Oxbow",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:855223",
       "name": "Palace Music",
       "birth_year": null,
@@ -228248,26 +228676,10 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:8562865",
-      "name": "Paynter",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:7766522",
       "name": "Pioneerof the Nile",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:7766522",
-      "name": "Pioneerof the Nile",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -228320,14 +228732,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:9118822",
-      "name": "Race Day",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:1055837",
       "name": "Rahy",
       "birth_year": null,
@@ -228357,6 +228761,22 @@
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:4005090",
+      "name": "Real Quiet",
+      "birth_year": null,
+      "role": "dam_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2008&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:4005090",
+      "name": "Real Quiet",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2008&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 2
     },
     {
@@ -228592,14 +229012,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:4434181",
-      "name": "Speightstown",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:7997465",
       "name": "Starspangledbanner (AUS)",
       "birth_year": null,
@@ -228610,22 +229022,6 @@
     {
       "id": "equibase:T:7997465",
       "name": "Starspangledbanner (AUS)",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:935962",
-      "name": "Storm Cat",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:935962",
-      "name": "Storm Cat",
       "birth_year": null,
       "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
@@ -228648,22 +229044,6 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:1439212",
-      "name": "Tale of the Cat",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:1439212",
-      "name": "Tale of the Cat",
-      "birth_year": null,
-      "role": "sire_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
       "id": "equibase:T:1371579",
       "name": "Talkin Man",
       "birth_year": null,
@@ -228684,14 +229064,6 @@
       "name": "Tapizar",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
-      "affected_targets": 2
-    },
-    {
-      "id": "equibase:T:8333257",
-      "name": "Tapizar",
-      "birth_year": null,
-      "role": "sire_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -228736,18 +229108,26 @@
       "affected_targets": 2
     },
     {
-      "id": "equibase:T:4680072",
-      "name": "Wiseman's Ferry",
+      "id": "equibase:T:798893",
+      "name": "Wild Again",
       "birth_year": null,
       "role": "dam_id",
-      "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2005&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
+      "affected_targets": 2
+    },
+    {
+      "id": "equibase:T:798893",
+      "name": "Wild Again",
+      "birth_year": null,
+      "role": "sire_id",
+      "source_url": "https://www.equibase.com/Data.cfm/Stats/Horse/Year/Page?year=2005&page=1&sort=EARNINGS&dir=A&list=N&category=A&attribute_total=1024&set=full&race_breed_type=TB",
       "affected_targets": 2
     },
     {
       "id": "equibase:T:4680072",
       "name": "Wiseman's Ferry",
       "birth_year": null,
-      "role": "sire_id",
+      "role": "dam_id",
       "source_url": "https://www.equibase.com/stats/ViewAllTime.cfm?tf=all-time&rbt=TB",
       "affected_targets": 2
     },
@@ -229269,14 +229649,6 @@
       "birth_year": null,
       "role": "dam_id",
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10997731&registry=T&rbt=TB",
-      "affected_targets": 1
-    },
-    {
-      "id": "equibase:T:7407836",
-      "name": "Gio Ponti",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7407836&registry=T&rbt=TB",
       "affected_targets": 1
     },
     {
@@ -230069,14 +230441,6 @@
       "birth_year": null,
       "role": "dam_id",
       "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7453428&registry=T&rbt=TB",
-      "affected_targets": 1
-    },
-    {
-      "id": "equibase:T:1108188",
-      "name": "Unbridled",
-      "birth_year": null,
-      "role": "dam_id",
-      "source_url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=1108188&registry=T&rbt=TB",
       "affected_targets": 1
     },
     {

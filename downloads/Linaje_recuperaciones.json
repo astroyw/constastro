@@ -600,6 +600,22 @@
           "observed_at": "2026-11-12T18:08:35+00:00"
         }
       ]
+    },
+    {
+      "file": "ar-studbook-44634.json",
+      "recovered_at": "2026-11-20T20:14:41+00:00",
+      "original_reason": "Un progenitor debe haber nacido antes que su descendiente.",
+      "applied": [],
+      "quarantined": [
+        {
+          "id": "ar-studbook:44634",
+          "reasons": [
+            "Cronología incompatible: ar-studbook:44634 (1942) / ar-studbook:43939 (1942)."
+          ],
+          "source_url": "https://www.studbook.org.ar/ejemplares/perfil/44634/royal-gem-ii",
+          "observed_at": "2026-11-20T20:13:57+00:00"
+        }
+      ]
     }
   ]
 }
